@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj": {}
+  },
+  "projects": {
+    "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+        "projectName": "BUS",
+        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj"
+              },
+              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj",
+        "projectName": "GUI",
+        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\DevExpress\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\DevExpress\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {
+              "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj": {
+                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj"
+              },
+              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "DevExpress.Win.Design": {
+              "target": "Package",
+              "version": "[22.2.4, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+D:\Homework\AirportManager\QLChuyenBay\BUS\bin\Debug\BUS.dll
+D:\Homework\AirportManager\QLChuyenBay\BUS\bin\Debug\BUS.pdb
+D:\Homework\AirportManager\QLChuyenBay\BUS\bin\Debug\DAL.dll
+D:\Homework\AirportManager\QLChuyenBay\BUS\bin\Debug\DTO.dll
+D:\Homework\AirportManager\QLChuyenBay\BUS\bin\Debug\DAL.pdb
+D:\Homework\AirportManager\QLChuyenBay\BUS\bin\Debug\DTO.pdb
+D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.dll
+D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.pdb

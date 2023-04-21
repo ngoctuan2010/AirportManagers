@@ -1,0 +1,6 @@
+D:\Homework\AirportManager\QLChuyenBay\DTO\bin\Debug\DTO.dll
+D:\Homework\AirportManager\QLChuyenBay\DTO\bin\Debug\DTO.pdb
+D:\Homework\AirportManager\QLChuyenBay\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Homework\AirportManager\QLChuyenBay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Homework\AirportManager\QLChuyenBay\DTO\obj\Debug\DTO.dll
+D:\Homework\AirportManager\QLChuyenBay\DTO\obj\Debug\DTO.pdb
