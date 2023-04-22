@@ -1,22 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj": {}
+    "D:\\Code\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj": {}
   },
   "projects": {
-    "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj": {
+    "D:\\Code\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+        "projectUniqueName": "D:\\Code\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
         "projectName": "BUS",
-        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+        "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj"
+              "D:\\Code\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj"
               },
-              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
-                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
+              "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
               }
             }
           }
@@ -26,16 +26,16 @@
         "net48": {}
       }
     },
-    "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj": {
+    "D:\\Code\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Code\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj",
+        "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
-                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
+              "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
               }
             }
           }
@@ -45,11 +45,11 @@
         "net48": {}
       }
     },
-    "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+    "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
+        "projectUniqueName": "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
+        "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -60,21 +60,23 @@
         "net48": {}
       }
     },
-    "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj": {
+    "D:\\Code\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj",
+        "projectUniqueName": "D:\\Code\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\obj\\",
+        "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj",
+        "packagesPath": "C:\\Users\\pthin\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\GUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\DevExpress\\Components\\Offline Packages"
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pthin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,18 +84,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\DevExpress\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj": {
-                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj"
+              "D:\\Code\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj": {
+                "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj"
               },
-              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
-                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
+              "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Code\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
               }
             }
           }
@@ -136,7 +138,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

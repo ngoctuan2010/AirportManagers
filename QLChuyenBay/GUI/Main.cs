@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace GUI
 {
@@ -22,5 +24,19 @@ namespace GUI
         {
         }
 
+        private void ButtonAddPlaneClick(object sender, EventArgs e)
+        {
+            Plane obj = (Plane)sender;
+            Plane_Func.AddPlane(obj);
+        }
+
+        private void ButtonUpdatePlaneClick(object sender, EventArgs e)
+        {
+        }
+
+        private void ButtonDeletePlaneClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
