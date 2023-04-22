@@ -4,3 +4,15 @@ D:\Homework\AirportManager\QLChuyenBay\DTO\obj\Debug\DTO.csproj.AssemblyReferenc
 D:\Homework\AirportManager\QLChuyenBay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Homework\AirportManager\QLChuyenBay\DTO\obj\Debug\DTO.dll
 D:\Homework\AirportManager\QLChuyenBay\DTO\obj\Debug\DTO.pdb
+D:\Homework\AirportManagers\QLChuyenBay\DTO\bin\Debug\DTO.dll.config
+D:\Homework\AirportManagers\QLChuyenBay\DTO\bin\Debug\DTO.dll
+D:\Homework\AirportManagers\QLChuyenBay\DTO\bin\Debug\DTO.pdb
+D:\Homework\AirportManagers\QLChuyenBay\DTO\bin\Debug\EntityFramework.dll
+D:\Homework\AirportManagers\QLChuyenBay\DTO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Homework\AirportManagers\QLChuyenBay\DTO\bin\Debug\EntityFramework.xml
+D:\Homework\AirportManagers\QLChuyenBay\DTO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Homework\AirportManagers\QLChuyenBay\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Homework\AirportManagers\QLChuyenBay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Homework\AirportManagers\QLChuyenBay\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\Homework\AirportManagers\QLChuyenBay\DTO\obj\Debug\DTO.dll
+D:\Homework\AirportManagers\QLChuyenBay\DTO\obj\Debug\DTO.pdb

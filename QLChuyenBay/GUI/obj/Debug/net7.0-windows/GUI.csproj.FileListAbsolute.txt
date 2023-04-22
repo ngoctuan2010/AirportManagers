@@ -355,3 +355,6 @@ D:\Homework\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\DAL.pdb
 D:\Homework\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\GUI.csproj.CopyComplete
 D:\Homework\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
 D:\Homework\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
+D:\Homework\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\BUS.dll.config
+D:\Homework\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\DTO.dll.config
+D:\Homework\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\DAL.dll.config
