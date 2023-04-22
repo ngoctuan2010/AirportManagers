@@ -71,29 +71,29 @@
             gcCustomer = new DevExpress.XtraGrid.GridControl();
             gvCustomer = new DevExpress.XtraGrid.Views.Grid.GridView();
             groupBox5 = new GroupBox();
-            simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
+            btnCustomerDelete = new DevExpress.XtraEditors.SimpleButton();
+            btnCustomerUpdate = new DevExpress.XtraEditors.SimpleButton();
+            btnAddCustomer = new DevExpress.XtraEditors.SimpleButton();
             simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
             simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
             label24 = new Label();
-            textEdit13 = new DevExpress.XtraEditors.TextEdit();
-            textEdit15 = new DevExpress.XtraEditors.TextEdit();
-            textEdit17 = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerPhone = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerNationality = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerEmail = new DevExpress.XtraEditors.TextEdit();
             label25 = new Label();
             label26 = new Label();
             label27 = new Label();
-            textEdit18 = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerID = new DevExpress.XtraEditors.TextEdit();
             label28 = new Label();
-            dateTimePicker4 = new DateTimePicker();
+            dtpCustomerDate = new DateTimePicker();
             label29 = new Label();
-            radioButton5 = new RadioButton();
-            radioButton6 = new RadioButton();
+            rbCustomerFemale = new RadioButton();
+            rbCustomerMale = new RadioButton();
             label30 = new Label();
             label31 = new Label();
-            textEdit19 = new DevExpress.XtraEditors.TextEdit();
-            textEdit20 = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerAddress = new DevExpress.XtraEditors.TextEdit();
+            txtCustomerName = new DevExpress.XtraEditors.TextEdit();
             textEdit21 = new DevExpress.XtraEditors.TextEdit();
             label32 = new Label();
             tp = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -102,22 +102,22 @@
             simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             label9 = new Label();
-            textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            txt2 = new DevExpress.XtraEditors.TextEdit();
+            txt5 = new DevExpress.XtraEditors.TextEdit();
+            txt4 = new DevExpress.XtraEditors.TextEdit();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
-            textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            txt1 = new DevExpress.XtraEditors.TextEdit();
             label5 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            dtp1 = new DateTimePicker();
             label4 = new Label();
             radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
             label3 = new Label();
             label2 = new Label();
-            textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            txt6 = new DevExpress.XtraEditors.TextEdit();
+            txt3 = new DevExpress.XtraEditors.TextEdit();
             textEdit1 = new DevExpress.XtraEditors.TextEdit();
             label1 = new Label();
             gridEmployee = new DevExpress.XtraGrid.GridControl();
@@ -167,6 +167,7 @@
             simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
             label45 = new Label();
             tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            label39 = new Label();
             ((System.ComponentModel.ISupportInitialize)tabControls).BeginInit();
             tabControls.SuspendLayout();
             tabNavigationPage1.SuspendLayout();
@@ -186,21 +187,21 @@
             ((System.ComponentModel.ISupportInitialize)gcCustomer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gvCustomer).BeginInit();
             groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit17.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit18.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit19.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit20.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerPhone.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerNationality.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerEmail.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerID.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerAddress.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerName.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit21.Properties).BeginInit();
             tp.SuspendLayout();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit7.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit5.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit4.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit3.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txt2.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txt5.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txt4.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txt1.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txt6.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txt3.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridEmployee).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridView2).BeginInit();
@@ -690,33 +691,34 @@
             gvCustomer.Name = "gvCustomer";
             gvCustomer.OptionsBehavior.CacheValuesOnRowUpdating = DevExpress.Data.CacheRowValuesMode.Disabled;
             gvCustomer.OptionsBehavior.Editable = false;
+            gvCustomer.RowClick += gvCustomer_RowClick;
             // 
             // groupBox5
             // 
             groupBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox5.Controls.Add(simpleButton10);
-            groupBox5.Controls.Add(simpleButton11);
-            groupBox5.Controls.Add(simpleButton12);
+            groupBox5.Controls.Add(btnCustomerDelete);
+            groupBox5.Controls.Add(btnCustomerUpdate);
+            groupBox5.Controls.Add(btnAddCustomer);
             groupBox5.Controls.Add(simpleButton7);
             groupBox5.Controls.Add(simpleButton8);
             groupBox5.Controls.Add(simpleButton9);
             groupBox5.Controls.Add(label24);
-            groupBox5.Controls.Add(textEdit13);
-            groupBox5.Controls.Add(textEdit15);
-            groupBox5.Controls.Add(textEdit17);
+            groupBox5.Controls.Add(txtCustomerPhone);
+            groupBox5.Controls.Add(txtCustomerNationality);
+            groupBox5.Controls.Add(txtCustomerEmail);
             groupBox5.Controls.Add(label25);
             groupBox5.Controls.Add(label26);
             groupBox5.Controls.Add(label27);
-            groupBox5.Controls.Add(textEdit18);
+            groupBox5.Controls.Add(txtCustomerID);
             groupBox5.Controls.Add(label28);
-            groupBox5.Controls.Add(dateTimePicker4);
+            groupBox5.Controls.Add(dtpCustomerDate);
             groupBox5.Controls.Add(label29);
-            groupBox5.Controls.Add(radioButton5);
-            groupBox5.Controls.Add(radioButton6);
+            groupBox5.Controls.Add(rbCustomerFemale);
+            groupBox5.Controls.Add(rbCustomerMale);
             groupBox5.Controls.Add(label30);
             groupBox5.Controls.Add(label31);
-            groupBox5.Controls.Add(textEdit19);
-            groupBox5.Controls.Add(textEdit20);
+            groupBox5.Controls.Add(txtCustomerAddress);
+            groupBox5.Controls.Add(txtCustomerName);
             groupBox5.Controls.Add(textEdit21);
             groupBox5.Controls.Add(label32);
             groupBox5.Location = new Point(12, 16);
@@ -726,37 +728,40 @@
             groupBox5.Size = new Size(1016, 228);
             groupBox5.TabIndex = 2;
             groupBox5.TabStop = false;
-            groupBox5.Text = "Information employee";
+            groupBox5.Text = "Information Customer";
             // 
-            // simpleButton10
+            // btnCustomerDelete
             // 
-            simpleButton10.Anchor = AnchorStyles.Right;
-            simpleButton10.Location = new Point(880, 169);
-            simpleButton10.Margin = new Padding(4, 2, 4, 2);
-            simpleButton10.Name = "simpleButton10";
-            simpleButton10.Size = new Size(118, 36);
-            simpleButton10.TabIndex = 24;
-            simpleButton10.Text = "Delete";
+            btnCustomerDelete.Anchor = AnchorStyles.Right;
+            btnCustomerDelete.Location = new Point(754, 137);
+            btnCustomerDelete.Margin = new Padding(3, 2, 3, 2);
+            btnCustomerDelete.Name = "btnCustomerDelete";
+            btnCustomerDelete.Size = new Size(101, 29);
+            btnCustomerDelete.TabIndex = 24;
+            btnCustomerDelete.Text = "Delete";
+            btnCustomerDelete.Click += btnCustomerDelete_Click;
             // 
-            // simpleButton11
+            // btnCustomerUpdate
             // 
-            simpleButton11.Anchor = AnchorStyles.Right;
-            simpleButton11.Location = new Point(742, 169);
-            simpleButton11.Margin = new Padding(4, 2, 4, 2);
-            simpleButton11.Name = "simpleButton11";
-            simpleButton11.Size = new Size(118, 36);
-            simpleButton11.TabIndex = 23;
-            simpleButton11.Text = "Update";
+            btnCustomerUpdate.Anchor = AnchorStyles.Right;
+            btnCustomerUpdate.Location = new Point(636, 137);
+            btnCustomerUpdate.Margin = new Padding(3, 2, 3, 2);
+            btnCustomerUpdate.Name = "btnCustomerUpdate";
+            btnCustomerUpdate.Size = new Size(101, 29);
+            btnCustomerUpdate.TabIndex = 23;
+            btnCustomerUpdate.Text = "Update";
+            btnCustomerUpdate.Click += btnCustomerUpdate_Click;
             // 
-            // simpleButton12
+            // btnAddCustomer
             // 
-            simpleButton12.Anchor = AnchorStyles.Right;
-            simpleButton12.Location = new Point(606, 169);
-            simpleButton12.Margin = new Padding(4, 2, 4, 2);
-            simpleButton12.Name = "simpleButton12";
-            simpleButton12.Size = new Size(118, 36);
-            simpleButton12.TabIndex = 22;
-            simpleButton12.Text = "Add";
+            btnAddCustomer.Anchor = AnchorStyles.Right;
+            btnAddCustomer.Location = new Point(519, 137);
+            btnAddCustomer.Margin = new Padding(3, 2, 3, 2);
+            btnAddCustomer.Name = "btnAddCustomer";
+            btnAddCustomer.Size = new Size(101, 29);
+            btnAddCustomer.TabIndex = 22;
+            btnAddCustomer.Text = "Add";
+            btnAddCustomer.Click += btnAddCustomer_Click;
             // 
             // simpleButton7
             // 
@@ -799,32 +804,32 @@
             label24.TabIndex = 18;
             label24.Text = "Phone:";
             // 
-            // textEdit13
+            // txtCustomerPhone
             // 
-            textEdit13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit13.Location = new Point(792, 22);
-            textEdit13.Margin = new Padding(4, 2, 4, 2);
-            textEdit13.Name = "textEdit13";
-            textEdit13.Size = new Size(206, 22);
-            textEdit13.TabIndex = 17;
+            txtCustomerPhone.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerPhone.Location = new Point(679, 18);
+            txtCustomerPhone.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerPhone.Name = "txtCustomerPhone";
+            txtCustomerPhone.Size = new Size(177, 20);
+            txtCustomerPhone.TabIndex = 17;
             // 
-            // textEdit15
+            // txtCustomerNationality
             // 
-            textEdit15.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit15.Location = new Point(792, 65);
-            textEdit15.Margin = new Padding(4, 2, 4, 2);
-            textEdit15.Name = "textEdit15";
-            textEdit15.Size = new Size(206, 22);
-            textEdit15.TabIndex = 16;
+            txtCustomerNationality.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerNationality.Location = new Point(679, 53);
+            txtCustomerNationality.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerNationality.Name = "txtCustomerNationality";
+            txtCustomerNationality.Size = new Size(177, 20);
+            txtCustomerNationality.TabIndex = 16;
             // 
-            // textEdit17
+            // txtCustomerEmail
             // 
-            textEdit17.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit17.Location = new Point(472, 65);
-            textEdit17.Margin = new Padding(4, 2, 4, 2);
-            textEdit17.Name = "textEdit17";
-            textEdit17.Size = new Size(206, 22);
-            textEdit17.TabIndex = 15;
+            txtCustomerEmail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerEmail.Location = new Point(405, 53);
+            txtCustomerEmail.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerEmail.Name = "txtCustomerEmail";
+            txtCustomerEmail.Size = new Size(177, 20);
+            txtCustomerEmail.TabIndex = 15;
             // 
             // label25
             // 
@@ -855,18 +860,18 @@
             label27.Location = new Point(380, 25);
             label27.Margin = new Padding(4, 0, 4, 0);
             label27.Name = "label27";
-            label27.Size = new Size(83, 16);
+            label27.Size = new Size(64, 13);
             label27.TabIndex = 12;
-            label27.Text = "CMND/CCCD:";
+            label27.Text = "National ID:";
             // 
-            // textEdit18
+            // txtCustomerID
             // 
-            textEdit18.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit18.Location = new Point(472, 22);
-            textEdit18.Margin = new Padding(4, 2, 4, 2);
-            textEdit18.Name = "textEdit18";
-            textEdit18.Size = new Size(206, 22);
-            textEdit18.TabIndex = 11;
+            txtCustomerID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerID.Location = new Point(405, 18);
+            txtCustomerID.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerID.Name = "txtCustomerID";
+            txtCustomerID.Size = new Size(177, 20);
+            txtCustomerID.TabIndex = 11;
             // 
             // label28
             // 
@@ -879,14 +884,16 @@
             label28.TabIndex = 10;
             label28.Text = "Sex:";
             // 
-            // dateTimePicker4
+            // dtpCustomerDate
             // 
-            dateTimePicker4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            dateTimePicker4.Location = new Point(472, 110);
-            dateTimePicker4.Margin = new Padding(4, 2, 4, 2);
-            dateTimePicker4.Name = "dateTimePicker4";
-            dateTimePicker4.Size = new Size(243, 23);
-            dateTimePicker4.TabIndex = 9;
+            dtpCustomerDate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            dtpCustomerDate.CustomFormat = "dd/MM/yyyy";
+            dtpCustomerDate.Format = DateTimePickerFormat.Custom;
+            dtpCustomerDate.Location = new Point(405, 89);
+            dtpCustomerDate.Margin = new Padding(3, 2, 3, 2);
+            dtpCustomerDate.Name = "dtpCustomerDate";
+            dtpCustomerDate.Size = new Size(177, 21);
+            dtpCustomerDate.TabIndex = 9;
             // 
             // label29
             // 
@@ -899,31 +906,31 @@
             label29.TabIndex = 8;
             label29.Text = "Date of birth:";
             // 
-            // radioButton5
+            // rbCustomerFemale
             // 
-            radioButton5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            radioButton5.AutoSize = true;
-            radioButton5.Location = new Point(190, 139);
-            radioButton5.Margin = new Padding(4, 2, 4, 2);
-            radioButton5.Name = "radioButton5";
-            radioButton5.Size = new Size(73, 20);
-            radioButton5.TabIndex = 7;
-            radioButton5.TabStop = true;
-            radioButton5.Text = "Felmale";
-            radioButton5.UseVisualStyleBackColor = true;
+            rbCustomerFemale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            rbCustomerFemale.AutoSize = true;
+            rbCustomerFemale.Location = new Point(163, 113);
+            rbCustomerFemale.Margin = new Padding(3, 2, 3, 2);
+            rbCustomerFemale.Name = "rbCustomerFemale";
+            rbCustomerFemale.Size = new Size(61, 17);
+            rbCustomerFemale.TabIndex = 7;
+            rbCustomerFemale.TabStop = true;
+            rbCustomerFemale.Text = "Felmale";
+            rbCustomerFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rbCustomerMale
             // 
-            radioButton6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            radioButton6.AutoSize = true;
-            radioButton6.Location = new Point(105, 139);
-            radioButton6.Margin = new Padding(4, 2, 4, 2);
-            radioButton6.Name = "radioButton6";
-            radioButton6.Size = new Size(55, 20);
-            radioButton6.TabIndex = 6;
-            radioButton6.TabStop = true;
-            radioButton6.Text = "Male";
-            radioButton6.UseVisualStyleBackColor = true;
+            rbCustomerMale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            rbCustomerMale.AutoSize = true;
+            rbCustomerMale.Location = new Point(90, 113);
+            rbCustomerMale.Margin = new Padding(3, 2, 3, 2);
+            rbCustomerMale.Name = "rbCustomerMale";
+            rbCustomerMale.Size = new Size(47, 17);
+            rbCustomerMale.TabIndex = 6;
+            rbCustomerMale.TabStop = true;
+            rbCustomerMale.Text = "Male";
+            rbCustomerMale.UseVisualStyleBackColor = true;
             // 
             // label30
             // 
@@ -947,23 +954,23 @@
             label31.TabIndex = 4;
             label31.Text = "Name:";
             // 
-            // textEdit19
+            // txtCustomerAddress
             // 
-            textEdit19.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit19.Location = new Point(105, 103);
-            textEdit19.Margin = new Padding(4, 2, 4, 2);
-            textEdit19.Name = "textEdit19";
-            textEdit19.Size = new Size(243, 22);
-            textEdit19.TabIndex = 3;
+            txtCustomerAddress.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerAddress.Location = new Point(90, 84);
+            txtCustomerAddress.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerAddress.Name = "txtCustomerAddress";
+            txtCustomerAddress.Size = new Size(208, 20);
+            txtCustomerAddress.TabIndex = 3;
             // 
-            // textEdit20
+            // txtCustomerName
             // 
-            textEdit20.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit20.Location = new Point(105, 65);
-            textEdit20.Margin = new Padding(4, 2, 4, 2);
-            textEdit20.Name = "textEdit20";
-            textEdit20.Size = new Size(243, 22);
-            textEdit20.TabIndex = 2;
+            txtCustomerName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtCustomerName.Location = new Point(90, 53);
+            txtCustomerName.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerName.Name = "txtCustomerName";
+            txtCustomerName.Size = new Size(208, 20);
+            txtCustomerName.TabIndex = 2;
             // 
             // textEdit21
             // 
@@ -992,7 +999,7 @@
             tp.Controls.Add(gridEmployee);
             tp.Margin = new Padding(4, 2, 4, 2);
             tp.Name = "tp";
-            tp.Size = new Size(1040, 361);
+            tp.Size = new Size(891, 491);
             // 
             // groupBox2
             // 
@@ -1001,22 +1008,22 @@
             groupBox2.Controls.Add(simpleButton2);
             groupBox2.Controls.Add(simpleButton1);
             groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(textEdit7);
-            groupBox2.Controls.Add(textEdit6);
-            groupBox2.Controls.Add(textEdit5);
+            groupBox2.Controls.Add(txt2);
+            groupBox2.Controls.Add(txt5);
+            groupBox2.Controls.Add(txt4);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(textEdit4);
+            groupBox2.Controls.Add(txt1);
             groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(dateTimePicker1);
+            groupBox2.Controls.Add(dtp1);
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(radioButton2);
             groupBox2.Controls.Add(radioButton1);
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(textEdit3);
-            groupBox2.Controls.Add(textEdit2);
+            groupBox2.Controls.Add(txt6);
+            groupBox2.Controls.Add(txt3);
             groupBox2.Controls.Add(textEdit1);
             groupBox2.Controls.Add(label1);
             groupBox2.Location = new Point(5, 2);
@@ -1069,32 +1076,32 @@
             label9.TabIndex = 18;
             label9.Text = "Phone:";
             // 
-            // textEdit7
+            // txt2
             // 
-            textEdit7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit7.Location = new Point(792, 22);
-            textEdit7.Margin = new Padding(4, 2, 4, 2);
-            textEdit7.Name = "textEdit7";
-            textEdit7.Size = new Size(206, 22);
-            textEdit7.TabIndex = 17;
+            txt2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt2.Location = new Point(679, 18);
+            txt2.Margin = new Padding(3, 2, 3, 2);
+            txt2.Name = "txt2";
+            txt2.Size = new Size(177, 20);
+            txt2.TabIndex = 17;
             // 
-            // textEdit6
+            // txt5
             // 
-            textEdit6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit6.Location = new Point(792, 65);
-            textEdit6.Margin = new Padding(4, 2, 4, 2);
-            textEdit6.Name = "textEdit6";
-            textEdit6.Size = new Size(206, 22);
-            textEdit6.TabIndex = 16;
+            txt5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt5.Location = new Point(679, 53);
+            txt5.Margin = new Padding(3, 2, 3, 2);
+            txt5.Name = "txt5";
+            txt5.Size = new Size(177, 20);
+            txt5.TabIndex = 16;
             // 
-            // textEdit5
+            // txt4
             // 
-            textEdit5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit5.Location = new Point(472, 65);
-            textEdit5.Margin = new Padding(4, 2, 4, 2);
-            textEdit5.Name = "textEdit5";
-            textEdit5.Size = new Size(206, 22);
-            textEdit5.TabIndex = 15;
+            txt4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt4.Location = new Point(405, 53);
+            txt4.Margin = new Padding(3, 2, 3, 2);
+            txt4.Name = "txt4";
+            txt4.Size = new Size(177, 20);
+            txt4.TabIndex = 15;
             // 
             // label8
             // 
@@ -1125,18 +1132,18 @@
             label6.Location = new Point(380, 25);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(83, 16);
+            label6.Size = new Size(64, 13);
             label6.TabIndex = 12;
-            label6.Text = "CMND/CCCD:";
+            label6.Text = "National ID:";
             // 
-            // textEdit4
+            // txt1
             // 
-            textEdit4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit4.Location = new Point(472, 22);
-            textEdit4.Margin = new Padding(4, 2, 4, 2);
-            textEdit4.Name = "textEdit4";
-            textEdit4.Size = new Size(206, 22);
-            textEdit4.TabIndex = 11;
+            txt1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt1.Location = new Point(405, 18);
+            txt1.Margin = new Padding(3, 2, 3, 2);
+            txt1.Name = "txt1";
+            txt1.Size = new Size(177, 20);
+            txt1.TabIndex = 11;
             // 
             // label5
             // 
@@ -1149,14 +1156,16 @@
             label5.TabIndex = 10;
             label5.Text = "Sex:";
             // 
-            // dateTimePicker1
+            // dtp1
             // 
-            dateTimePicker1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            dateTimePicker1.Location = new Point(472, 110);
-            dateTimePicker1.Margin = new Padding(4, 2, 4, 2);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(243, 23);
-            dateTimePicker1.TabIndex = 9;
+            dtp1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            dtp1.CustomFormat = "\"dd-mm-yyyy\"";
+            dtp1.Format = DateTimePickerFormat.Short;
+            dtp1.Location = new Point(405, 89);
+            dtp1.Margin = new Padding(3, 2, 3, 2);
+            dtp1.Name = "dtp1";
+            dtp1.Size = new Size(177, 21);
+            dtp1.TabIndex = 9;
             // 
             // label4
             // 
@@ -1217,23 +1226,23 @@
             label2.TabIndex = 4;
             label2.Text = "Name:";
             // 
-            // textEdit3
+            // txt6
             // 
-            textEdit3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit3.Location = new Point(105, 103);
-            textEdit3.Margin = new Padding(4, 2, 4, 2);
-            textEdit3.Name = "textEdit3";
-            textEdit3.Size = new Size(243, 22);
-            textEdit3.TabIndex = 3;
+            txt6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt6.Location = new Point(90, 84);
+            txt6.Margin = new Padding(3, 2, 3, 2);
+            txt6.Name = "txt6";
+            txt6.Size = new Size(208, 20);
+            txt6.TabIndex = 3;
             // 
-            // textEdit2
+            // txt3
             // 
-            textEdit2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit2.Location = new Point(105, 65);
-            textEdit2.Margin = new Padding(4, 2, 4, 2);
-            textEdit2.Name = "textEdit2";
-            textEdit2.Size = new Size(243, 22);
-            textEdit2.TabIndex = 2;
+            txt3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txt3.Location = new Point(90, 53);
+            txt3.Margin = new Padding(3, 2, 3, 2);
+            txt3.Name = "txt3";
+            txt3.Size = new Size(208, 20);
+            txt3.TabIndex = 2;
             // 
             // textEdit1
             // 
@@ -1263,7 +1272,7 @@
             gridEmployee.MainView = gridView2;
             gridEmployee.Margin = new Padding(4, 2, 4, 2);
             gridEmployee.Name = "gridEmployee";
-            gridEmployee.Size = new Size(1016, 120);
+            gridEmployee.Size = new Size(871, 295);
             gridEmployee.TabIndex = 0;
             gridEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView2 });
             // 
@@ -1733,6 +1742,18 @@
             tabNavigationPage6.Name = "tabNavigationPage6";
             tabNavigationPage6.Size = new Size(1040, 511);
             // 
+            // label39
+            // 
+            label39.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label39.AutoSize = true;
+            label39.BackColor = Color.FromArgb(128, 128, 255);
+            label39.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label39.Location = new Point(914, 6);
+            label39.Name = "label39";
+            label39.Size = new Size(80, 19);
+            label39.TabIndex = 6;
+            label39.Text = "Username";
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
@@ -1771,22 +1792,22 @@
             ((System.ComponentModel.ISupportInitialize)gvCustomer).EndInit();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit17.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit18.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit19.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit20.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerPhone.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerNationality.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerEmail.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerID.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerAddress.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCustomerName.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit21.Properties).EndInit();
             tp.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit7.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit5.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit4.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit3.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txt2.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txt5.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txt4.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txt1.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txt6.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txt3.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridEmployee).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridView2).EndInit();
@@ -1807,6 +1828,7 @@
             ((System.ComponentModel.ISupportInitialize)txtManufactor.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtPlaneModel.Properties).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -1830,22 +1852,22 @@
         private RadioButton radioButton1;
         private Label label3;
         private Label label2;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txt6;
+        private DevExpress.XtraEditors.TextEdit txt3;
         private Label label4;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txt5;
+        private DevExpress.XtraEditors.TextEdit txt4;
         private Label label8;
         private Label label7;
         private Label label6;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit txt1;
         private Label label5;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtp1;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private Label label9;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit txt2;
         private GroupBox groupBox4;
         private GroupBox groupBox3;
         private DateTimePicker dateTimePicker2;
@@ -1881,29 +1903,29 @@
         private DevExpress.XtraEditors.TextEdit textEdit14;
         private Label label20;
         private GroupBox groupBox5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton12;
+        private DevExpress.XtraEditors.SimpleButton btnCustomerDelete;
+        private DevExpress.XtraEditors.SimpleButton btnCustomerUpdate;
+        private DevExpress.XtraEditors.SimpleButton btnAddCustomer;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
         private DevExpress.XtraEditors.SimpleButton simpleButton8;
         private DevExpress.XtraEditors.SimpleButton simpleButton9;
         private Label label24;
-        private DevExpress.XtraEditors.TextEdit textEdit13;
-        private DevExpress.XtraEditors.TextEdit textEdit15;
-        private DevExpress.XtraEditors.TextEdit textEdit17;
+        private DevExpress.XtraEditors.TextEdit txtCustomerPhone;
+        private DevExpress.XtraEditors.TextEdit txtCustomerNationality;
+        private DevExpress.XtraEditors.TextEdit txtCustomerEmail;
         private Label label25;
         private Label label26;
         private Label label27;
-        private DevExpress.XtraEditors.TextEdit textEdit18;
+        private DevExpress.XtraEditors.TextEdit txtCustomerID;
         private Label label28;
-        private DateTimePicker dateTimePicker4;
+        private DateTimePicker dtpCustomerDate;
         private Label label29;
-        private RadioButton radioButton5;
-        private RadioButton radioButton6;
+        private RadioButton rbCustomerFemale;
+        private RadioButton rbCustomerMale;
         private Label label30;
         private Label label31;
-        private DevExpress.XtraEditors.TextEdit textEdit19;
-        private DevExpress.XtraEditors.TextEdit textEdit20;
+        private DevExpress.XtraEditors.TextEdit txtCustomerAddress;
+        private DevExpress.XtraEditors.TextEdit txtCustomerName;
         private DevExpress.XtraEditors.TextEdit textEdit21;
         private Label label32;
         private DevExpress.XtraGrid.GridControl gcCustomer;

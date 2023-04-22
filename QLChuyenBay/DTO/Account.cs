@@ -14,7 +14,8 @@ namespace DTO
     
     public partial class Account
     {
-        public int EmployeeID { get; set; }
+        public int AccountID { get; set; }
+        public Nullable<int> EmployeeID { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public Nullable<bool> AccessLevel { get; set; }
