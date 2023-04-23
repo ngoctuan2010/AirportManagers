@@ -16,8 +16,9 @@ namespace DTO
     public partial class Bill_Detail
     {
         public int BillID { get; set; }
-        public Nullable<int> CustomerID { get; set; }
-        public Nullable<int> FlightID { get; set; }
+        public int CustomerID { get; set; }
+        public int FlightID { get; set; }
+        public int EmployeeID { get; set; }
         public string SeatNumber { get; set; }
         public Nullable<bool> SeatClass { get; set; }
         public Nullable<int> BookingState { get; set; }
@@ -26,5 +27,6 @@ namespace DTO
     
         public virtual Customer Customer { get; set; }
         public virtual Flight Flight { get; set; }
+        public virtual Employee Employee { get; set; }
     }
 }

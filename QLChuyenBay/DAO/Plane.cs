@@ -7,26 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DAO
+namespace DTO
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Plane
+    public partial class Location
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Plane()
+        public Location()
         {
             this.Flights = new HashSet<Flight>();
+            this.Flights1 = new HashSet<Flight>();
         }
     
-        public int PlaneID { get; set; }
-        public string Model { get; set; }
-        public Nullable<int> TotalSeat { get; set; }
-        public string Manufacturer { get; set; }
-        public string State { get; set; }
+        public int LocationID { get; set; }
+        public string LocationName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Flight> Flights { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Flight> Flights1 { get; set; }
     }
 }

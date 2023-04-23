@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel;
+
 namespace DTO
 {
     using System;
@@ -23,11 +25,12 @@ namespace DTO
         public int PlaneID { get; set; }
         public string Model { get; set; }
         public string Registration { get; set; }
-        public Nullable<int> TotalSeat { get; set; }
+        public int TotalSeat { get; set; }
         public string Manufacturer { get; set; }
-        public Nullable<int> State { get; set; }
-    
+        public int State { get; set; }
+        
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [Browsable(false)]
         public virtual ICollection<Flight> Flights { get; set; }
     }
 }

@@ -7,38 +7,51 @@
     <EntitySet Name="Employees" EntityType="AirportManagerModel.Store.Employees" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Flights" EntityType="AirportManagerModel.Store.Flights" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Jobs" EntityType="AirportManagerModel.Store.Jobs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Locations" EntityType="AirportManagerModel.Store.Locations" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Planes" EntityType="AirportManagerModel.Store.Planes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="AirportManagerModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="FK__Account__Employe__398D8EEE" Association="AirportManagerModel.Store.FK__Account__Employe__398D8EEE">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="Account" EntitySet="Accounts" />
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Accounts" EntitySet="Accounts" />
     </AssociationSet>
     <AssociationSet Name="FK__Bill_Deta__Custo__4316F928" Association="AirportManagerModel.Store.FK__Bill_Deta__Custo__4316F928">
-      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Customers" EntitySet="Customers" />
       <End Role="Bill_Detail" EntitySet="Bill_Detail" />
     </AssociationSet>
     <AssociationSet Name="FK__Bill_Deta__Fligh__440B1D61" Association="AirportManagerModel.Store.FK__Bill_Deta__Fligh__440B1D61">
-      <End Role="Flight" EntitySet="Flights" />
+      <End Role="Flights" EntitySet="Flights" />
       <End Role="Bill_Detail" EntitySet="Bill_Detail" />
     </AssociationSet>
-    <AssociationSet Name="FK__Job__EmployeeID__49C3F6B7" Association="AirportManagerModel.Store.FK__Job__EmployeeID__49C3F6B7">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="Job" EntitySet="Jobs" />
+    <AssociationSet Name="FK_Bill_Detail_Employees" Association="AirportManagerModel.Store.FK_Bill_Detail_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Bill_Detail" EntitySet="Bill_Detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Job__EmployeeID__46E78A0C" Association="AirportManagerModel.Store.FK__Job__EmployeeID__46E78A0C">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Jobs" EntitySet="Jobs" />
     </AssociationSet>
     <AssociationSet Name="FK__Flight__Airline__403A8C7D" Association="AirportManagerModel.Store.FK__Flight__Airline__403A8C7D">
-      <End Role="Plane" EntitySet="Planes" />
-      <End Role="Flight" EntitySet="Flights" />
+      <End Role="Planes" EntitySet="Planes" />
+      <End Role="Flights" EntitySet="Flights" />
     </AssociationSet>
-    <AssociationSet Name="FK__Job__FlightID__4AB81AF0" Association="AirportManagerModel.Store.FK__Job__FlightID__4AB81AF0">
-      <End Role="Flight" EntitySet="Flights" />
-      <End Role="Job" EntitySet="Jobs" />
+    <AssociationSet Name="FK__Job__FlightID__47DBAE45" Association="AirportManagerModel.Store.FK__Job__FlightID__47DBAE45">
+      <End Role="Flights" EntitySet="Flights" />
+      <End Role="Jobs" EntitySet="Jobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Flights_Locations" Association="AirportManagerModel.Store.FK_Flights_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Flights" EntitySet="Flights" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Flights_Locations1" Association="AirportManagerModel.Store.FK_Flights_Locations1">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Flights" EntitySet="Flights" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Accounts">
     <Key>
-      <PropertyRef Name="AccountID" />
+      <PropertyRef Name="EmployeeID" />
     </Key>
-    <Property Name="AccountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="EmployeeID" Type="int" Nullable="true" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
     <Property Name="Username" Type="nvarchar" Nullable="true" MaxLength="30" />
     <Property Name="Password" Type="nvarchar" Nullable="true" MaxLength="30" />
     <Property Name="AccessLevel" Type="bit" Nullable="true" />
@@ -48,8 +61,9 @@
       <PropertyRef Name="BillID" />
     </Key>
     <Property Name="BillID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="CustomerID" Type="int" Nullable="true" />
-    <Property Name="FlightID" Type="int" Nullable="true" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="FlightID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
     <Property Name="SeatNumber" Type="nvarchar" Nullable="true" MaxLength="5" />
     <Property Name="SeatClass" Type="bit" Nullable="true" />
     <Property Name="BookingState" Type="int" Nullable="true" />
@@ -90,11 +104,10 @@
       <PropertyRef Name="FlightID" />
     </Key>
     <Property Name="FlightID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="PlaneID" Type="int" Nullable="true" />
-    <Property Name="Departure" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="PlaneID" Type="int" Nullable="false" />
+    <Property Name="Departure" Type="int" Nullable="true" />
     <Property Name="DateOfDeparture" Type="datetime" Nullable="true" />
-    <Property Name="Destination" Type="nvarchar" Nullable="true" MaxLength="20" />
-    <Property Name="DateOfDestination" Type="datetime" Nullable="true" />
+    <Property Name="Destination" Type="int" Nullable="true" />
     <Property Name="Airline" Type="nvarchar" Nullable="true" MaxLength="20" />
   </EntityType>
   <EntityType Name="Jobs">
@@ -105,7 +118,14 @@
     <Property Name="EmployeeID" Type="int" Nullable="true" />
     <Property Name="FlightID" Type="int" Nullable="true" />
     <Property Name="JobDescription" Type="nvarchar" Nullable="true" MaxLength="20" />
-    <Property Name="JobStae" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="JobState" Type="nvarchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LocationName" Type="nvarchar" Nullable="true" MaxLength="20" />
   </EntityType>
   <EntityType Name="Planes">
     <Key>
@@ -113,27 +133,38 @@
     </Key>
     <Property Name="PlaneID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Model" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Registration" Type="nvarchar" Nullable="true" MaxLength="20" />
     <Property Name="TotalSeat" Type="int" Nullable="true" />
     <Property Name="Manufacturer" Type="nvarchar" Nullable="true" MaxLength="30" />
-    <Property Name="State" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="State" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" Nullable="true" />
+    <Property Name="definition" Type="varbinary(max)" Nullable="true" />
   </EntityType>
   <Association Name="FK__Account__Employe__398D8EEE">
-    <End Role="Employee" Type="AirportManagerModel.Store.Employees" Multiplicity="0..1" />
-    <End Role="Account" Type="AirportManagerModel.Store.Accounts" Multiplicity="*" />
+    <End Role="Employees" Type="AirportManagerModel.Store.Employees" Multiplicity="1" />
+    <End Role="Accounts" Type="AirportManagerModel.Store.Accounts" Multiplicity="0..1" />
     <ReferentialConstraint>
-      <Principal Role="Employee">
+      <Principal Role="Employees">
         <PropertyRef Name="EmployeeID" />
       </Principal>
-      <Dependent Role="Account">
+      <Dependent Role="Accounts">
         <PropertyRef Name="EmployeeID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Bill_Deta__Custo__4316F928">
-    <End Role="Customer" Type="AirportManagerModel.Store.Customers" Multiplicity="0..1" />
+    <End Role="Customers" Type="AirportManagerModel.Store.Customers" Multiplicity="1" />
     <End Role="Bill_Detail" Type="AirportManagerModel.Store.Bill_Detail" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Customer">
+      <Principal Role="Customers">
         <PropertyRef Name="CustomerID" />
       </Principal>
       <Dependent Role="Bill_Detail">
@@ -142,10 +173,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Bill_Deta__Fligh__440B1D61">
-    <End Role="Flight" Type="AirportManagerModel.Store.Flights" Multiplicity="0..1" />
+    <End Role="Flights" Type="AirportManagerModel.Store.Flights" Multiplicity="1" />
     <End Role="Bill_Detail" Type="AirportManagerModel.Store.Bill_Detail" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Flight">
+      <Principal Role="Flights">
         <PropertyRef Name="FlightID" />
       </Principal>
       <Dependent Role="Bill_Detail">
@@ -153,39 +184,75 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Job__EmployeeID__49C3F6B7">
-    <End Role="Employee" Type="AirportManagerModel.Store.Employees" Multiplicity="0..1" />
-    <End Role="Job" Type="AirportManagerModel.Store.Jobs" Multiplicity="*" />
+  <Association Name="FK_Bill_Detail_Employees">
+    <End Role="Employees" Type="AirportManagerModel.Store.Employees" Multiplicity="1" />
+    <End Role="Bill_Detail" Type="AirportManagerModel.Store.Bill_Detail" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Employee">
+      <Principal Role="Employees">
         <PropertyRef Name="EmployeeID" />
       </Principal>
-      <Dependent Role="Job">
+      <Dependent Role="Bill_Detail">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Job__EmployeeID__46E78A0C">
+    <End Role="Employees" Type="AirportManagerModel.Store.Employees" Multiplicity="0..1" />
+    <End Role="Jobs" Type="AirportManagerModel.Store.Jobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Jobs">
         <PropertyRef Name="EmployeeID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Flight__Airline__403A8C7D">
-    <End Role="Plane" Type="AirportManagerModel.Store.Planes" Multiplicity="0..1" />
-    <End Role="Flight" Type="AirportManagerModel.Store.Flights" Multiplicity="*" />
+    <End Role="Planes" Type="AirportManagerModel.Store.Planes" Multiplicity="1" />
+    <End Role="Flights" Type="AirportManagerModel.Store.Flights" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Plane">
+      <Principal Role="Planes">
         <PropertyRef Name="PlaneID" />
       </Principal>
-      <Dependent Role="Flight">
+      <Dependent Role="Flights">
         <PropertyRef Name="PlaneID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Job__FlightID__4AB81AF0">
-    <End Role="Flight" Type="AirportManagerModel.Store.Flights" Multiplicity="0..1" />
-    <End Role="Job" Type="AirportManagerModel.Store.Jobs" Multiplicity="*" />
+  <Association Name="FK__Job__FlightID__47DBAE45">
+    <End Role="Flights" Type="AirportManagerModel.Store.Flights" Multiplicity="0..1" />
+    <End Role="Jobs" Type="AirportManagerModel.Store.Jobs" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Flight">
+      <Principal Role="Flights">
         <PropertyRef Name="FlightID" />
       </Principal>
-      <Dependent Role="Job">
+      <Dependent Role="Jobs">
         <PropertyRef Name="FlightID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Flights_Locations">
+    <End Role="Locations" Type="AirportManagerModel.Store.Locations" Multiplicity="0..1" />
+    <End Role="Flights" Type="AirportManagerModel.Store.Flights" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="Flights">
+        <PropertyRef Name="Departure" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Flights_Locations1">
+    <End Role="Locations" Type="AirportManagerModel.Store.Locations" Multiplicity="0..1" />
+    <End Role="Flights" Type="AirportManagerModel.Store.Flights" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="Flights">
+        <PropertyRef Name="Destination" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
