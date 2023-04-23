@@ -2235,40 +2235,6 @@
             "rid": "win"
           }
         }
-      },
-      "BUS/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "DAL": "1.0.0",
-          "DTO": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BUS.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BUS.dll": {}
-        }
-      },
-      "DAL/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "DTO": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DAL.dll": {}
-        }
-      },
-      "DTO/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/DTO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DTO.dll": {}
-        }
       }
     }
   },
@@ -5502,27 +5468,12 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "BUS/1.0.0": {
-      "type": "project",
-      "path": "../BUS/BUS.csproj",
-      "msbuildProject": "../BUS/BUS.csproj"
-    },
-    "DAL/1.0.0": {
-      "type": "project",
-      "path": "../DAL/DAL.csproj",
-      "msbuildProject": "../DAL/DAL.csproj"
-    },
-    "DTO/1.0.0": {
-      "type": "project",
-      "path": "../DTO/DTO.csproj",
-      "msbuildProject": "../DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "BUS >= 1.0.0",
-      "DTO >= 1.0.0",
+      "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+      "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
       "DevExpress.Win.Design >= 22.2.4",
       "EntityFramework >= 6.4.4"
     ]
@@ -5610,5 +5561,25 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
 }

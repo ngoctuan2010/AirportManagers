@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "2aTItEeYI7PRclOlV2ViYNur3C9y7xDAIn43iBqAWFAgyZ/sgTrMP6GApmS1jRl/Xh1uRd6cHhXrBu7qCFX2ng==",
-  "success": true,
+  "dgSpecHash": "zlBIVG4mt88UKjN5u+Wc1cv0nqyFvva5RTglBqlCnGUk83fpCqjs5rGd54x/kL5Hw4EBaGmGIE1fBoNbuLgFGw==",
+  "success": false,
   "projectFilePath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj",
   "expectedPackageFiles": [
     "D:\\DevExpress\\Components\\Offline Packages\\devexpress.charts\\22.2.4\\devexpress.charts.22.2.4.nupkg.sha512",
@@ -116,5 +116,24 @@
     "C:\\Users\\PC\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
 }

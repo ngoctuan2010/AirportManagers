@@ -12,6 +12,7 @@
         <EntityTypeShape EntityType="AirportManagerModel.Flight" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
         <EntityTypeShape EntityType="AirportManagerModel.Job" Width="1.5" PointX="9.125" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="AirportManagerModel.Plane" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportManagerModel.sysdiagram" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
         <AssociationConnector Association="AirportManagerModel.FK__Account__Employe__398D8EEE" ManuallyRouted="false" />
         <AssociationConnector Association="AirportManagerModel.FK__Bill_Deta__Custo__4316F928" ManuallyRouted="false" />
         <AssociationConnector Association="AirportManagerModel.FK__Bill_Deta__Fligh__440B1D61" ManuallyRouted="false" />

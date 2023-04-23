@@ -406,13 +406,15 @@
             // 
             // label21
             // 
-            label21.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label21.AutoSize = true;
-            label21.Location = new Point(20, 31);
-            label21.Name = "label21";
-            label21.Size = new Size(71, 13);
-            label21.TabIndex = 29;
-            label21.Text = "Customer ID:";
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(23, 38);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(83, 16);
+            this.label21.TabIndex = 29;
+            this.label21.Text = "Customer ID:";
             // 
             // label15
             // 
@@ -446,13 +448,15 @@
             // 
             // label10
             // 
-            label10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label10.AutoSize = true;
-            label10.Location = new Point(21, 92);
-            label10.Name = "label10";
-            label10.Size = new Size(50, 13);
-            label10.TabIndex = 21;
-            label10.Text = "Address:";
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(24, 113);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 16);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Address:";
             // 
             // label11
             // 
@@ -466,13 +470,15 @@
             // 
             // label12
             // 
-            label12.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label12.AutoSize = true;
-            label12.Location = new Point(20, 60);
-            label12.Name = "label12";
-            label12.Size = new Size(38, 13);
-            label12.TabIndex = 17;
-            label12.Text = "Name:";
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(23, 74);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(45, 16);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "Name:";
             // 
             // groupBox3
             // 
@@ -616,23 +622,27 @@
             // 
             // label17
             // 
-            label17.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label17.AutoSize = true;
-            label17.Location = new Point(24, 92);
-            label17.Name = "label17";
-            label17.Size = new Size(65, 13);
-            label17.TabIndex = 31;
-            label17.Text = "Destination:";
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(28, 113);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(75, 16);
+            this.label17.TabIndex = 31;
+            this.label17.Text = "Destination:";
             // 
             // label16
             // 
-            label16.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label16.AutoSize = true;
-            label16.Location = new Point(24, 60);
-            label16.Name = "label16";
-            label16.Size = new Size(60, 13);
-            label16.TabIndex = 30;
-            label16.Text = "Departure:";
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(28, 74);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(69, 16);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "Departure:";
             // 
             // cbDeparture
             // 
@@ -655,13 +665,15 @@
             // 
             // label20
             // 
-            label20.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label20.AutoSize = true;
-            label20.Location = new Point(24, 31);
-            label20.Name = "label20";
-            label20.Size = new Size(53, 13);
-            label20.TabIndex = 28;
-            label20.Text = "Ticket ID:";
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(28, 38);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(62, 16);
+            this.label20.TabIndex = 28;
+            this.label20.Text = "Ticket ID:";
             // 
             // tpCustomer
             // 
@@ -797,13 +809,15 @@
             // 
             // label24
             // 
-            label24.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label24.AutoSize = true;
-            label24.Location = new Point(613, 20);
-            label24.Name = "label24";
-            label24.Size = new Size(41, 13);
-            label24.TabIndex = 18;
-            label24.Text = "Phone:";
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(715, 25);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(47, 16);
+            this.label24.TabIndex = 18;
+            this.label24.Text = "Phone:";
             // 
             // txtCustomerPhone
             // 
@@ -834,23 +848,28 @@
             // 
             // label25
             // 
-            label25.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label25.AutoSize = true;
-            label25.Location = new Point(6, 87);
-            label25.Name = "label25";
-            label25.Size = new Size(50, 13);
-            label25.TabIndex = 14;
-            label25.Text = "Address:";
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(7, 107);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(58, 16);
+            this.label25.TabIndex = 14;
+            this.label25.Text = "Address:";
             // 
             // label26
             // 
-            label26.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label26.AutoSize = true;
-            label26.Location = new Point(326, 55);
-            label26.Name = "label26";
-            label26.Size = new Size(35, 13);
-            label26.TabIndex = 13;
-            label26.Text = "Email:";
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(380, 68);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(43, 16);
+            this.label26.TabIndex = 13;
+            this.label26.Text = "Email:";
             // 
             // label27
             // 
@@ -873,13 +892,16 @@
             // 
             // label28
             // 
-            label28.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label28.AutoSize = true;
-            label28.Location = new Point(6, 116);
-            label28.Name = "label28";
-            label28.Size = new Size(29, 13);
-            label28.TabIndex = 10;
-            label28.Text = "Sex:";
+            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(7, 143);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(33, 16);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Sex:";
             // 
             // dtpCustomerDate
             // 
@@ -894,13 +916,15 @@
             // 
             // label29
             // 
-            label29.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label29.AutoSize = true;
-            label29.Location = new Point(326, 89);
-            label29.Name = "label29";
-            label29.Size = new Size(72, 13);
-            label29.TabIndex = 8;
-            label29.Text = "Date of birth:";
+            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(380, 110);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(83, 16);
+            this.label29.TabIndex = 8;
+            this.label29.Text = "Date of birth:";
             // 
             // rbCustomerFemale
             // 
@@ -930,23 +954,28 @@
             // 
             // label30
             // 
-            label30.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label30.AutoSize = true;
-            label30.Location = new Point(613, 55);
-            label30.Name = "label30";
-            label30.Size = new Size(62, 13);
-            label30.TabIndex = 5;
-            label30.Text = "Nationality:";
+            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(715, 68);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(71, 16);
+            this.label30.TabIndex = 5;
+            this.label30.Text = "Nationality:";
             // 
             // label31
             // 
-            label31.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label31.AutoSize = true;
-            label31.Location = new Point(5, 55);
-            label31.Name = "label31";
-            label31.Size = new Size(38, 13);
-            label31.TabIndex = 4;
-            label31.Text = "Name:";
+            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(6, 68);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(45, 16);
+            this.label31.TabIndex = 4;
+            this.label31.Text = "Name:";
             // 
             // txtCustomerAddress
             // 
@@ -968,22 +997,26 @@
             // 
             // textEdit21
             // 
-            textEdit21.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit21.Location = new Point(90, 18);
-            textEdit21.Margin = new Padding(3, 2, 3, 2);
-            textEdit21.Name = "textEdit21";
-            textEdit21.Size = new Size(208, 20);
-            textEdit21.TabIndex = 1;
+            this.textEdit21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit21.Location = new System.Drawing.Point(105, 22);
+            this.textEdit21.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit21.Name = "textEdit21";
+            this.textEdit21.Size = new System.Drawing.Size(243, 22);
+            this.textEdit21.TabIndex = 1;
             // 
             // label32
             // 
-            label32.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label32.AutoSize = true;
-            label32.Location = new Point(5, 23);
-            label32.Name = "label32";
-            label32.Size = new Size(71, 13);
-            label32.TabIndex = 0;
-            label32.Text = "Customer ID:";
+            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(6, 28);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(83, 16);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Customer ID:";
             // 
             // tp
             // 
@@ -1028,7 +1061,7 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Information employee";
             // 
-            // simpleButton3
+            // groupBox8
             // 
             simpleButton3.Anchor = AnchorStyles.Right;
             simpleButton3.Location = new Point(844, 151);
@@ -1038,7 +1071,7 @@
             simpleButton3.TabIndex = 21;
             simpleButton3.Text = "Delete";
             // 
-            // simpleButton2
+            // label49
             // 
             simpleButton2.Anchor = AnchorStyles.Right;
             simpleButton2.Location = new Point(728, 151);
@@ -1048,7 +1081,7 @@
             simpleButton2.TabIndex = 20;
             simpleButton2.Text = "Update";
             // 
-            // simpleButton1
+            // label48
             // 
             simpleButton1.Anchor = AnchorStyles.Right;
             simpleButton1.Location = new Point(611, 151);
@@ -1058,15 +1091,117 @@
             simpleButton1.TabIndex = 19;
             simpleButton1.Text = "Add";
             // 
+            // label47
+            // 
+            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(716, 163);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(67, 16);
+            this.label47.TabIndex = 27;
+            this.label47.Text = "Password:";
+            // 
+            // txtPasswordEmployee
+            // 
+            this.txtPasswordEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtPasswordEmployee.Location = new System.Drawing.Point(792, 160);
+            this.txtPasswordEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtPasswordEmployee.Name = "txtPasswordEmployee";
+            this.txtPasswordEmployee.Size = new System.Drawing.Size(206, 22);
+            this.txtPasswordEmployee.TabIndex = 26;
+            this.txtPasswordEmployee.EditValueChanged += new System.EventHandler(this.txtPasswordEmployee_EditValueChanged);
+            // 
+            // txtUsernameEmployee
+            // 
+            this.txtUsernameEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtUsernameEmployee.Location = new System.Drawing.Point(472, 163);
+            this.txtUsernameEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtUsernameEmployee.Name = "txtUsernameEmployee";
+            this.txtUsernameEmployee.Size = new System.Drawing.Size(225, 22);
+            this.txtUsernameEmployee.TabIndex = 25;
+            // 
+            // label40
+            // 
+            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(380, 166);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(70, 16);
+            this.label40.TabIndex = 24;
+            this.label40.Text = "Username:";
+            // 
+            // txtPositionEmployee
+            // 
+            this.txtPositionEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtPositionEmployee.Location = new System.Drawing.Point(105, 166);
+            this.txtPositionEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtPositionEmployee.Name = "txtPositionEmployee";
+            this.txtPositionEmployee.Size = new System.Drawing.Size(243, 22);
+            this.txtPositionEmployee.TabIndex = 23;
+            // 
+            // label39
+            // 
+            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(6, 169);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(56, 16);
+            this.label39.TabIndex = 22;
+            this.label39.Text = "Position:";
+            // 
+            // btnDeleteEmployee
+            // 
+            this.btnDeleteEmployee.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(1775, 326);
+            this.btnDeleteEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btnDeleteEmployee.Name = "btnDeleteEmployee";
+            this.btnDeleteEmployee.Size = new System.Drawing.Size(118, 36);
+            this.btnDeleteEmployee.TabIndex = 21;
+            this.btnDeleteEmployee.Text = "Delete";
+            this.btnDeleteEmployee.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdateEmployee
+            // 
+            this.btnUpdateEmployee.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnUpdateEmployee.Location = new System.Drawing.Point(1640, 326);
+            this.btnUpdateEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btnUpdateEmployee.Name = "btnUpdateEmployee";
+            this.btnUpdateEmployee.Size = new System.Drawing.Size(118, 36);
+            this.btnUpdateEmployee.TabIndex = 20;
+            this.btnUpdateEmployee.Text = "Update";
+            this.btnUpdateEmployee.Click += new System.EventHandler(this.btnUpdateEmployee_Click);
+            // 
+            // btnAddEmployee
+            // 
+            this.btnAddEmployee.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnAddEmployee.Location = new System.Drawing.Point(1504, 326);
+            this.btnAddEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btnAddEmployee.Name = "btnAddEmployee";
+            this.btnAddEmployee.Size = new System.Drawing.Size(118, 36);
+            this.btnAddEmployee.TabIndex = 19;
+            this.btnAddEmployee.Text = "Add";
+            this.btnAddEmployee.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // label9
             // 
-            label9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label9.AutoSize = true;
-            label9.Location = new Point(613, 20);
-            label9.Name = "label9";
-            label9.Size = new Size(41, 13);
-            label9.TabIndex = 18;
-            label9.Text = "Phone:";
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(715, 25);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 16);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Phone:";
             // 
             // txt2
             // 
@@ -1097,23 +1232,28 @@
             // 
             // label8
             // 
-            label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 87);
-            label8.Name = "label8";
-            label8.Size = new Size(50, 13);
-            label8.TabIndex = 14;
-            label8.Text = "Address:";
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 107);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 16);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Address:";
             // 
             // label7
             // 
-            label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label7.AutoSize = true;
-            label7.Location = new Point(326, 55);
-            label7.Name = "label7";
-            label7.Size = new Size(35, 13);
-            label7.TabIndex = 13;
-            label7.Text = "Email:";
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(380, 68);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 16);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Email:";
             // 
             // label6
             // 
@@ -1136,13 +1276,16 @@
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label5.AutoSize = true;
-            label5.Location = new Point(6, 116);
-            label5.Name = "label5";
-            label5.Size = new Size(29, 13);
-            label5.TabIndex = 10;
-            label5.Text = "Sex:";
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 143);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Sex:";
             // 
             // dtp1
             // 
@@ -1157,59 +1300,70 @@
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label4.AutoSize = true;
-            label4.Location = new Point(326, 89);
-            label4.Name = "label4";
-            label4.Size = new Size(72, 13);
-            label4.TabIndex = 8;
-            label4.Text = "Date of birth:";
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(380, 110);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 16);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Date of birth:";
             // 
-            // radioButton2
+            // rbFelmale
             // 
-            radioButton2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(163, 113);
-            radioButton2.Margin = new Padding(3, 2, 3, 2);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(61, 17);
-            radioButton2.TabIndex = 7;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Felmale";
-            radioButton2.UseVisualStyleBackColor = true;
+            this.rbFelmale.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbFelmale.AutoSize = true;
+            this.rbFelmale.Location = new System.Drawing.Point(190, 139);
+            this.rbFelmale.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.rbFelmale.Name = "rbFelmale";
+            this.rbFelmale.Size = new System.Drawing.Size(73, 20);
+            this.rbFelmale.TabIndex = 7;
+            this.rbFelmale.TabStop = true;
+            this.rbFelmale.Text = "Felmale";
+            this.rbFelmale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbMale
             // 
-            radioButton1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(90, 113);
-            radioButton1.Margin = new Padding(3, 2, 3, 2);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(47, 17);
-            radioButton1.TabIndex = 6;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Male";
-            radioButton1.UseVisualStyleBackColor = true;
+            this.rbMale.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbMale.AutoSize = true;
+            this.rbMale.Location = new System.Drawing.Point(105, 139);
+            this.rbMale.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(55, 20);
+            this.rbMale.TabIndex = 6;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label3.AutoSize = true;
-            label3.Location = new Point(613, 55);
-            label3.Name = "label3";
-            label3.Size = new Size(62, 13);
-            label3.TabIndex = 5;
-            label3.Text = "Nationality:";
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(715, 68);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Nationality:";
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Location = new Point(5, 55);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 13);
-            label2.TabIndex = 4;
-            label2.Text = "Name:";
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 68);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Name:";
             // 
             // txt6
             // 
@@ -1229,26 +1383,30 @@
             txt3.Size = new Size(208, 20);
             txt3.TabIndex = 2;
             // 
-            // textEdit1
+            // txtEmployeeID
             // 
-            textEdit1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit1.Location = new Point(90, 18);
-            textEdit1.Margin = new Padding(3, 2, 3, 2);
-            textEdit1.Name = "textEdit1";
-            textEdit1.Size = new Size(208, 20);
-            textEdit1.TabIndex = 1;
+            this.txtEmployeeID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtEmployeeID.Location = new System.Drawing.Point(105, 22);
+            this.txtEmployeeID.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtEmployeeID.Name = "txtEmployeeID";
+            this.txtEmployeeID.Size = new System.Drawing.Size(243, 22);
+            this.txtEmployeeID.TabIndex = 1;
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Location = new Point(5, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(71, 13);
-            label1.TabIndex = 0;
-            label1.Text = "Employee ID:";
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Employee ID:";
             // 
-            // gridEmployee
+            // dgvEmployee
             // 
             gridEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             gridEmployee.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
@@ -1260,11 +1418,11 @@
             gridEmployee.TabIndex = 0;
             gridEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView2 });
             // 
-            // gridView2
+            // gvEmploy
             // 
-            gridView2.DetailHeight = 284;
-            gridView2.GridControl = gridEmployee;
-            gridView2.Name = "gridView2";
+            this.gvEmploy.GridControl = this.dgvEmployee;
+            this.gvEmploy.Name = "gvEmploy";
+            this.gvEmploy.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gvEmployee_RowClick);
             // 
             // tabNavigationPage4
             // 
@@ -1289,9 +1447,8 @@
             // 
             // gridView4
             // 
-            gridView4.DetailHeight = 284;
-            gridView4.GridControl = gridControl2;
-            gridView4.Name = "gridView4";
+            this.gridView4.GridControl = this.gridControl2;
+            this.gridView4.Name = "gridView4";
             // 
             // groupBox6
             // 
@@ -1327,120 +1484,125 @@
             // 
             // simpleButton16
             // 
-            simpleButton16.Location = new Point(332, 157);
-            simpleButton16.Margin = new Padding(3, 2, 3, 2);
-            simpleButton16.Name = "simpleButton16";
-            simpleButton16.Size = new Size(101, 29);
-            simpleButton16.TabIndex = 34;
-            simpleButton16.Text = "Delete";
+            this.simpleButton16.Location = new System.Drawing.Point(387, 193);
+            this.simpleButton16.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton16.Name = "simpleButton16";
+            this.simpleButton16.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton16.TabIndex = 34;
+            this.simpleButton16.Text = "Delete";
             // 
             // simpleButton17
             // 
-            simpleButton17.Location = new Point(215, 157);
-            simpleButton17.Margin = new Padding(3, 2, 3, 2);
-            simpleButton17.Name = "simpleButton17";
-            simpleButton17.Size = new Size(101, 29);
-            simpleButton17.TabIndex = 33;
-            simpleButton17.Text = "Update";
+            this.simpleButton17.Location = new System.Drawing.Point(251, 193);
+            this.simpleButton17.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton17.Name = "simpleButton17";
+            this.simpleButton17.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton17.TabIndex = 33;
+            this.simpleButton17.Text = "Update";
             // 
             // simpleButton18
             // 
-            simpleButton18.Location = new Point(99, 157);
-            simpleButton18.Margin = new Padding(3, 2, 3, 2);
-            simpleButton18.Name = "simpleButton18";
-            simpleButton18.Size = new Size(101, 29);
-            simpleButton18.TabIndex = 32;
-            simpleButton18.Text = "Add";
+            this.simpleButton18.Location = new System.Drawing.Point(115, 193);
+            this.simpleButton18.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton18.Name = "simpleButton18";
+            this.simpleButton18.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton18.TabIndex = 32;
+            this.simpleButton18.Text = "Add";
             // 
             // comboBox9
             // 
-            comboBox9.FormattingEnabled = true;
-            comboBox9.Location = new Point(483, 79);
-            comboBox9.Margin = new Padding(3, 2, 3, 2);
-            comboBox9.Name = "comboBox9";
-            comboBox9.Size = new Size(129, 21);
-            comboBox9.TabIndex = 31;
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(564, 97);
+            this.comboBox9.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(150, 24);
+            this.comboBox9.TabIndex = 31;
             // 
             // label37
             // 
-            label37.AutoSize = true;
-            label37.Location = new Point(379, 81);
-            label37.Name = "label37";
-            label37.Size = new Size(40, 13);
-            label37.TabIndex = 30;
-            label37.Text = "Airline:";
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(442, 100);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(48, 16);
+            this.label37.TabIndex = 30;
+            this.label37.Text = "Airline:";
             // 
             // comboBox8
             // 
-            comboBox8.FormattingEnabled = true;
-            comboBox8.Location = new Point(483, 49);
-            comboBox8.Margin = new Padding(3, 2, 3, 2);
-            comboBox8.Name = "comboBox8";
-            comboBox8.Size = new Size(129, 21);
-            comboBox8.TabIndex = 29;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(564, 60);
+            this.comboBox8.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(150, 24);
+            this.comboBox8.TabIndex = 29;
             // 
             // comboBox7
             // 
-            comboBox7.FormattingEnabled = true;
-            comboBox7.Location = new Point(483, 19);
-            comboBox7.Margin = new Padding(3, 2, 3, 2);
-            comboBox7.Name = "comboBox7";
-            comboBox7.Size = new Size(129, 21);
-            comboBox7.TabIndex = 28;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(564, 23);
+            this.comboBox7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(150, 24);
+            this.comboBox7.TabIndex = 28;
             // 
             // label36
             // 
-            label36.AutoSize = true;
-            label36.Location = new Point(379, 49);
-            label36.Name = "label36";
-            label36.Size = new Size(90, 13);
-            label36.TabIndex = 27;
-            label36.Text = "Time Destination:";
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(442, 60);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(108, 16);
+            this.label36.TabIndex = 27;
+            this.label36.Text = "Time Destination:";
             // 
             // label35
             // 
-            label35.AutoSize = true;
-            label35.Location = new Point(379, 23);
-            label35.Name = "label35";
-            label35.Size = new Size(85, 13);
-            label35.TabIndex = 26;
-            label35.Text = "Time Departure:";
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(442, 28);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(102, 16);
+            this.label35.TabIndex = 26;
+            this.label35.Text = "Time Departure:";
             // 
             // comboBox6
             // 
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Location = new Point(99, 79);
-            comboBox6.Margin = new Padding(3, 2, 3, 2);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(209, 21);
-            comboBox6.TabIndex = 25;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(115, 97);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(243, 24);
+            this.comboBox6.TabIndex = 25;
             // 
             // comboBox5
             // 
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(99, 46);
-            comboBox5.Margin = new Padding(3, 2, 3, 2);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(209, 21);
-            comboBox5.TabIndex = 24;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(115, 57);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(243, 24);
+            this.comboBox5.TabIndex = 24;
             // 
             // label34
             // 
-            label34.AutoSize = true;
-            label34.Location = new Point(5, 79);
-            label34.Name = "label34";
-            label34.Size = new Size(60, 13);
-            label34.TabIndex = 23;
-            label34.Text = "Detination:";
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(6, 97);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(69, 16);
+            this.label34.TabIndex = 23;
+            this.label34.Text = "Detination:";
             // 
             // label33
             // 
-            label33.AutoSize = true;
-            label33.Location = new Point(5, 49);
-            label33.Name = "label33";
-            label33.Size = new Size(60, 13);
-            label33.TabIndex = 22;
-            label33.Text = "Departure:";
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(6, 60);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(69, 16);
+            this.label33.TabIndex = 22;
+            this.label33.Text = "Departure:";
             // 
             // simpleButton13
             // 
@@ -1474,37 +1636,39 @@
             // 
             // dateTimePicker5
             // 
-            dateTimePicker5.Location = new Point(99, 111);
-            dateTimePicker5.Margin = new Padding(3, 2, 3, 2);
-            dateTimePicker5.Name = "dateTimePicker5";
-            dateTimePicker5.Size = new Size(209, 21);
-            dateTimePicker5.TabIndex = 9;
+            this.dateTimePicker5.Location = new System.Drawing.Point(115, 137);
+            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(243, 23);
+            this.dateTimePicker5.TabIndex = 9;
             // 
             // label38
             // 
-            label38.AutoSize = true;
-            label38.Location = new Point(5, 111);
-            label38.Name = "label38";
-            label38.Size = new Size(85, 13);
-            label38.TabIndex = 8;
-            label38.Text = "Date departure:";
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(6, 137);
+            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(98, 16);
+            this.label38.TabIndex = 8;
+            this.label38.Text = "Date departure:";
             // 
             // textEdit28
             // 
-            textEdit28.Location = new Point(99, 20);
-            textEdit28.Margin = new Padding(3, 2, 3, 2);
-            textEdit28.Name = "textEdit28";
-            textEdit28.Size = new Size(208, 20);
-            textEdit28.TabIndex = 1;
+            this.textEdit28.Location = new System.Drawing.Point(115, 25);
+            this.textEdit28.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit28.Name = "textEdit28";
+            this.textEdit28.Size = new System.Drawing.Size(243, 22);
+            this.textEdit28.TabIndex = 1;
             // 
             // label41
             // 
-            label41.AutoSize = true;
-            label41.Location = new Point(5, 23);
-            label41.Name = "label41";
-            label41.Size = new Size(51, 13);
-            label41.TabIndex = 0;
-            label41.Text = "Flight ID:";
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(6, 28);
+            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(59, 16);
+            this.label41.TabIndex = 0;
+            this.label41.Text = "Flight ID:";
             // 
             // tabNavigationPage5
             // 
@@ -1529,9 +1693,8 @@
             // 
             // gridView5
             // 
-            gridView5.DetailHeight = 284;
-            gridView5.GridControl = gridControl3;
-            gridView5.Name = "gridView5";
+            this.gridView5.GridControl = this.gridControl3;
+            this.gridView5.Name = "gridView5";
             // 
             // groupBox7
             // 
@@ -1563,90 +1726,93 @@
             // 
             // textEdit25
             // 
-            textEdit25.Location = new Point(99, 117);
-            textEdit25.Margin = new Padding(3, 2, 3, 2);
-            textEdit25.Name = "textEdit25";
-            textEdit25.Size = new Size(208, 20);
-            textEdit25.TabIndex = 37;
+            this.textEdit25.Location = new System.Drawing.Point(115, 144);
+            this.textEdit25.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit25.Name = "textEdit25";
+            this.textEdit25.Size = new System.Drawing.Size(243, 22);
+            this.textEdit25.TabIndex = 37;
             // 
             // textEdit24
             // 
-            textEdit24.Location = new Point(99, 80);
-            textEdit24.Margin = new Padding(3, 2, 3, 2);
-            textEdit24.Name = "textEdit24";
-            textEdit24.Size = new Size(208, 20);
-            textEdit24.TabIndex = 36;
+            this.textEdit24.Location = new System.Drawing.Point(115, 98);
+            this.textEdit24.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit24.Name = "textEdit24";
+            this.textEdit24.Size = new System.Drawing.Size(243, 22);
+            this.textEdit24.TabIndex = 36;
             // 
             // textEdit23
             // 
-            textEdit23.Location = new Point(99, 50);
-            textEdit23.Margin = new Padding(3, 2, 3, 2);
-            textEdit23.Name = "textEdit23";
-            textEdit23.Size = new Size(208, 20);
-            textEdit23.TabIndex = 35;
+            this.textEdit23.Location = new System.Drawing.Point(115, 62);
+            this.textEdit23.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit23.Name = "textEdit23";
+            this.textEdit23.Size = new System.Drawing.Size(243, 22);
+            this.textEdit23.TabIndex = 35;
             // 
             // simpleButton19
             // 
-            simpleButton19.Location = new Point(332, 157);
-            simpleButton19.Margin = new Padding(3, 2, 3, 2);
-            simpleButton19.Name = "simpleButton19";
-            simpleButton19.Size = new Size(101, 29);
-            simpleButton19.TabIndex = 34;
-            simpleButton19.Text = "Delete";
+            this.simpleButton19.Location = new System.Drawing.Point(387, 193);
+            this.simpleButton19.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton19.Name = "simpleButton19";
+            this.simpleButton19.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton19.TabIndex = 34;
+            this.simpleButton19.Text = "Delete";
             // 
             // simpleButton20
             // 
-            simpleButton20.Location = new Point(215, 157);
-            simpleButton20.Margin = new Padding(3, 2, 3, 2);
-            simpleButton20.Name = "simpleButton20";
-            simpleButton20.Size = new Size(101, 29);
-            simpleButton20.TabIndex = 33;
-            simpleButton20.Text = "Update";
+            this.simpleButton20.Location = new System.Drawing.Point(251, 193);
+            this.simpleButton20.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton20.Name = "simpleButton20";
+            this.simpleButton20.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton20.TabIndex = 33;
+            this.simpleButton20.Text = "Update";
             // 
             // simpleButton21
             // 
-            simpleButton21.Location = new Point(99, 157);
-            simpleButton21.Margin = new Padding(3, 2, 3, 2);
-            simpleButton21.Name = "simpleButton21";
-            simpleButton21.Size = new Size(101, 29);
-            simpleButton21.TabIndex = 32;
-            simpleButton21.Text = "Add";
+            this.simpleButton21.Location = new System.Drawing.Point(115, 193);
+            this.simpleButton21.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton21.Name = "simpleButton21";
+            this.simpleButton21.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton21.TabIndex = 32;
+            this.simpleButton21.Text = "Add";
             // 
             // comboBox12
             // 
-            comboBox12.FormattingEnabled = true;
-            comboBox12.Location = new Point(483, 19);
-            comboBox12.Margin = new Padding(3, 2, 3, 2);
-            comboBox12.Name = "comboBox12";
-            comboBox12.Size = new Size(129, 21);
-            comboBox12.TabIndex = 28;
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Location = new System.Drawing.Point(564, 23);
+            this.comboBox12.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(150, 24);
+            this.comboBox12.TabIndex = 28;
             // 
             // label42
             // 
-            label42.AutoSize = true;
-            label42.Location = new Point(379, 23);
-            label42.Name = "label42";
-            label42.Size = new Size(37, 13);
-            label42.TabIndex = 26;
-            label42.Text = "State:";
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(442, 28);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(42, 16);
+            this.label42.TabIndex = 26;
+            this.label42.Text = "State:";
             // 
             // label43
             // 
-            label43.AutoSize = true;
-            label43.Location = new Point(5, 79);
-            label43.Name = "label43";
-            label43.Size = new Size(66, 13);
-            label43.TabIndex = 23;
-            label43.Text = "Manufactor:";
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(6, 97);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(76, 16);
+            this.label43.TabIndex = 23;
+            this.label43.Text = "Manufactor:";
             // 
             // label44
             // 
-            label44.AutoSize = true;
-            label44.Location = new Point(5, 49);
-            label44.Name = "label44";
-            label44.Size = new Size(39, 13);
-            label44.TabIndex = 22;
-            label44.Text = "Model:";
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(6, 60);
+            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(46, 16);
+            this.label44.TabIndex = 22;
+            this.label44.Text = "Model:";
             // 
             // simpleButton22
             // 
@@ -1680,29 +1846,31 @@
             // 
             // label45
             // 
-            label45.AutoSize = true;
-            label45.Location = new Point(5, 111);
-            label45.Name = "label45";
-            label45.Size = new Size(59, 13);
-            label45.TabIndex = 8;
-            label45.Text = "Total seat:";
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(6, 137);
+            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(69, 16);
+            this.label45.TabIndex = 8;
+            this.label45.Text = "Total seat:";
             // 
             // textEdit22
             // 
-            textEdit22.Location = new Point(99, 20);
-            textEdit22.Margin = new Padding(3, 2, 3, 2);
-            textEdit22.Name = "textEdit22";
-            textEdit22.Size = new Size(208, 20);
-            textEdit22.TabIndex = 1;
+            this.textEdit22.Location = new System.Drawing.Point(115, 25);
+            this.textEdit22.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit22.Name = "textEdit22";
+            this.textEdit22.Size = new System.Drawing.Size(243, 22);
+            this.textEdit22.TabIndex = 1;
             // 
             // label46
             // 
-            label46.AutoSize = true;
-            label46.Location = new Point(5, 23);
-            label46.Name = "label46";
-            label46.Size = new Size(51, 13);
-            label46.TabIndex = 0;
-            label46.Text = "Plane ID:";
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(6, 28);
+            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(59, 16);
+            this.label46.TabIndex = 0;
+            this.label46.Text = "Plane ID:";
             // 
             // tabNavigationPage6
             // 
@@ -1800,16 +1968,16 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gvTicket;
         private GroupBox groupBox1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tp;
-        private DevExpress.XtraGrid.GridControl gridEmployee;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.GridControl dgvEmployee;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvEmploy;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage4;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage5;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage6;
         private GroupBox groupBox2;
         private Label label1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private DevExpress.XtraEditors.TextEdit txtEmployeeID;
+        private RadioButton rbFelmale;
+        private RadioButton rbMale;
         private Label label3;
         private Label label2;
         private DevExpress.XtraEditors.TextEdit txt6;
