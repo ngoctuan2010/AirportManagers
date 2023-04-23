@@ -31,6 +31,7 @@ namespace DTO
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Flight> Flights { get; set; }
         public virtual DbSet<Job> Jobs { get; set; }
+        public virtual DbSet<Location> Locations { get; set; }
         public virtual DbSet<Plane> Planes { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }

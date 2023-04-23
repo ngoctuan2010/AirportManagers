@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="BUS_Account.cs" />
     <Compile Include="BUS_Employee.cs" />
+    <Compile Include="BUS_Job.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

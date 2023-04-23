@@ -12,28 +12,21 @@ namespace DTO
     using System;
     using System.Collections.Generic;
     
-    public partial class Flight
+    public partial class Location
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Flight()
+        public Location()
         {
-            this.Bill_Detail = new HashSet<Bill_Detail>();
-            this.Jobs = new HashSet<Job>();
+            this.Flights = new HashSet<Flight>();
+            this.Flights1 = new HashSet<Flight>();
         }
     
-        public int FlightID { get; set; }
-        public int PlaneID { get; set; }
-        public Nullable<int> Departure { get; set; }
-        public Nullable<System.DateTime> DateOfDeparture { get; set; }
-        public Nullable<int> Destination { get; set; }
-        public string Airline { get; set; }
+        public int LocationID { get; set; }
+        public string LocationName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bill_Detail> Bill_Detail { get; set; }
-        public virtual Plane Plane { get; set; }
+        public virtual ICollection<Flight> Flights { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Job> Jobs { get; set; }
-        public virtual Location Location { get; set; }
-        public virtual Location Location1 { get; set; }
+        public virtual ICollection<Flight> Flights1 { get; set; }
     }
 }

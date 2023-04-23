@@ -16,12 +16,7 @@ namespace GUI
 {
     public partial class Main : DevExpress.XtraEditors.XtraForm
     {
-        Employee employee = new Employee();
-        Account account = new Account();
-        BUS_Employee busEmp = new BUS_Employee();
-        BUS_Account busAcc = new BUS_Account();
-        DAL_Account dalAccount = new DAL_Account();
-        DAL_Employee dalEmployee = new DAL_Employee();
+       
         public Main()
         {
             InitializeComponent();
@@ -34,14 +29,26 @@ namespace GUI
                 dgvEmployee.DataSource = db.Employees.ToList<Employee>();
             }
         }
+        void LoadDataGridViewJob()
+        {
+            using (AirportManager db = new AirportManager())
+            {
+                dgvJob.DataSource= db.Jobs.ToList<Job>();
+            }
+        }
 
         private void Main_Load(object sender, EventArgs e)
         {
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnAddEmployee_Click(object sender, EventArgs e)
         {
-
+            Employee employee = new Employee();
+            Account account = new Account();
+            BUS_Employee busEmp = new BUS_Employee();
+            BUS_Account busAcc = new BUS_Account();
+            DAL_Account dalAccount = new DAL_Account();
+            DAL_Employee dalEmployee = new DAL_Employee();
 
             if (String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text))
             {
@@ -85,7 +92,7 @@ namespace GUI
                             LoadDataGridViewEmployee();
                         }
                         else
-                            MessageBox.Show("Add fAIL");
+                            MessageBox.Show("Add  Employee Successfully!");
                     }
                 }
                 else
@@ -113,6 +120,10 @@ namespace GUI
             txtEmployeeID.ReadOnly = true;
             LoadDataGridViewEmployee();
         }
+        private void gbJob_Paint(object sender, PaintEventArgs e)
+        {
+            LoadDataGridViewJob();
+        }
 
         private void gvEmployee_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
@@ -136,8 +147,14 @@ namespace GUI
             }    
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
+            Employee employee = new Employee();
+            Account account = new Account();
+            BUS_Employee busEmp = new BUS_Employee();
+            BUS_Account busAcc = new BUS_Account();
+            DAL_Account dalAccount = new DAL_Account();
+            DAL_Employee dalEmployee = new DAL_Employee();
 
             if (String.IsNullOrEmpty(txtEmployeeID.Text))
             {
@@ -172,6 +189,13 @@ namespace GUI
 
         private void btnUpdateEmployee_Click(object sender, EventArgs e)
         {
+            Employee employee = new Employee();
+            Account account = new Account();
+            BUS_Employee busEmp = new BUS_Employee();
+            BUS_Account busAcc = new BUS_Account();
+            DAL_Account dalAccount = new DAL_Account();
+            DAL_Employee dalEmployee = new DAL_Employee();
+
             if (String.IsNullOrEmpty(txtEmployeeID.Text)|| String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtUsernameEmployee.Text) || String.IsNullOrEmpty(txtPasswordEmployee.Text))
             {
                 MessageBox.Show("Please enter all the information!");
@@ -224,6 +248,44 @@ namespace GUI
         private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddJob_Click(object sender, EventArgs e)
+        {
+            BUS_Job busJob = new BUS_Job();
+            Job job = new Job();
+            if (String.IsNullOrEmpty(txtEmpIDJob.Text) || String.IsNullOrEmpty(txtFightIDJob.Text) || String.IsNullOrEmpty(txtJobDescription.Text) || cbStateJob.SelectedItem == null)
+            {
+                MessageBox.Show("Please enter all the information!");
+            }
+            else
+            {
+                job.AssignedDate = dtpAssignedDateJob.Value.Date;
+                job.EmployeeID = Int32.Parse(txtEmpIDJob.Text.Trim());
+                job.FlightID = Int32.Parse(txtFightIDJob.Text.Trim());
+                job.JobDescription = txtJobDescription.Text.Trim();
+                job.JobState = cbStateJob.SelectedIndex.ToString();
+                if (busJob.AddJob(job) == 1)
+                {
+                    MessageBox.Show(" Add job successfull");
+                }
+                else
+                {
+                    if (busJob.AddJob(job) == 2)
+                    {
+                        MessageBox.Show("NOT EXIT FLIGHTID");
+                    }
+                    else
+                    {
+                        if (busJob.AddJob(job) == 3)
+                        {
+
+                        }
+                    }
+
+                }
+            }
+                
         }
     }
 }
