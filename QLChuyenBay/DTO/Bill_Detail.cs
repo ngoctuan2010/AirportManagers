@@ -11,6 +11,7 @@ namespace DTO
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     
     public partial class Bill_Detail
     {
@@ -22,8 +23,9 @@ namespace DTO
         public Nullable<int> BookingState { get; set; }
         public Nullable<decimal> TotalPrice { get; set; }
         public Nullable<System.DateTime> BookingDate { get; set; }
-    
+        [Browsable(false)]        
         public virtual Customer Customer { get; set; }
+        [Browsable(false)]
         public virtual Flight Flight { get; set; }
     }
 }

@@ -51,9 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="DAL_Account.cs" />
-    <Compile Include="DAL_Employee.cs" />
+    <Compile Include="DAL_Customer.cs" />
+    <Compile Include="DAL_Ticket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

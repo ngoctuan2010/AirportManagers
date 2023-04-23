@@ -355,6 +355,11 @@ D:\Homework\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\DAL.pdb
 D:\Homework\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\GUI.csproj.CopyComplete
 D:\Homework\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
 D:\Homework\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
+<<<<<<< HEAD
+D:\Homework\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\BUS.dll.config
+D:\Homework\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\DTO.dll.config
+D:\Homework\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\DAL.dll.config
+=======
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\GUI.exe
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\GUI.dll.config
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\GUI\bin\Debug\net7.0-windows\GUI.deps.json
@@ -477,3 +482,4 @@ C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\GUI\obj\D
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\GUI.pdb
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
+>>>>>>> main
