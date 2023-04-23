@@ -30,7 +30,7 @@ namespace GUI
                 Main frmMain = new Main(acc, emp);
                 this.Hide();
                 frmMain.ShowDialog();
-                this.Show();
+                Application.Exit();
             }
         }
     }

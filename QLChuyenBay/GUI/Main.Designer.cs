@@ -29,43 +29,44 @@
         private void InitializeComponent()
         {
             tabControls = new DevExpress.XtraBars.Navigation.TabPane();
-            tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            tpTicket = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            gridTicket = new DevExpress.XtraGrid.GridControl();
-            gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            gcTicket = new DevExpress.XtraGrid.GridControl();
+            gvTicket = new DevExpress.XtraGrid.Views.Grid.GridView();
             groupBox1 = new GroupBox();
             groupBox4 = new GroupBox();
-            textEdit16 = new DevExpress.XtraEditors.TextEdit();
+            lbTicketCustomerDoB = new Label();
+            lbTicketCustomerPhone = new Label();
+            lbTicketCustomerNid = new Label();
+            lbTicketCustomerSex = new Label();
+            lbTicketCustomerAddress = new Label();
+            lbTicketCustomerName = new Label();
+            lbTicketsCustomerID = new Label();
             label21 = new Label();
-            dateTimePicker2 = new DateTimePicker();
             label15 = new Label();
-            textEdit11 = new DevExpress.XtraEditors.TextEdit();
             label14 = new Label();
             label13 = new Label();
-            textEdit10 = new DevExpress.XtraEditors.TextEdit();
             label10 = new Label();
-            textEdit9 = new DevExpress.XtraEditors.TextEdit();
             label11 = new Label();
-            textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            radioButton3 = new RadioButton();
             label12 = new Label();
-            radioButton4 = new RadioButton();
             groupBox3 = new GroupBox();
+            lbTicketCurrentClass = new Label();
+            lbTicketCurrentSeat = new Label();
+            lbTicketSeatClass = new Label();
+            lbTicketSeatNumber = new Label();
+            lbTicketPrice = new Label();
             dateTimePicker3 = new DateTimePicker();
             label23 = new Label();
-            textEdit12 = new DevExpress.XtraEditors.TextEdit();
             label22 = new Label();
-            comboBox4 = new ComboBox();
-            comboBox3 = new ComboBox();
-            label19 = new Label();
+            cbTimeDeparture = new ComboBox();
             label18 = new Label();
-            comboBox2 = new ComboBox();
+            cbDestination = new ComboBox();
             label17 = new Label();
             label16 = new Label();
-            comboBox1 = new ComboBox();
-            textEdit14 = new DevExpress.XtraEditors.TextEdit();
+            cbDeparture = new ComboBox();
+            txtTicketID = new DevExpress.XtraEditors.TextEdit();
             label20 = new Label();
             tpCustomer = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             gcCustomer = new DevExpress.XtraGrid.GridControl();
@@ -167,22 +168,16 @@
             textEdit22 = new DevExpress.XtraEditors.TextEdit();
             label46 = new Label();
             tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            label39 = new Label();
+            lbUsername = new Label();
             ((System.ComponentModel.ISupportInitialize)tabControls).BeginInit();
             tabControls.SuspendLayout();
-            tabNavigationPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gridTicket).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView1).BeginInit();
+            tpTicket.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gcTicket).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gvTicket).BeginInit();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit16.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit10.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit9.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit8.Properties).BeginInit();
             groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtTicketID.Properties).BeginInit();
             tpCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gcCustomer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gvCustomer).BeginInit();
@@ -223,7 +218,7 @@
             // tabControls
             // 
             tabControls.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tabControls.Controls.Add(tabNavigationPage1);
+            tabControls.Controls.Add(tpTicket);
             tabControls.Controls.Add(tpCustomer);
             tabControls.Controls.Add(tp);
             tabControls.Controls.Add(tabNavigationPage4);
@@ -232,28 +227,29 @@
             tabControls.Location = new Point(0, 6);
             tabControls.Margin = new Padding(3, 2, 3, 2);
             tabControls.Name = "tabControls";
-            tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { tabNavigationPage1, tpCustomer, tp, tabNavigationPage4, tabNavigationPage5, tabNavigationPage6 });
-            tabControls.RegularSize = new Size(1006, 518);
-            tabControls.SelectedPage = tabNavigationPage1;
-            tabControls.Size = new Size(1006, 518);
+            tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { tpTicket, tpCustomer, tp, tabNavigationPage4, tabNavigationPage5, tabNavigationPage6 });
+            tabControls.RegularSize = new Size(1006, 599);
+            tabControls.SelectedPage = tpTicket;
+            tabControls.Size = new Size(1006, 599);
             tabControls.TabIndex = 0;
             tabControls.Text = "Tickets";
             // 
-            // tabNavigationPage1
+            // tpTicket
             // 
-            tabNavigationPage1.Caption = "Tickets";
-            tabNavigationPage1.Controls.Add(simpleButton4);
-            tabNavigationPage1.Controls.Add(simpleButton5);
-            tabNavigationPage1.Controls.Add(simpleButton6);
-            tabNavigationPage1.Controls.Add(gridTicket);
-            tabNavigationPage1.Controls.Add(groupBox1);
-            tabNavigationPage1.Margin = new Padding(3, 2, 3, 2);
-            tabNavigationPage1.Name = "tabNavigationPage1";
-            tabNavigationPage1.Size = new Size(1006, 485);
+            tpTicket.Caption = "Tickets";
+            tpTicket.Controls.Add(simpleButton4);
+            tpTicket.Controls.Add(simpleButton5);
+            tpTicket.Controls.Add(simpleButton6);
+            tpTicket.Controls.Add(gcTicket);
+            tpTicket.Controls.Add(groupBox1);
+            tpTicket.Margin = new Padding(3, 2, 3, 2);
+            tpTicket.Name = "tpTicket";
+            tpTicket.Size = new Size(1006, 566);
+            tpTicket.Paint += tpTicket_Paint;
             // 
             // simpleButton4
             // 
-            simpleButton4.Location = new Point(252, 310);
+            simpleButton4.Location = new Point(615, 317);
             simpleButton4.Margin = new Padding(3, 2, 3, 2);
             simpleButton4.Name = "simpleButton4";
             simpleButton4.Size = new Size(101, 29);
@@ -262,7 +258,7 @@
             // 
             // simpleButton5
             // 
-            simpleButton5.Location = new Point(135, 310);
+            simpleButton5.Location = new Point(487, 317);
             simpleButton5.Margin = new Padding(3, 2, 3, 2);
             simpleButton5.Name = "simpleButton5";
             simpleButton5.Size = new Size(101, 29);
@@ -271,30 +267,32 @@
             // 
             // simpleButton6
             // 
-            simpleButton6.Location = new Point(19, 310);
+            simpleButton6.Location = new Point(356, 317);
             simpleButton6.Margin = new Padding(3, 2, 3, 2);
             simpleButton6.Name = "simpleButton6";
             simpleButton6.Size = new Size(101, 29);
             simpleButton6.TabIndex = 22;
             simpleButton6.Text = "Add";
             // 
-            // gridTicket
+            // gcTicket
             // 
-            gridTicket.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gridTicket.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
-            gridTicket.Location = new Point(4, 358);
-            gridTicket.MainView = gridView1;
-            gridTicket.Margin = new Padding(3, 2, 3, 2);
-            gridTicket.Name = "gridTicket";
-            gridTicket.Size = new Size(986, 76);
-            gridTicket.TabIndex = 1;
-            gridTicket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
+            gcTicket.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gcTicket.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
+            gcTicket.Location = new Point(4, 358);
+            gcTicket.MainView = gvTicket;
+            gcTicket.Margin = new Padding(3, 2, 3, 2);
+            gcTicket.Name = "gcTicket";
+            gcTicket.Size = new Size(986, 157);
+            gcTicket.TabIndex = 1;
+            gcTicket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvTicket });
             // 
-            // gridView1
+            // gvTicket
             // 
-            gridView1.DetailHeight = 284;
-            gridView1.GridControl = gridTicket;
-            gridView1.Name = "gridView1";
+            gvTicket.DetailHeight = 284;
+            gvTicket.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            gvTicket.GridControl = gcTicket;
+            gvTicket.Name = "gvTicket";
+            gvTicket.RowClick += gvTicket_RowClick;
             // 
             // groupBox1
             // 
@@ -305,7 +303,7 @@
             groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(983, 292);
+            groupBox1.Size = new Size(983, 300);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Book Ticket";
@@ -313,38 +311,98 @@
             // groupBox4
             // 
             groupBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            groupBox4.Controls.Add(textEdit16);
+            groupBox4.Controls.Add(lbTicketCustomerDoB);
+            groupBox4.Controls.Add(lbTicketCustomerPhone);
+            groupBox4.Controls.Add(lbTicketCustomerNid);
+            groupBox4.Controls.Add(lbTicketCustomerSex);
+            groupBox4.Controls.Add(lbTicketCustomerAddress);
+            groupBox4.Controls.Add(lbTicketCustomerName);
+            groupBox4.Controls.Add(lbTicketsCustomerID);
             groupBox4.Controls.Add(label21);
-            groupBox4.Controls.Add(dateTimePicker2);
             groupBox4.Controls.Add(label15);
-            groupBox4.Controls.Add(textEdit11);
             groupBox4.Controls.Add(label14);
             groupBox4.Controls.Add(label13);
-            groupBox4.Controls.Add(textEdit10);
             groupBox4.Controls.Add(label10);
-            groupBox4.Controls.Add(textEdit9);
             groupBox4.Controls.Add(label11);
-            groupBox4.Controls.Add(textEdit8);
-            groupBox4.Controls.Add(radioButton3);
             groupBox4.Controls.Add(label12);
-            groupBox4.Controls.Add(radioButton4);
-            groupBox4.Location = new Point(450, 27);
+            groupBox4.Location = new Point(6, 24);
             groupBox4.Margin = new Padding(3, 2, 3, 2);
             groupBox4.Name = "groupBox4";
             groupBox4.Padding = new Padding(3, 2, 3, 2);
-            groupBox4.Size = new Size(413, 260);
+            groupBox4.Size = new Size(327, 272);
             groupBox4.TabIndex = 1;
             groupBox4.TabStop = false;
             groupBox4.Text = "Customer information";
             // 
-            // textEdit16
+            // lbTicketCustomerDoB
             // 
-            textEdit16.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit16.Location = new Point(97, 28);
-            textEdit16.Margin = new Padding(3, 2, 3, 2);
-            textEdit16.Name = "textEdit16";
-            textEdit16.Size = new Size(208, 20);
-            textEdit16.TabIndex = 28;
+            lbTicketCustomerDoB.AutoSize = true;
+            lbTicketCustomerDoB.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerDoB.Location = new Point(97, 209);
+            lbTicketCustomerDoB.Name = "lbTicketCustomerDoB";
+            lbTicketCustomerDoB.Size = new Size(23, 18);
+            lbTicketCustomerDoB.TabIndex = 36;
+            lbTicketCustomerDoB.Text = "...";
+            // 
+            // lbTicketCustomerPhone
+            // 
+            lbTicketCustomerPhone.AutoSize = true;
+            lbTicketCustomerPhone.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerPhone.Location = new Point(97, 174);
+            lbTicketCustomerPhone.Name = "lbTicketCustomerPhone";
+            lbTicketCustomerPhone.Size = new Size(23, 18);
+            lbTicketCustomerPhone.TabIndex = 35;
+            lbTicketCustomerPhone.Text = "...";
+            // 
+            // lbTicketCustomerNid
+            // 
+            lbTicketCustomerNid.AutoSize = true;
+            lbTicketCustomerNid.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerNid.Location = new Point(97, 145);
+            lbTicketCustomerNid.Name = "lbTicketCustomerNid";
+            lbTicketCustomerNid.Size = new Size(23, 18);
+            lbTicketCustomerNid.TabIndex = 34;
+            lbTicketCustomerNid.Text = "...";
+            // 
+            // lbTicketCustomerSex
+            // 
+            lbTicketCustomerSex.AutoSize = true;
+            lbTicketCustomerSex.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerSex.Location = new Point(97, 117);
+            lbTicketCustomerSex.Name = "lbTicketCustomerSex";
+            lbTicketCustomerSex.Size = new Size(23, 18);
+            lbTicketCustomerSex.TabIndex = 33;
+            lbTicketCustomerSex.Text = "...";
+            // 
+            // lbTicketCustomerAddress
+            // 
+            lbTicketCustomerAddress.AutoSize = true;
+            lbTicketCustomerAddress.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerAddress.Location = new Point(97, 88);
+            lbTicketCustomerAddress.Name = "lbTicketCustomerAddress";
+            lbTicketCustomerAddress.Size = new Size(23, 18);
+            lbTicketCustomerAddress.TabIndex = 32;
+            lbTicketCustomerAddress.Text = "...";
+            // 
+            // lbTicketCustomerName
+            // 
+            lbTicketCustomerName.AutoSize = true;
+            lbTicketCustomerName.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCustomerName.Location = new Point(97, 56);
+            lbTicketCustomerName.Name = "lbTicketCustomerName";
+            lbTicketCustomerName.Size = new Size(23, 18);
+            lbTicketCustomerName.TabIndex = 31;
+            lbTicketCustomerName.Text = "...";
+            // 
+            // lbTicketsCustomerID
+            // 
+            lbTicketsCustomerID.AutoSize = true;
+            lbTicketsCustomerID.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketsCustomerID.Location = new Point(97, 26);
+            lbTicketsCustomerID.Name = "lbTicketsCustomerID";
+            lbTicketsCustomerID.Size = new Size(23, 18);
+            lbTicketsCustomerID.TabIndex = 30;
+            lbTicketsCustomerID.Text = "...";
             // 
             // label21
             // 
@@ -356,39 +414,21 @@
             label21.TabIndex = 29;
             label21.Text = "Customer ID:";
             // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            dateTimePicker2.Location = new Point(97, 197);
-            dateTimePicker2.Margin = new Padding(3, 2, 3, 2);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(210, 21);
-            dateTimePicker2.TabIndex = 27;
-            // 
             // label15
             // 
             label15.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label15.AutoSize = true;
-            label15.Location = new Point(21, 202);
+            label15.Location = new Point(21, 211);
             label15.Name = "label15";
             label15.Size = new Size(72, 13);
             label15.TabIndex = 26;
             label15.Text = "Date of birth:";
             // 
-            // textEdit11
-            // 
-            textEdit11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit11.Location = new Point(98, 167);
-            textEdit11.Margin = new Padding(3, 2, 3, 2);
-            textEdit11.Name = "textEdit11";
-            textEdit11.Size = new Size(208, 20);
-            textEdit11.TabIndex = 24;
-            // 
             // label14
             // 
             label14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label14.AutoSize = true;
-            label14.Location = new Point(21, 170);
+            label14.Location = new Point(21, 179);
             label14.Name = "label14";
             label14.Size = new Size(41, 13);
             label14.TabIndex = 25;
@@ -398,20 +438,11 @@
             // 
             label13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label13.AutoSize = true;
-            label13.Location = new Point(21, 141);
+            label13.Location = new Point(21, 150);
             label13.Name = "label13";
-            label13.Size = new Size(72, 13);
+            label13.Size = new Size(64, 13);
             label13.TabIndex = 23;
-            label13.Text = "CMND/CCCD:";
-            // 
-            // textEdit10
-            // 
-            textEdit10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit10.Location = new Point(97, 139);
-            textEdit10.Margin = new Padding(3, 2, 3, 2);
-            textEdit10.Name = "textEdit10";
-            textEdit10.Size = new Size(208, 20);
-            textEdit10.TabIndex = 22;
+            label13.Text = "National ID:";
             // 
             // label10
             // 
@@ -423,46 +454,15 @@
             label10.TabIndex = 21;
             label10.Text = "Address:";
             // 
-            // textEdit9
-            // 
-            textEdit9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit9.Location = new Point(97, 58);
-            textEdit9.Margin = new Padding(3, 2, 3, 2);
-            textEdit9.Name = "textEdit9";
-            textEdit9.Size = new Size(208, 20);
-            textEdit9.TabIndex = 15;
-            // 
             // label11
             // 
             label11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label11.AutoSize = true;
-            label11.Location = new Point(21, 118);
+            label11.Location = new Point(21, 121);
             label11.Name = "label11";
             label11.Size = new Size(29, 13);
             label11.TabIndex = 20;
             label11.Text = "Sex:";
-            // 
-            // textEdit8
-            // 
-            textEdit8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit8.Location = new Point(97, 89);
-            textEdit8.Margin = new Padding(3, 2, 3, 2);
-            textEdit8.Name = "textEdit8";
-            textEdit8.Size = new Size(208, 20);
-            textEdit8.TabIndex = 16;
-            // 
-            // radioButton3
-            // 
-            radioButton3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(165, 115);
-            radioButton3.Margin = new Padding(3, 2, 3, 2);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(61, 17);
-            radioButton3.TabIndex = 19;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Felmale";
-            radioButton3.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -474,49 +474,91 @@
             label12.TabIndex = 17;
             label12.Text = "Name:";
             // 
-            // radioButton4
-            // 
-            radioButton4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(105, 115);
-            radioButton4.Margin = new Padding(3, 2, 3, 2);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(47, 17);
-            radioButton4.TabIndex = 18;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "Male";
-            radioButton4.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
             groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            groupBox3.Controls.Add(lbTicketCurrentClass);
+            groupBox3.Controls.Add(lbTicketCurrentSeat);
+            groupBox3.Controls.Add(lbTicketSeatClass);
+            groupBox3.Controls.Add(lbTicketSeatNumber);
+            groupBox3.Controls.Add(lbTicketPrice);
             groupBox3.Controls.Add(dateTimePicker3);
             groupBox3.Controls.Add(label23);
-            groupBox3.Controls.Add(textEdit12);
             groupBox3.Controls.Add(label22);
-            groupBox3.Controls.Add(comboBox4);
-            groupBox3.Controls.Add(comboBox3);
-            groupBox3.Controls.Add(label19);
+            groupBox3.Controls.Add(cbTimeDeparture);
             groupBox3.Controls.Add(label18);
-            groupBox3.Controls.Add(comboBox2);
+            groupBox3.Controls.Add(cbDestination);
             groupBox3.Controls.Add(label17);
             groupBox3.Controls.Add(label16);
-            groupBox3.Controls.Add(comboBox1);
-            groupBox3.Controls.Add(textEdit14);
+            groupBox3.Controls.Add(cbDeparture);
+            groupBox3.Controls.Add(txtTicketID);
             groupBox3.Controls.Add(label20);
-            groupBox3.Location = new Point(14, 27);
+            groupBox3.Location = new Point(352, 24);
             groupBox3.Margin = new Padding(3, 2, 3, 2);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(3, 2, 3, 2);
-            groupBox3.Size = new Size(398, 260);
+            groupBox3.Size = new Size(360, 272);
             groupBox3.TabIndex = 0;
             groupBox3.TabStop = false;
             groupBox3.Text = "Tickets information";
             // 
+            // lbTicketCurrentClass
+            // 
+            lbTicketCurrentClass.AutoSize = true;
+            lbTicketCurrentClass.BackColor = Color.FromArgb(192, 192, 255);
+            lbTicketCurrentClass.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCurrentClass.Location = new Point(121, 209);
+            lbTicketCurrentClass.Name = "lbTicketCurrentClass";
+            lbTicketCurrentClass.Size = new Size(23, 18);
+            lbTicketCurrentClass.TabIndex = 45;
+            lbTicketCurrentClass.Text = "...";
+            // 
+            // lbTicketCurrentSeat
+            // 
+            lbTicketCurrentSeat.AutoSize = true;
+            lbTicketCurrentSeat.BackColor = Color.FromArgb(192, 192, 255);
+            lbTicketCurrentSeat.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTicketCurrentSeat.Location = new Point(121, 179);
+            lbTicketCurrentSeat.Name = "lbTicketCurrentSeat";
+            lbTicketCurrentSeat.Size = new Size(23, 18);
+            lbTicketCurrentSeat.TabIndex = 44;
+            lbTicketCurrentSeat.Text = "...";
+            // 
+            // lbTicketSeatClass
+            // 
+            lbTicketSeatClass.AutoSize = true;
+            lbTicketSeatClass.Location = new Point(24, 214);
+            lbTicketSeatClass.Name = "lbTicketSeatClass";
+            lbTicketSeatClass.Size = new Size(61, 13);
+            lbTicketSeatClass.TabIndex = 43;
+            lbTicketSeatClass.Text = "Seat Class:";
+            // 
+            // lbTicketSeatNumber
+            // 
+            lbTicketSeatNumber.AutoSize = true;
+            lbTicketSeatNumber.Location = new Point(24, 184);
+            lbTicketSeatNumber.Name = "lbTicketSeatNumber";
+            lbTicketSeatNumber.Size = new Size(33, 13);
+            lbTicketSeatNumber.TabIndex = 42;
+            lbTicketSeatNumber.Text = "Seat:";
+            // 
+            // lbTicketPrice
+            // 
+            lbTicketPrice.AutoSize = true;
+            lbTicketPrice.BackColor = Color.FromArgb(192, 192, 255);
+            lbTicketPrice.Font = new Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbTicketPrice.Location = new Point(121, 241);
+            lbTicketPrice.Name = "lbTicketPrice";
+            lbTicketPrice.Size = new Size(16, 18);
+            lbTicketPrice.TabIndex = 41;
+            lbTicketPrice.Text = "0";
+            // 
             // dateTimePicker3
             // 
             dateTimePicker3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            dateTimePicker3.Location = new Point(121, 213);
+            dateTimePicker3.CustomFormat = "dd/MM/yyyy";
+            dateTimePicker3.Format = DateTimePickerFormat.Custom;
+            dateTimePicker3.Location = new Point(121, 121);
             dateTimePicker3.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker3.Name = "dateTimePicker3";
             dateTimePicker3.Size = new Size(215, 21);
@@ -526,80 +568,51 @@
             // 
             label23.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label23.AutoSize = true;
-            label23.Location = new Point(24, 213);
+            label23.Location = new Point(24, 122);
             label23.Name = "label23";
             label23.Size = new Size(86, 13);
             label23.TabIndex = 39;
             label23.Text = "Date Departure:";
             // 
-            // textEdit12
-            // 
-            textEdit12.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit12.Location = new Point(121, 179);
-            textEdit12.Margin = new Padding(3, 2, 3, 2);
-            textEdit12.Name = "textEdit12";
-            textEdit12.Size = new Size(214, 20);
-            textEdit12.TabIndex = 38;
-            // 
             // label22
             // 
             label22.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label22.AutoSize = true;
-            label22.Location = new Point(24, 181);
+            label22.Location = new Point(24, 246);
             label22.Name = "label22";
             label22.Size = new Size(34, 13);
             label22.TabIndex = 37;
             label22.Text = "Price:";
             // 
-            // comboBox4
+            // cbTimeDeparture
             // 
-            comboBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(121, 148);
-            comboBox4.Margin = new Padding(3, 2, 3, 2);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(215, 21);
-            comboBox4.TabIndex = 36;
-            // 
-            // comboBox3
-            // 
-            comboBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(121, 120);
-            comboBox3.Margin = new Padding(3, 2, 3, 2);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(215, 21);
-            comboBox3.TabIndex = 35;
-            // 
-            // label19
-            // 
-            label19.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label19.AutoSize = true;
-            label19.Location = new Point(23, 150);
-            label19.Name = "label19";
-            label19.Size = new Size(90, 13);
-            label19.TabIndex = 34;
-            label19.Text = "Time Destination:";
+            cbTimeDeparture.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            cbTimeDeparture.FormattingEnabled = true;
+            cbTimeDeparture.Location = new Point(121, 150);
+            cbTimeDeparture.Margin = new Padding(3, 2, 3, 2);
+            cbTimeDeparture.Name = "cbTimeDeparture";
+            cbTimeDeparture.Size = new Size(215, 21);
+            cbTimeDeparture.TabIndex = 35;
             // 
             // label18
             // 
             label18.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             label18.AutoSize = true;
-            label18.Location = new Point(24, 120);
+            label18.Location = new Point(25, 150);
             label18.Name = "label18";
             label18.Size = new Size(85, 13);
             label18.TabIndex = 33;
             label18.Text = "Time Departure:";
             // 
-            // comboBox2
+            // cbDestination
             // 
-            comboBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(121, 89);
-            comboBox2.Margin = new Padding(3, 2, 3, 2);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(215, 21);
-            comboBox2.TabIndex = 32;
+            cbDestination.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            cbDestination.FormattingEnabled = true;
+            cbDestination.Location = new Point(121, 89);
+            cbDestination.Margin = new Padding(3, 2, 3, 2);
+            cbDestination.Name = "cbDestination";
+            cbDestination.Size = new Size(215, 21);
+            cbDestination.TabIndex = 32;
             // 
             // label17
             // 
@@ -621,24 +634,24 @@
             label16.TabIndex = 30;
             label16.Text = "Departure:";
             // 
-            // comboBox1
+            // cbDeparture
             // 
-            comboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(121, 56);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(215, 21);
-            comboBox1.TabIndex = 29;
+            cbDeparture.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            cbDeparture.FormattingEnabled = true;
+            cbDeparture.Location = new Point(121, 56);
+            cbDeparture.Margin = new Padding(3, 2, 3, 2);
+            cbDeparture.Name = "cbDeparture";
+            cbDeparture.Size = new Size(215, 21);
+            cbDeparture.TabIndex = 29;
             // 
-            // textEdit14
+            // txtTicketID
             // 
-            textEdit14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textEdit14.Location = new Point(121, 28);
-            textEdit14.Margin = new Padding(3, 2, 3, 2);
-            textEdit14.Name = "textEdit14";
-            textEdit14.Size = new Size(214, 20);
-            textEdit14.TabIndex = 26;
+            txtTicketID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtTicketID.Location = new Point(121, 28);
+            txtTicketID.Margin = new Padding(3, 2, 3, 2);
+            txtTicketID.Name = "txtTicketID";
+            txtTicketID.Size = new Size(214, 20);
+            txtTicketID.TabIndex = 26;
             // 
             // label20
             // 
@@ -657,7 +670,7 @@
             tpCustomer.Controls.Add(groupBox5);
             tpCustomer.Margin = new Padding(3, 2, 3, 2);
             tpCustomer.Name = "tpCustomer";
-            tpCustomer.Size = new Size(891, 491);
+            tpCustomer.Size = new Size(1006, 566);
             tpCustomer.Paint += tpCustomer_Paint;
             // 
             // gcCustomer
@@ -668,13 +681,14 @@
             gcCustomer.MainView = gvCustomer;
             gcCustomer.Margin = new Padding(3, 2, 3, 2);
             gcCustomer.Name = "gcCustomer";
-            gcCustomer.Size = new Size(871, 269);
+            gcCustomer.Size = new Size(986, 344);
             gcCustomer.TabIndex = 3;
             gcCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvCustomer });
             // 
             // gvCustomer
             // 
             gvCustomer.DetailHeight = 284;
+            gvCustomer.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             gvCustomer.GridControl = gcCustomer;
             gvCustomer.Name = "gvCustomer";
             gvCustomer.OptionsBehavior.CacheValuesOnRowUpdating = DevExpress.Data.CacheRowValuesMode.Disabled;
@@ -713,7 +727,7 @@
             groupBox5.Margin = new Padding(3, 2, 3, 2);
             groupBox5.Name = "groupBox5";
             groupBox5.Padding = new Padding(3, 2, 3, 2);
-            groupBox5.Size = new Size(871, 185);
+            groupBox5.Size = new Size(986, 185);
             groupBox5.TabIndex = 2;
             groupBox5.TabStop = false;
             groupBox5.Text = "Information Customer";
@@ -721,7 +735,7 @@
             // btnCustomerDelete
             // 
             btnCustomerDelete.Anchor = AnchorStyles.Right;
-            btnCustomerDelete.Location = new Point(754, 137);
+            btnCustomerDelete.Location = new Point(869, 137);
             btnCustomerDelete.Margin = new Padding(3, 2, 3, 2);
             btnCustomerDelete.Name = "btnCustomerDelete";
             btnCustomerDelete.Size = new Size(101, 29);
@@ -732,7 +746,7 @@
             // btnCustomerUpdate
             // 
             btnCustomerUpdate.Anchor = AnchorStyles.Right;
-            btnCustomerUpdate.Location = new Point(636, 137);
+            btnCustomerUpdate.Location = new Point(751, 137);
             btnCustomerUpdate.Margin = new Padding(3, 2, 3, 2);
             btnCustomerUpdate.Name = "btnCustomerUpdate";
             btnCustomerUpdate.Size = new Size(101, 29);
@@ -743,7 +757,7 @@
             // btnAddCustomer
             // 
             btnAddCustomer.Anchor = AnchorStyles.Right;
-            btnAddCustomer.Location = new Point(519, 137);
+            btnAddCustomer.Location = new Point(634, 137);
             btnAddCustomer.Margin = new Padding(3, 2, 3, 2);
             btnAddCustomer.Name = "btnAddCustomer";
             btnAddCustomer.Size = new Size(101, 29);
@@ -754,7 +768,7 @@
             // simpleButton7
             // 
             simpleButton7.Anchor = AnchorStyles.Right;
-            simpleButton7.Location = new Point(1429, 203);
+            simpleButton7.Location = new Point(1544, 203);
             simpleButton7.Margin = new Padding(3, 2, 3, 2);
             simpleButton7.Name = "simpleButton7";
             simpleButton7.Size = new Size(101, 29);
@@ -764,7 +778,7 @@
             // simpleButton8
             // 
             simpleButton8.Anchor = AnchorStyles.Right;
-            simpleButton8.Location = new Point(1312, 203);
+            simpleButton8.Location = new Point(1427, 203);
             simpleButton8.Margin = new Padding(3, 2, 3, 2);
             simpleButton8.Name = "simpleButton8";
             simpleButton8.Size = new Size(101, 29);
@@ -774,7 +788,7 @@
             // simpleButton9
             // 
             simpleButton9.Anchor = AnchorStyles.Right;
-            simpleButton9.Location = new Point(1196, 203);
+            simpleButton9.Location = new Point(1311, 203);
             simpleButton9.Margin = new Padding(3, 2, 3, 2);
             simpleButton9.Name = "simpleButton9";
             simpleButton9.Size = new Size(101, 29);
@@ -978,7 +992,7 @@
             tp.Controls.Add(gridEmployee);
             tp.Margin = new Padding(3, 2, 3, 2);
             tp.Name = "tp";
-            tp.Size = new Size(891, 491);
+            tp.Size = new Size(1006, 566);
             // 
             // groupBox2
             // 
@@ -1009,7 +1023,7 @@
             groupBox2.Margin = new Padding(3, 2, 3, 2);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 2, 3, 2);
-            groupBox2.Size = new Size(871, 185);
+            groupBox2.Size = new Size(986, 185);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Information employee";
@@ -1017,7 +1031,7 @@
             // simpleButton3
             // 
             simpleButton3.Anchor = AnchorStyles.Right;
-            simpleButton3.Location = new Point(729, 151);
+            simpleButton3.Location = new Point(844, 151);
             simpleButton3.Margin = new Padding(3, 2, 3, 2);
             simpleButton3.Name = "simpleButton3";
             simpleButton3.Size = new Size(101, 29);
@@ -1027,7 +1041,7 @@
             // simpleButton2
             // 
             simpleButton2.Anchor = AnchorStyles.Right;
-            simpleButton2.Location = new Point(613, 151);
+            simpleButton2.Location = new Point(728, 151);
             simpleButton2.Margin = new Padding(3, 2, 3, 2);
             simpleButton2.Name = "simpleButton2";
             simpleButton2.Size = new Size(101, 29);
@@ -1037,7 +1051,7 @@
             // simpleButton1
             // 
             simpleButton1.Anchor = AnchorStyles.Right;
-            simpleButton1.Location = new Point(496, 151);
+            simpleButton1.Location = new Point(611, 151);
             simpleButton1.Margin = new Padding(3, 2, 3, 2);
             simpleButton1.Name = "simpleButton1";
             simpleButton1.Size = new Size(101, 29);
@@ -1242,7 +1256,7 @@
             gridEmployee.MainView = gridView2;
             gridEmployee.Margin = new Padding(3, 2, 3, 2);
             gridEmployee.Name = "gridEmployee";
-            gridEmployee.Size = new Size(871, 295);
+            gridEmployee.Size = new Size(986, 370);
             gridEmployee.TabIndex = 0;
             gridEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView2 });
             // 
@@ -1259,7 +1273,7 @@
             tabNavigationPage4.Controls.Add(groupBox6);
             tabNavigationPage4.Margin = new Padding(3, 2, 3, 2);
             tabNavigationPage4.Name = "tabNavigationPage4";
-            tabNavigationPage4.Size = new Size(891, 415);
+            tabNavigationPage4.Size = new Size(1006, 566);
             // 
             // gridControl2
             // 
@@ -1269,7 +1283,7 @@
             gridControl2.MainView = gridView4;
             gridControl2.Margin = new Padding(3, 2, 3, 2);
             gridControl2.Name = "gridControl2";
-            gridControl2.Size = new Size(871, 185);
+            gridControl2.Size = new Size(986, 336);
             gridControl2.TabIndex = 3;
             gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView4 });
             // 
@@ -1306,7 +1320,7 @@
             groupBox6.Margin = new Padding(3, 2, 3, 2);
             groupBox6.Name = "groupBox6";
             groupBox6.Padding = new Padding(3, 2, 3, 2);
-            groupBox6.Size = new Size(871, 197);
+            groupBox6.Size = new Size(986, 197);
             groupBox6.TabIndex = 2;
             groupBox6.TabStop = false;
             groupBox6.Text = "Information flight";
@@ -1431,7 +1445,7 @@
             // simpleButton13
             // 
             simpleButton13.Anchor = AnchorStyles.Right;
-            simpleButton13.Location = new Point(1429, 209);
+            simpleButton13.Location = new Point(1544, 209);
             simpleButton13.Margin = new Padding(3, 2, 3, 2);
             simpleButton13.Name = "simpleButton13";
             simpleButton13.Size = new Size(101, 29);
@@ -1441,7 +1455,7 @@
             // simpleButton14
             // 
             simpleButton14.Anchor = AnchorStyles.Right;
-            simpleButton14.Location = new Point(1312, 209);
+            simpleButton14.Location = new Point(1427, 209);
             simpleButton14.Margin = new Padding(3, 2, 3, 2);
             simpleButton14.Name = "simpleButton14";
             simpleButton14.Size = new Size(101, 29);
@@ -1451,7 +1465,7 @@
             // simpleButton15
             // 
             simpleButton15.Anchor = AnchorStyles.Right;
-            simpleButton15.Location = new Point(1196, 209);
+            simpleButton15.Location = new Point(1311, 209);
             simpleButton15.Margin = new Padding(3, 2, 3, 2);
             simpleButton15.Name = "simpleButton15";
             simpleButton15.Size = new Size(101, 29);
@@ -1499,7 +1513,7 @@
             tabNavigationPage5.Controls.Add(groupBox7);
             tabNavigationPage5.Margin = new Padding(3, 2, 3, 2);
             tabNavigationPage5.Name = "tabNavigationPage5";
-            tabNavigationPage5.Size = new Size(891, 415);
+            tabNavigationPage5.Size = new Size(1006, 566);
             // 
             // gridControl3
             // 
@@ -1509,7 +1523,7 @@
             gridControl3.MainView = gridView5;
             gridControl3.Margin = new Padding(3, 2, 3, 2);
             gridControl3.Name = "gridControl3";
-            gridControl3.Size = new Size(871, 176);
+            gridControl3.Size = new Size(986, 327);
             gridControl3.TabIndex = 4;
             gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView5 });
             // 
@@ -1542,7 +1556,7 @@
             groupBox7.Margin = new Padding(3, 2, 3, 2);
             groupBox7.Name = "groupBox7";
             groupBox7.Padding = new Padding(3, 2, 3, 2);
-            groupBox7.Size = new Size(871, 197);
+            groupBox7.Size = new Size(986, 197);
             groupBox7.TabIndex = 3;
             groupBox7.TabStop = false;
             groupBox7.Text = "Information plane";
@@ -1637,7 +1651,7 @@
             // simpleButton22
             // 
             simpleButton22.Anchor = AnchorStyles.Right;
-            simpleButton22.Location = new Point(2128, 266);
+            simpleButton22.Location = new Point(2243, 266);
             simpleButton22.Margin = new Padding(3, 2, 3, 2);
             simpleButton22.Name = "simpleButton22";
             simpleButton22.Size = new Size(101, 29);
@@ -1647,7 +1661,7 @@
             // simpleButton23
             // 
             simpleButton23.Anchor = AnchorStyles.Right;
-            simpleButton23.Location = new Point(2012, 266);
+            simpleButton23.Location = new Point(2127, 266);
             simpleButton23.Margin = new Padding(3, 2, 3, 2);
             simpleButton23.Name = "simpleButton23";
             simpleButton23.Size = new Size(101, 29);
@@ -1657,7 +1671,7 @@
             // simpleButton24
             // 
             simpleButton24.Anchor = AnchorStyles.Right;
-            simpleButton24.Location = new Point(1895, 266);
+            simpleButton24.Location = new Point(2010, 266);
             simpleButton24.Margin = new Padding(3, 2, 3, 2);
             simpleButton24.Name = "simpleButton24";
             simpleButton24.Size = new Size(101, 29);
@@ -1695,26 +1709,27 @@
             tabNavigationPage6.Caption = "Statistics";
             tabNavigationPage6.Margin = new Padding(3, 2, 3, 2);
             tabNavigationPage6.Name = "tabNavigationPage6";
-            tabNavigationPage6.Size = new Size(891, 415);
+            tabNavigationPage6.Size = new Size(1006, 566);
             // 
-            // label39
+            // lbUsername
             // 
-            label39.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label39.AutoSize = true;
-            label39.BackColor = Color.FromArgb(128, 128, 255);
-            label39.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label39.Location = new Point(914, 6);
-            label39.Name = "label39";
-            label39.Size = new Size(80, 19);
-            label39.TabIndex = 6;
-            label39.Text = "Username";
+            lbUsername.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lbUsername.AutoSize = true;
+            lbUsername.BackColor = Color.FromArgb(128, 128, 255);
+            lbUsername.BorderStyle = BorderStyle.FixedSingle;
+            lbUsername.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbUsername.Location = new Point(919, 9);
+            lbUsername.Name = "lbUsername";
+            lbUsername.Size = new Size(82, 21);
+            lbUsername.TabIndex = 6;
+            lbUsername.Text = "Username";
             // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1006, 524);
-            Controls.Add(label39);
+            ClientSize = new Size(1006, 605);
+            Controls.Add(lbUsername);
             Controls.Add(tabControls);
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
@@ -1724,21 +1739,15 @@
             Load += Main_Load;
             ((System.ComponentModel.ISupportInitialize)tabControls).EndInit();
             tabControls.ResumeLayout(false);
-            tabNavigationPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)gridTicket).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView1).EndInit();
+            tpTicket.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gcTicket).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gvTicket).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit16.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit10.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit9.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit8.Properties).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtTicketID.Properties).EndInit();
             tpCustomer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gcCustomer).EndInit();
             ((System.ComponentModel.ISupportInitialize)gvCustomer).EndInit();
@@ -1785,10 +1794,10 @@
         #endregion
 
         private DevExpress.XtraBars.Navigation.TabPane tabControls;
-        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage1;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage tpTicket;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tpCustomer;
-        private DevExpress.XtraGrid.GridControl gridTicket;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl gcTicket;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvTicket;
         private GroupBox groupBox1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tp;
         private DevExpress.XtraGrid.GridControl gridEmployee;
@@ -1821,37 +1830,26 @@
         private DevExpress.XtraEditors.TextEdit txt2;
         private GroupBox groupBox4;
         private GroupBox groupBox3;
-        private DateTimePicker dateTimePicker2;
         private Label label15;
-        private DevExpress.XtraEditors.TextEdit textEdit11;
         private Label label14;
         private Label label13;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
         private Label label10;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
         private Label label11;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
-        private RadioButton radioButton3;
         private Label label12;
-        private RadioButton radioButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.TextEdit textEdit16;
         private Label label21;
         private DateTimePicker dateTimePicker3;
         private Label label23;
-        private DevExpress.XtraEditors.TextEdit textEdit12;
         private Label label22;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private Label label19;
+        private ComboBox cbTimeDeparture;
         private Label label18;
-        private ComboBox comboBox2;
+        private ComboBox cbDestination;
         private Label label17;
         private Label label16;
-        private ComboBox comboBox1;
-        private DevExpress.XtraEditors.TextEdit textEdit14;
+        private ComboBox cbDeparture;
+        private DevExpress.XtraEditors.TextEdit txtTicketID;
         private Label label20;
         private GroupBox groupBox5;
         private DevExpress.XtraEditors.SimpleButton btnCustomerDelete;
@@ -1923,6 +1921,18 @@
         private DevExpress.XtraEditors.TextEdit textEdit23;
         private DevExpress.XtraGrid.GridControl gridControl3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
-        private Label label39;
+        private Label lbUsername;
+        private Label lbTicketsCustomerID;
+        private Label lbTicketCustomerName;
+        private Label lbTicketCustomerAddress;
+        private Label lbTicketCustomerSex;
+        private Label lbTicketCustomerNid;
+        private Label lbTicketCustomerPhone;
+        private Label lbTicketCustomerDoB;
+        private Label lbTicketPrice;
+        private Label lbTicketSeatNumber;
+        private Label lbTicketSeatClass;
+        private Label lbTicketCurrentSeat;
+        private Label lbTicketCurrentClass;
     }
 }

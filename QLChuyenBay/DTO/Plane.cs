@@ -22,9 +22,10 @@ namespace DTO
     
         public int PlaneID { get; set; }
         public string Model { get; set; }
+        public string Registration { get; set; }
         public Nullable<int> TotalSeat { get; set; }
         public string Manufacturer { get; set; }
-        public string State { get; set; }
+        public Nullable<int> State { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Flight> Flights { get; set; }

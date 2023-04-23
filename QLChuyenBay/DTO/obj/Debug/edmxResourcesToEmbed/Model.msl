@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="AirportManagerModelStoreContainer" CdmEntityContainer="AirportManagerEntities">
+  <EntityContainerMapping StorageEntityContainer="AirportManagerModelStoreContainer" CdmEntityContainer="AirportManager">
     <EntitySetMapping Name="Accounts">
       <EntityTypeMapping TypeName="AirportManagerModel.Account">
-        <MappingFragment StoreEntitySet="Account">
-          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        <MappingFragment StoreEntitySet="Accounts">
           <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Password" ColumnName="Password" />
@@ -28,7 +27,7 @@
     </EntitySetMapping>
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="AirportManagerModel.Customer">
-        <MappingFragment StoreEntitySet="Customer">
+        <MappingFragment StoreEntitySet="Customers">
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Address" ColumnName="Address" />
@@ -43,7 +42,7 @@
     </EntitySetMapping>
     <EntitySetMapping Name="Employees">
       <EntityTypeMapping TypeName="AirportManagerModel.Employee">
-        <MappingFragment StoreEntitySet="Employee">
+        <MappingFragment StoreEntitySet="Employees">
           <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Address" ColumnName="Address" />
@@ -59,7 +58,7 @@
     </EntitySetMapping>
     <EntitySetMapping Name="Flights">
       <EntityTypeMapping TypeName="AirportManagerModel.Flight">
-        <MappingFragment StoreEntitySet="Flight">
+        <MappingFragment StoreEntitySet="Flights">
           <ScalarProperty Name="FlightID" ColumnName="FlightID" />
           <ScalarProperty Name="PlaneID" ColumnName="PlaneID" />
           <ScalarProperty Name="Departure" ColumnName="Departure" />
@@ -72,7 +71,7 @@
     </EntitySetMapping>
     <EntitySetMapping Name="Jobs">
       <EntityTypeMapping TypeName="AirportManagerModel.Job">
-        <MappingFragment StoreEntitySet="Job">
+        <MappingFragment StoreEntitySet="Jobs">
           <ScalarProperty Name="AssignedDate" ColumnName="AssignedDate" />
           <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
           <ScalarProperty Name="FlightID" ColumnName="FlightID" />
@@ -83,9 +82,10 @@
     </EntitySetMapping>
     <EntitySetMapping Name="Planes">
       <EntityTypeMapping TypeName="AirportManagerModel.Plane">
-        <MappingFragment StoreEntitySet="Plane">
+        <MappingFragment StoreEntitySet="Planes">
           <ScalarProperty Name="PlaneID" ColumnName="PlaneID" />
           <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Registration" ColumnName="Registration" />
           <ScalarProperty Name="TotalSeat" ColumnName="TotalSeat" />
           <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
           <ScalarProperty Name="State" ColumnName="State" />

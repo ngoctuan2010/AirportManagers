@@ -22,6 +22,7 @@ namespace GUI
     public partial class Main : DevExpress.XtraEditors.XtraForm
     {
         BUS_Customer bCustomer = new BUS_Customer();
+        BUS_Ticket bTicket = new BUS_Ticket();
         private Account current_account;
         private Employee current_employee;
 
@@ -34,7 +35,6 @@ namespace GUI
 
         private void Main_Load(object sender, EventArgs e)
         {
-
         }
         // Customer Controller
         private void tpCustomer_Paint(object sender, PaintEventArgs e)
@@ -105,24 +105,49 @@ namespace GUI
 
         private void gvCustomer_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-            if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
+
+            if (e.Clicks == 2) //Send customer to ticket tab
             {
-                Customer cur_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
-                txtCustomerID.Text = cur_customer.NationalID;
-                txtCustomerName.Text = cur_customer.Name;
-                txtCustomerAddress.Text = cur_customer.Address;
-                txtCustomerPhone.Text = cur_customer.TeleNumber;
-                txtCustomerEmail.Text = cur_customer.Email;
-                txtCustomerNationality.Text = cur_customer.Nationality;
-                dtpCustomerDate.Value = cur_customer.DateOfBirth.Value;
-                if (cur_customer.Sex == true)
+                tabControls.SelectedPageIndex = 0;
+                Customer order_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                lbTicketsCustomerID.Text = order_customer.CustomerID.ToString();
+                lbTicketCustomerName.Text = order_customer.Name;
+                lbTicketCustomerAddress.Text = order_customer.Address;
+                lbTicketCustomerPhone.Text = order_customer.TeleNumber;
+                lbTicketCustomerNid.Text = order_customer.NationalID;
+                if (order_customer.Sex == true)
                 {
-                    rbCustomerFemale.Checked = true;
+                    lbTicketCustomerSex.Text = "Nữ";
                 }
                 else
                 {
-                    rbCustomerMale.Checked = true;
+                    lbTicketCustomerSex.Text = "Nam";
                 }
+                lbTicketCustomerDoB.Text = order_customer.DateOfBirth.Value.ToString("dd/MM/yyyy");
+            }
+            else if (e.Clicks == 1) //fetch data to textfield
+            {
+
+                if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
+                {
+                    Customer cur_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    txtCustomerID.Text = cur_customer.NationalID;
+                    txtCustomerName.Text = cur_customer.Name;
+                    txtCustomerAddress.Text = cur_customer.Address;
+                    txtCustomerPhone.Text = cur_customer.TeleNumber;
+                    txtCustomerEmail.Text = cur_customer.Email;
+                    txtCustomerNationality.Text = cur_customer.Nationality;
+                    dtpCustomerDate.Value = cur_customer.DateOfBirth.Value;
+                    if (cur_customer.Sex == true)
+                    {
+                        rbCustomerFemale.Checked = true;
+                    }
+                    else
+                    {
+                        rbCustomerMale.Checked = true;
+                    }
+                }
+
             }
         }
 
@@ -180,7 +205,7 @@ namespace GUI
 
         private void btnCustomerDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to delete this customer?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Do you want to delete this customer?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
                 {
@@ -201,5 +226,20 @@ namespace GUI
 
         }
 
+        //Ticket Controller
+        private void tpTicket_Paint(object sender, PaintEventArgs e)
+        {
+            gcTicket.DataSource = bTicket.getTicketsList();
+        }
+
+        private void gvTicket_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if (gvTicket.GetRow(gvTicket.FocusedRowHandle) != null)
+            {
+                Bill_Detail ticket = (Bill_Detail)gvTicket.GetRow(gvTicket.FocusedRowHandle);
+                Customer customer = ticket.Customer;
+                MessageBox.Show(customer.Name);
+            }
+        }
     }
 }
