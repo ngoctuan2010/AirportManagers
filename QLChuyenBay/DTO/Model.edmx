@@ -89,16 +89,6 @@
           <Property Name="Manufacturer" Type="nvarchar" MaxLength="30" />
           <Property Name="State" Type="int" />
         </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
-        </EntityType>
         <Association Name="FK__Account__Employe__398D8EEE">
           <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
           <End Role="Accounts" Type="Self.Accounts" Multiplicity="0..1" />
@@ -179,7 +169,6 @@
           <EntitySet Name="Flights" EntityType="Self.Flights" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Jobs" EntityType="Self.Jobs" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Planes" EntityType="Self.Planes" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__Account__Employe__398D8EEE" Association="Self.FK__Account__Employe__398D8EEE">
             <End Role="Employees" EntitySet="Employees" />
             <End Role="Accounts" EntitySet="Accounts" />
@@ -306,16 +295,6 @@
           <Property Name="State" Type="Int32" />
           <NavigationProperty Name="Flights" Relationship="Self.FK__Flight__Airline__403A8C7D" FromRole="Planes" ToRole="Flights" />
         </EntityType>
-        <EntityType Name="sysdiagram">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-        </EntityType>
         <Association Name="FK__Account__Employe__398D8EEE">
           <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
           <End Role="Accounts" Type="Self.Account" Multiplicity="0..1" />
@@ -396,7 +375,6 @@
           <EntitySet Name="Flights" EntityType="Self.Flight" />
           <EntitySet Name="Jobs" EntityType="Self.Job" />
           <EntitySet Name="Planes" EntityType="Self.Plane" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <AssociationSet Name="FK__Account__Employe__398D8EEE" Association="Self.FK__Account__Employe__398D8EEE">
             <End Role="Employees" EntitySet="Employees" />
             <End Role="Accounts" EntitySet="Accounts" />
@@ -516,17 +494,6 @@
                 <ScalarProperty Name="TotalSeat" ColumnName="TotalSeat" />
                 <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
                 <ScalarProperty Name="State" ColumnName="State" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="AirportManagerModel.sysdiagram">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

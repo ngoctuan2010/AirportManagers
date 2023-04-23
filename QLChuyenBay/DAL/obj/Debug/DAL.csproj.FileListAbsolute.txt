@@ -7,7 +7,6 @@ D:\Homework\AirportManager\QLChuyenBay\DAL\obj\Debug\DAL.csproj.CoreCompileInput
 D:\Homework\AirportManager\QLChuyenBay\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Homework\AirportManager\QLChuyenBay\DAL\obj\Debug\DAL.dll
 D:\Homework\AirportManager\QLChuyenBay\DAL\obj\Debug\DAL.pdb
-<<<<<<< HEAD
 D:\Homework\AirportManagers\QLChuyenBay\DAL\bin\Debug\DAL.dll.config
 D:\Homework\AirportManagers\QLChuyenBay\DAL\bin\Debug\DAL.dll
 D:\Homework\AirportManagers\QLChuyenBay\DAL\bin\Debug\DAL.pdb
@@ -23,20 +22,3 @@ D:\Homework\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.csproj.CoreCompileInpu
 D:\Homework\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Homework\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.dll
 D:\Homework\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.pdb
-=======
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\DAL.dll.config
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\DAL.dll
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\DAL.pdb
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\DTO.dll
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\EntityFramework.dll
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\DTO.pdb
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\DTO.dll.config
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\EntityFramework.xml
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.csproj.CopyComplete
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.dll
-C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\DAL\obj\Debug\DAL.pdb
->>>>>>> main

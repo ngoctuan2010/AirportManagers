@@ -4,6 +4,62 @@
     "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj": {}
   },
   "projects": {
+    "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+        "projectName": "BUS",
+        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\BUS\\BUS.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj"
+              },
+              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DAL\\DAL.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "D:\\Homework\\AirportManagers\\QLChuyenBay\\DTO\\DTO.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
     "D:\\Homework\\AirportManagers\\QLChuyenBay\\GUI\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
