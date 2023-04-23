@@ -17,7 +17,7 @@ namespace DTO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Employee()
         {
-            this.Accounts = new HashSet<Account>();
+            this.Bill_Detail = new HashSet<Bill_Detail>();
             this.Jobs = new HashSet<Job>();
         }
     
@@ -32,8 +32,9 @@ namespace DTO
         public string TeleNumber { get; set; }
         public string Position { get; set; }
     
+        public virtual Account Account { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Account> Accounts { get; set; }
+        public virtual ICollection<Bill_Detail> Bill_Detail { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Job> Jobs { get; set; }
     }

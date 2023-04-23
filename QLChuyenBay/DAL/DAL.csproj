@@ -53,8 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Flight_Service.cs" />
-    <Compile Include="Plane_Service.cs" />
+    <Compile Include="DAL_Customer.cs" />
+    <Compile Include="DAL_Flight.cs" />
+    <Compile Include="DAL_Plane.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

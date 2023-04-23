@@ -122,36 +122,36 @@
             label1 = new Label();
             gridEmployee = new DevExpress.XtraGrid.GridControl();
             gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            gridControl2 = new DevExpress.XtraGrid.GridControl();
-            gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            tabNavigationFlight = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            gridControlFlight = new DevExpress.XtraGrid.GridControl();
+            gridViewFlight = new DevExpress.XtraGrid.Views.Grid.GridView();
             groupBox6 = new GroupBox();
+            timeDepartPicker = new DateTimePicker();
             label36 = new Label();
-            textEdit26 = new DevExpress.XtraEditors.TextEdit();
-            simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
-            comboBox9 = new ComboBox();
+            textAirline = new DevExpress.XtraEditors.TextEdit();
+            buttonDeleteFlight = new DevExpress.XtraEditors.SimpleButton();
+            buttonUpdateFlight = new DevExpress.XtraEditors.SimpleButton();
+            buttonAddFlight = new DevExpress.XtraEditors.SimpleButton();
+            comboBoxPlane = new ComboBox();
             label37 = new Label();
-            comboBox7 = new ComboBox();
             label35 = new Label();
-            comboBox6 = new ComboBox();
-            comboBox5 = new ComboBox();
+            comboBoxDesti = new ComboBox();
+            comboBoxDepart = new ComboBox();
             label34 = new Label();
             label33 = new Label();
             simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
-            dateTimePicker5 = new DateTimePicker();
+            dateDepartPicker = new DateTimePicker();
             label38 = new Label();
             textFlightID = new DevExpress.XtraEditors.TextEdit();
             label41 = new Label();
             tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            gridControl3 = new DevExpress.XtraGrid.GridControl();
-            gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            gridControlPlane = new DevExpress.XtraGrid.GridControl();
+            gridPlane = new DevExpress.XtraGrid.Views.Grid.GridView();
             groupBox7 = new GroupBox();
-            txtRegistration = new DevExpress.XtraEditors.TextEdit();
             label39 = new Label();
+            txtRegistration = new DevExpress.XtraEditors.TextEdit();
             txtPlaneSeat = new DevExpress.XtraEditors.TextEdit();
             txtManufactor = new DevExpress.XtraEditors.TextEdit();
             txtPlaneModel = new DevExpress.XtraEditors.TextEdit();
@@ -167,7 +167,6 @@
             simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
             label45 = new Label();
             tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            label39 = new Label();
             ((System.ComponentModel.ISupportInitialize)tabControls).BeginInit();
             tabControls.SuspendLayout();
             tabNavigationPage1.SuspendLayout();
@@ -205,15 +204,15 @@
             ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridEmployee).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridView2).BeginInit();
-            tabNavigationPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gridControl2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView4).BeginInit();
+            tabNavigationFlight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridControlFlight).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewFlight).BeginInit();
             groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit26.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textAirline.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textFlightID.Properties).BeginInit();
             tabNavigationPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gridControl3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridControlPlane).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridPlane).BeginInit();
             groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)txtRegistration.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtPlaneSeat.Properties).BeginInit();
@@ -227,13 +226,13 @@
             tabControls.Controls.Add(tabNavigationPage1);
             tabControls.Controls.Add(tpCustomer);
             tabControls.Controls.Add(tp);
-            tabControls.Controls.Add(tabNavigationPage4);
+            tabControls.Controls.Add(tabNavigationFlight);
             tabControls.Controls.Add(tabNavigationPage5);
             tabControls.Controls.Add(tabNavigationPage6);
             tabControls.Location = new Point(0, 0);
             tabControls.Margin = new Padding(4, 2, 4, 2);
             tabControls.Name = "tabControls";
-            tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { tabNavigationPage1, tpCustomer, tp, tabNavigationPage4, tabNavigationPage5, tabNavigationPage6 });
+            tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { tabNavigationPage1, tpCustomer, tp, tabNavigationFlight, tabNavigationPage5, tabNavigationPage6 });
             tabControls.RegularSize = new Size(1040, 847);
             tabControls.SelectedPage = tabNavigationPage1;
             tabControls.Size = new Size(1040, 847);
@@ -671,7 +670,7 @@
             tpCustomer.Controls.Add(groupBox5);
             tpCustomer.Margin = new Padding(4, 2, 4, 2);
             tpCustomer.Name = "tpCustomer";
-            tpCustomer.Size = new Size(1040, 361);
+            tpCustomer.Size = new Size(1040, 806);
             // 
             // gcCustomer
             // 
@@ -681,7 +680,7 @@
             gcCustomer.MainView = gvCustomer;
             gcCustomer.Margin = new Padding(4, 2, 4, 2);
             gcCustomer.Name = "gcCustomer";
-            gcCustomer.Size = new Size(1016, 101);
+            gcCustomer.Size = new Size(1016, 546);
             gcCustomer.TabIndex = 3;
             gcCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvCustomer });
             // 
@@ -733,7 +732,7 @@
             // btnCustomerDelete
             // 
             btnCustomerDelete.Anchor = AnchorStyles.Right;
-            btnCustomerDelete.Location = new Point(754, 137);
+            btnCustomerDelete.Location = new Point(661, 179);
             btnCustomerDelete.Margin = new Padding(3, 2, 3, 2);
             btnCustomerDelete.Name = "btnCustomerDelete";
             btnCustomerDelete.Size = new Size(101, 29);
@@ -744,7 +743,7 @@
             // btnCustomerUpdate
             // 
             btnCustomerUpdate.Anchor = AnchorStyles.Right;
-            btnCustomerUpdate.Location = new Point(636, 137);
+            btnCustomerUpdate.Location = new Point(511, 179);
             btnCustomerUpdate.Margin = new Padding(3, 2, 3, 2);
             btnCustomerUpdate.Name = "btnCustomerUpdate";
             btnCustomerUpdate.Size = new Size(101, 29);
@@ -755,7 +754,7 @@
             // btnAddCustomer
             // 
             btnAddCustomer.Anchor = AnchorStyles.Right;
-            btnAddCustomer.Location = new Point(519, 137);
+            btnAddCustomer.Location = new Point(362, 179);
             btnAddCustomer.Margin = new Padding(3, 2, 3, 2);
             btnAddCustomer.Name = "btnAddCustomer";
             btnAddCustomer.Size = new Size(101, 29);
@@ -807,28 +806,28 @@
             // txtCustomerPhone
             // 
             txtCustomerPhone.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerPhone.Location = new Point(679, 18);
+            txtCustomerPhone.Location = new Point(791, 20);
             txtCustomerPhone.Margin = new Padding(3, 2, 3, 2);
             txtCustomerPhone.Name = "txtCustomerPhone";
-            txtCustomerPhone.Size = new Size(177, 20);
+            txtCustomerPhone.Size = new Size(177, 22);
             txtCustomerPhone.TabIndex = 17;
             // 
             // txtCustomerNationality
             // 
             txtCustomerNationality.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerNationality.Location = new Point(679, 53);
+            txtCustomerNationality.Location = new Point(791, 65);
             txtCustomerNationality.Margin = new Padding(3, 2, 3, 2);
             txtCustomerNationality.Name = "txtCustomerNationality";
-            txtCustomerNationality.Size = new Size(177, 20);
+            txtCustomerNationality.Size = new Size(177, 22);
             txtCustomerNationality.TabIndex = 16;
             // 
             // txtCustomerEmail
             // 
             txtCustomerEmail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerEmail.Location = new Point(405, 53);
+            txtCustomerEmail.Location = new Point(473, 62);
             txtCustomerEmail.Margin = new Padding(3, 2, 3, 2);
             txtCustomerEmail.Name = "txtCustomerEmail";
-            txtCustomerEmail.Size = new Size(177, 20);
+            txtCustomerEmail.Size = new Size(177, 22);
             txtCustomerEmail.TabIndex = 15;
             // 
             // label25
@@ -860,17 +859,17 @@
             label27.Location = new Point(380, 25);
             label27.Margin = new Padding(4, 0, 4, 0);
             label27.Name = "label27";
-            label27.Size = new Size(64, 13);
+            label27.Size = new Size(74, 16);
             label27.TabIndex = 12;
             label27.Text = "National ID:";
             // 
             // txtCustomerID
             // 
             txtCustomerID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerID.Location = new Point(405, 18);
+            txtCustomerID.Location = new Point(473, 22);
             txtCustomerID.Margin = new Padding(3, 2, 3, 2);
             txtCustomerID.Name = "txtCustomerID";
-            txtCustomerID.Size = new Size(177, 20);
+            txtCustomerID.Size = new Size(177, 22);
             txtCustomerID.TabIndex = 11;
             // 
             // label28
@@ -889,10 +888,10 @@
             dtpCustomerDate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             dtpCustomerDate.CustomFormat = "dd/MM/yyyy";
             dtpCustomerDate.Format = DateTimePickerFormat.Custom;
-            dtpCustomerDate.Location = new Point(405, 89);
+            dtpCustomerDate.Location = new Point(473, 105);
             dtpCustomerDate.Margin = new Padding(3, 2, 3, 2);
             dtpCustomerDate.Name = "dtpCustomerDate";
-            dtpCustomerDate.Size = new Size(177, 21);
+            dtpCustomerDate.Size = new Size(177, 23);
             dtpCustomerDate.TabIndex = 9;
             // 
             // label29
@@ -910,10 +909,10 @@
             // 
             rbCustomerFemale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             rbCustomerFemale.AutoSize = true;
-            rbCustomerFemale.Location = new Point(163, 113);
+            rbCustomerFemale.Location = new Point(227, 141);
             rbCustomerFemale.Margin = new Padding(3, 2, 3, 2);
             rbCustomerFemale.Name = "rbCustomerFemale";
-            rbCustomerFemale.Size = new Size(61, 17);
+            rbCustomerFemale.Size = new Size(73, 20);
             rbCustomerFemale.TabIndex = 7;
             rbCustomerFemale.TabStop = true;
             rbCustomerFemale.Text = "Felmale";
@@ -923,10 +922,10 @@
             // 
             rbCustomerMale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             rbCustomerMale.AutoSize = true;
-            rbCustomerMale.Location = new Point(90, 113);
+            rbCustomerMale.Location = new Point(128, 141);
             rbCustomerMale.Margin = new Padding(3, 2, 3, 2);
             rbCustomerMale.Name = "rbCustomerMale";
-            rbCustomerMale.Size = new Size(47, 17);
+            rbCustomerMale.Size = new Size(55, 20);
             rbCustomerMale.TabIndex = 6;
             rbCustomerMale.TabStop = true;
             rbCustomerMale.Text = "Male";
@@ -957,19 +956,19 @@
             // txtCustomerAddress
             // 
             txtCustomerAddress.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerAddress.Location = new Point(90, 84);
+            txtCustomerAddress.Location = new Point(105, 104);
             txtCustomerAddress.Margin = new Padding(3, 2, 3, 2);
             txtCustomerAddress.Name = "txtCustomerAddress";
-            txtCustomerAddress.Size = new Size(208, 20);
+            txtCustomerAddress.Size = new Size(208, 22);
             txtCustomerAddress.TabIndex = 3;
             // 
             // txtCustomerName
             // 
             txtCustomerName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerName.Location = new Point(90, 53);
+            txtCustomerName.Location = new Point(105, 65);
             txtCustomerName.Margin = new Padding(3, 2, 3, 2);
             txtCustomerName.Name = "txtCustomerName";
-            txtCustomerName.Size = new Size(208, 20);
+            txtCustomerName.Size = new Size(208, 22);
             txtCustomerName.TabIndex = 2;
             // 
             // textEdit21
@@ -978,7 +977,7 @@
             textEdit21.Location = new Point(105, 22);
             textEdit21.Margin = new Padding(4, 2, 4, 2);
             textEdit21.Name = "textEdit21";
-            textEdit21.Size = new Size(243, 22);
+            textEdit21.Size = new Size(208, 22);
             textEdit21.TabIndex = 1;
             // 
             // label32
@@ -999,7 +998,7 @@
             tp.Controls.Add(gridEmployee);
             tp.Margin = new Padding(4, 2, 4, 2);
             tp.Name = "tp";
-            tp.Size = new Size(891, 491);
+            tp.Size = new Size(1040, 806);
             // 
             // groupBox2
             // 
@@ -1030,7 +1029,7 @@
             groupBox2.Margin = new Padding(4, 2, 4, 2);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(4, 2, 4, 2);
-            groupBox2.Size = new Size(1016, 228);
+            groupBox2.Size = new Size(1020, 228);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Information employee";
@@ -1038,7 +1037,7 @@
             // simpleButton3
             // 
             simpleButton3.Anchor = AnchorStyles.Right;
-            simpleButton3.Location = new Point(850, 186);
+            simpleButton3.Location = new Point(668, 188);
             simpleButton3.Margin = new Padding(4, 2, 4, 2);
             simpleButton3.Name = "simpleButton3";
             simpleButton3.Size = new Size(118, 36);
@@ -1048,7 +1047,7 @@
             // simpleButton2
             // 
             simpleButton2.Anchor = AnchorStyles.Right;
-            simpleButton2.Location = new Point(715, 186);
+            simpleButton2.Location = new Point(457, 188);
             simpleButton2.Margin = new Padding(4, 2, 4, 2);
             simpleButton2.Name = "simpleButton2";
             simpleButton2.Size = new Size(118, 36);
@@ -1058,7 +1057,7 @@
             // simpleButton1
             // 
             simpleButton1.Anchor = AnchorStyles.Right;
-            simpleButton1.Location = new Point(579, 186);
+            simpleButton1.Location = new Point(244, 188);
             simpleButton1.Margin = new Padding(4, 2, 4, 2);
             simpleButton1.Name = "simpleButton1";
             simpleButton1.Size = new Size(118, 36);
@@ -1079,28 +1078,28 @@
             // txt2
             // 
             txt2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt2.Location = new Point(679, 18);
+            txt2.Location = new Point(796, 22);
             txt2.Margin = new Padding(3, 2, 3, 2);
             txt2.Name = "txt2";
-            txt2.Size = new Size(177, 20);
+            txt2.Size = new Size(177, 22);
             txt2.TabIndex = 17;
             // 
             // txt5
             // 
             txt5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt5.Location = new Point(679, 53);
+            txt5.Location = new Point(796, 62);
             txt5.Margin = new Padding(3, 2, 3, 2);
             txt5.Name = "txt5";
-            txt5.Size = new Size(177, 20);
+            txt5.Size = new Size(177, 22);
             txt5.TabIndex = 16;
             // 
             // txt4
             // 
             txt4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt4.Location = new Point(405, 53);
+            txt4.Location = new Point(485, 63);
             txt4.Margin = new Padding(3, 2, 3, 2);
             txt4.Name = "txt4";
-            txt4.Size = new Size(177, 20);
+            txt4.Size = new Size(177, 22);
             txt4.TabIndex = 15;
             // 
             // label8
@@ -1132,17 +1131,17 @@
             label6.Location = new Point(380, 25);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(64, 13);
+            label6.Size = new Size(74, 16);
             label6.TabIndex = 12;
             label6.Text = "National ID:";
             // 
             // txt1
             // 
             txt1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt1.Location = new Point(405, 18);
+            txt1.Location = new Point(485, 22);
             txt1.Margin = new Padding(3, 2, 3, 2);
             txt1.Name = "txt1";
-            txt1.Size = new Size(177, 20);
+            txt1.Size = new Size(177, 22);
             txt1.TabIndex = 11;
             // 
             // label5
@@ -1161,10 +1160,10 @@
             dtp1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             dtp1.CustomFormat = "\"dd-mm-yyyy\"";
             dtp1.Format = DateTimePickerFormat.Short;
-            dtp1.Location = new Point(405, 89);
+            dtp1.Location = new Point(485, 105);
             dtp1.Margin = new Padding(3, 2, 3, 2);
             dtp1.Name = "dtp1";
-            dtp1.Size = new Size(177, 21);
+            dtp1.Size = new Size(177, 23);
             dtp1.TabIndex = 9;
             // 
             // label4
@@ -1229,19 +1228,19 @@
             // txt6
             // 
             txt6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt6.Location = new Point(90, 84);
+            txt6.Location = new Point(105, 101);
             txt6.Margin = new Padding(3, 2, 3, 2);
             txt6.Name = "txt6";
-            txt6.Size = new Size(208, 20);
+            txt6.Size = new Size(208, 22);
             txt6.TabIndex = 3;
             // 
             // txt3
             // 
             txt3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt3.Location = new Point(90, 53);
+            txt3.Location = new Point(105, 65);
             txt3.Margin = new Padding(3, 2, 3, 2);
             txt3.Name = "txt3";
-            txt3.Size = new Size(208, 20);
+            txt3.Size = new Size(208, 22);
             txt3.TabIndex = 2;
             // 
             // textEdit1
@@ -1250,7 +1249,7 @@
             textEdit1.Location = new Point(105, 22);
             textEdit1.Margin = new Padding(4, 2, 4, 2);
             textEdit1.Name = "textEdit1";
-            textEdit1.Size = new Size(243, 22);
+            textEdit1.Size = new Size(208, 22);
             textEdit1.TabIndex = 1;
             // 
             // label1
@@ -1272,7 +1271,7 @@
             gridEmployee.MainView = gridView2;
             gridEmployee.Margin = new Padding(4, 2, 4, 2);
             gridEmployee.Name = "gridEmployee";
-            gridEmployee.Size = new Size(871, 295);
+            gridEmployee.Size = new Size(1020, 610);
             gridEmployee.TabIndex = 0;
             gridEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView2 });
             // 
@@ -1281,52 +1280,56 @@
             gridView2.GridControl = gridEmployee;
             gridView2.Name = "gridView2";
             // 
-            // tabNavigationPage4
+            // tabNavigationFlight
             // 
-            tabNavigationPage4.Caption = "Flight";
-            tabNavigationPage4.Controls.Add(gridControl2);
-            tabNavigationPage4.Controls.Add(groupBox6);
-            tabNavigationPage4.Margin = new Padding(4, 2, 4, 2);
-            tabNavigationPage4.Name = "tabNavigationPage4";
-            tabNavigationPage4.Size = new Size(1040, 361);
+            tabNavigationFlight.Caption = "Flight";
+            tabNavigationFlight.Controls.Add(gridControlFlight);
+            tabNavigationFlight.Controls.Add(groupBox6);
+            tabNavigationFlight.Margin = new Padding(4, 2, 4, 2);
+            tabNavigationFlight.Name = "tabNavigationFlight";
+            tabNavigationFlight.Size = new Size(1040, 806);
+            tabNavigationFlight.Paint += TabNavigationFlightPaint;
             // 
-            // gridControl2
+            // gridControlFlight
             // 
-            gridControl2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gridControl2.EmbeddedNavigator.Margin = new Padding(4, 2, 4, 2);
-            gridControl2.Location = new Point(12, 272);
-            gridControl2.MainView = gridView4;
-            gridControl2.Margin = new Padding(4, 2, 4, 2);
-            gridControl2.Name = "gridControl2";
-            gridControl2.Size = new Size(1016, 78);
-            gridControl2.TabIndex = 3;
-            gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView4 });
+            gridControlFlight.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gridControlFlight.EmbeddedNavigator.Margin = new Padding(4, 2, 4, 2);
+            gridControlFlight.Location = new Point(12, 272);
+            gridControlFlight.MainView = gridViewFlight;
+            gridControlFlight.Margin = new Padding(4, 2, 4, 2);
+            gridControlFlight.Name = "gridControlFlight";
+            gridControlFlight.Size = new Size(1016, 523);
+            gridControlFlight.TabIndex = 3;
+            gridControlFlight.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridViewFlight });
+            gridControlFlight.Load += GridControlFlightLoad;
             // 
-            // gridView4
+            // gridViewFlight
             // 
-            gridView4.GridControl = gridControl2;
-            gridView4.Name = "gridView4";
+            gridViewFlight.GridControl = gridControlFlight;
+            gridViewFlight.Name = "gridViewFlight";
+            gridViewFlight.OptionsBehavior.Editable = false;
+            gridViewFlight.RowClick += gridViewFlight_RowClick;
             // 
             // groupBox6
             // 
             groupBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox6.Controls.Add(timeDepartPicker);
             groupBox6.Controls.Add(label36);
-            groupBox6.Controls.Add(textEdit26);
-            groupBox6.Controls.Add(simpleButton16);
-            groupBox6.Controls.Add(simpleButton17);
-            groupBox6.Controls.Add(simpleButton18);
-            groupBox6.Controls.Add(comboBox9);
+            groupBox6.Controls.Add(textAirline);
+            groupBox6.Controls.Add(buttonDeleteFlight);
+            groupBox6.Controls.Add(buttonUpdateFlight);
+            groupBox6.Controls.Add(buttonAddFlight);
+            groupBox6.Controls.Add(comboBoxPlane);
             groupBox6.Controls.Add(label37);
-            groupBox6.Controls.Add(comboBox7);
             groupBox6.Controls.Add(label35);
-            groupBox6.Controls.Add(comboBox6);
-            groupBox6.Controls.Add(comboBox5);
+            groupBox6.Controls.Add(comboBoxDesti);
+            groupBox6.Controls.Add(comboBoxDepart);
             groupBox6.Controls.Add(label34);
             groupBox6.Controls.Add(label33);
             groupBox6.Controls.Add(simpleButton13);
             groupBox6.Controls.Add(simpleButton14);
             groupBox6.Controls.Add(simpleButton15);
-            groupBox6.Controls.Add(dateTimePicker5);
+            groupBox6.Controls.Add(dateDepartPicker);
             groupBox6.Controls.Add(label38);
             groupBox6.Controls.Add(textFlightID);
             groupBox6.Controls.Add(label41);
@@ -1339,78 +1342,86 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "Information flight";
             // 
+            // timeDepartPicker
+            // 
+            timeDepartPicker.AllowDrop = true;
+            timeDepartPicker.Format = DateTimePickerFormat.Time;
+            timeDepartPicker.Location = new Point(735, 132);
+            timeDepartPicker.Margin = new Padding(4, 2, 4, 2);
+            timeDepartPicker.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
+            timeDepartPicker.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
+            timeDepartPicker.Name = "timeDepartPicker";
+            timeDepartPicker.ShowUpDown = true;
+            timeDepartPicker.Size = new Size(243, 23);
+            timeDepartPicker.TabIndex = 37;
+            timeDepartPicker.Value = new DateTime(2023, 4, 22, 0, 0, 0, 0);
+            // 
             // label36
             // 
             label36.AutoSize = true;
-            label36.Location = new Point(684, 28);
+            label36.Location = new Point(735, 28);
             label36.Margin = new Padding(4, 0, 4, 0);
             label36.Name = "label36";
-            label36.Size = new Size(80, 16);
+            label36.Size = new Size(48, 16);
             label36.TabIndex = 36;
-            label36.Text = "Registration:";
+            label36.Text = "Airline:";
             // 
-            // textEdit26
+            // textAirline
             // 
-            textEdit26.Location = new Point(828, 25);
-            textEdit26.Margin = new Padding(4, 2, 4, 2);
-            textEdit26.Name = "textEdit26";
-            textEdit26.Size = new Size(150, 22);
-            textEdit26.TabIndex = 35;
+            textAirline.Location = new Point(828, 25);
+            textAirline.Margin = new Padding(4, 2, 4, 2);
+            textAirline.Name = "textAirline";
+            textAirline.Size = new Size(150, 22);
+            textAirline.TabIndex = 35;
             // 
-            // simpleButton16
+            // buttonDeleteFlight
             // 
-            simpleButton16.Location = new Point(789, 193);
-            simpleButton16.Margin = new Padding(4, 2, 4, 2);
-            simpleButton16.Name = "simpleButton16";
-            simpleButton16.Size = new Size(118, 36);
-            simpleButton16.TabIndex = 34;
-            simpleButton16.Text = "Delete";
+            buttonDeleteFlight.Location = new Point(789, 193);
+            buttonDeleteFlight.Margin = new Padding(4, 2, 4, 2);
+            buttonDeleteFlight.Name = "buttonDeleteFlight";
+            buttonDeleteFlight.Size = new Size(118, 36);
+            buttonDeleteFlight.TabIndex = 34;
+            buttonDeleteFlight.Text = "Delete";
+            buttonDeleteFlight.Click += buttonDeleteFlight_Click;
             // 
-            // simpleButton17
+            // buttonUpdateFlight
             // 
-            simpleButton17.Location = new Point(433, 193);
-            simpleButton17.Margin = new Padding(4, 2, 4, 2);
-            simpleButton17.Name = "simpleButton17";
-            simpleButton17.Size = new Size(118, 36);
-            simpleButton17.TabIndex = 33;
-            simpleButton17.Text = "Update";
+            buttonUpdateFlight.Location = new Point(433, 193);
+            buttonUpdateFlight.Margin = new Padding(4, 2, 4, 2);
+            buttonUpdateFlight.Name = "buttonUpdateFlight";
+            buttonUpdateFlight.Size = new Size(118, 36);
+            buttonUpdateFlight.TabIndex = 33;
+            buttonUpdateFlight.Text = "Update";
+            buttonUpdateFlight.Click += buttonUpdateFlight_Click;
             // 
-            // simpleButton18
+            // buttonAddFlight
             // 
-            simpleButton18.Location = new Point(65, 193);
-            simpleButton18.Margin = new Padding(4, 2, 4, 2);
-            simpleButton18.Name = "simpleButton18";
-            simpleButton18.Size = new Size(118, 36);
-            simpleButton18.TabIndex = 32;
-            simpleButton18.Text = "Add";
+            buttonAddFlight.Location = new Point(65, 193);
+            buttonAddFlight.Margin = new Padding(4, 2, 4, 2);
+            buttonAddFlight.Name = "buttonAddFlight";
+            buttonAddFlight.Size = new Size(118, 36);
+            buttonAddFlight.TabIndex = 32;
+            buttonAddFlight.Text = "Add";
+            buttonAddFlight.Click += buttonAddFlight_Click;
             // 
-            // comboBox9
+            // comboBoxPlane
             // 
-            comboBox9.FormattingEnabled = true;
-            comboBox9.Location = new Point(454, 25);
-            comboBox9.Margin = new Padding(4, 2, 4, 2);
-            comboBox9.Name = "comboBox9";
-            comboBox9.Size = new Size(150, 24);
-            comboBox9.TabIndex = 31;
+            comboBoxPlane.FormattingEnabled = true;
+            comboBoxPlane.Location = new Point(498, 23);
+            comboBoxPlane.Margin = new Padding(4, 2, 4, 2);
+            comboBoxPlane.Name = "comboBoxPlane";
+            comboBoxPlane.Size = new Size(150, 24);
+            comboBoxPlane.TabIndex = 31;
             // 
             // label37
             // 
             label37.AutoSize = true;
-            label37.Location = new Point(349, 28);
+            label37.Location = new Point(375, 28);
             label37.Margin = new Padding(4, 0, 4, 0);
             label37.Name = "label37";
-            label37.Size = new Size(48, 16);
+            label37.Size = new Size(115, 16);
             label37.TabIndex = 30;
-            label37.Text = "Airline:";
-            // 
-            // comboBox7
-            // 
-            comboBox7.FormattingEnabled = true;
-            comboBox7.Location = new Point(735, 134);
-            comboBox7.Margin = new Padding(4, 2, 4, 2);
-            comboBox7.Name = "comboBox7";
-            comboBox7.Size = new Size(243, 24);
-            comboBox7.TabIndex = 28;
+            label37.Text = "Plane Registration:";
             // 
             // label35
             // 
@@ -1422,23 +1433,23 @@
             label35.TabIndex = 26;
             label35.Text = "Time Departure:";
             // 
-            // comboBox6
+            // comboBoxDesti
             // 
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Location = new Point(735, 76);
-            comboBox6.Margin = new Padding(4, 2, 4, 2);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(243, 24);
-            comboBox6.TabIndex = 25;
+            comboBoxDesti.FormattingEnabled = true;
+            comboBoxDesti.Location = new Point(735, 76);
+            comboBoxDesti.Margin = new Padding(4, 2, 4, 2);
+            comboBoxDesti.Name = "comboBoxDesti";
+            comboBoxDesti.Size = new Size(243, 24);
+            comboBoxDesti.TabIndex = 25;
             // 
-            // comboBox5
+            // comboBoxDepart
             // 
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(200, 79);
-            comboBox5.Margin = new Padding(4, 2, 4, 2);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(243, 24);
-            comboBox5.TabIndex = 24;
+            comboBoxDepart.FormattingEnabled = true;
+            comboBoxDepart.Location = new Point(200, 79);
+            comboBoxDepart.Margin = new Padding(4, 2, 4, 2);
+            comboBoxDepart.Name = "comboBoxDepart";
+            comboBoxDepart.Size = new Size(243, 24);
+            comboBoxDepart.TabIndex = 24;
             // 
             // label34
             // 
@@ -1446,9 +1457,9 @@
             label34.Location = new Point(579, 82);
             label34.Margin = new Padding(4, 0, 4, 0);
             label34.Name = "label34";
-            label34.Size = new Size(69, 16);
+            label34.Size = new Size(75, 16);
             label34.TabIndex = 23;
-            label34.Text = "Detination:";
+            label34.Text = "Destination:";
             // 
             // label33
             // 
@@ -1490,17 +1501,17 @@
             simpleButton15.TabIndex = 19;
             simpleButton15.Text = "Add";
             // 
-            // dateTimePicker5
+            // dateDepartPicker
             // 
-            dateTimePicker5.Format = DateTimePickerFormat.Short;
-            dateTimePicker5.Location = new Point(200, 132);
-            dateTimePicker5.Margin = new Padding(4, 2, 4, 2);
-            dateTimePicker5.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
-            dateTimePicker5.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
-            dateTimePicker5.Name = "dateTimePicker5";
-            dateTimePicker5.Size = new Size(243, 23);
-            dateTimePicker5.TabIndex = 9;
-            dateTimePicker5.Value = new DateTime(2023, 4, 22, 0, 0, 0, 0);
+            dateDepartPicker.Format = DateTimePickerFormat.Short;
+            dateDepartPicker.Location = new Point(200, 132);
+            dateDepartPicker.Margin = new Padding(4, 2, 4, 2);
+            dateDepartPicker.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
+            dateDepartPicker.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
+            dateDepartPicker.Name = "dateDepartPicker";
+            dateDepartPicker.Size = new Size(243, 23);
+            dateDepartPicker.TabIndex = 9;
+            dateDepartPicker.Value = new DateTime(2023, 4, 22, 0, 0, 0, 0);
             // 
             // label38
             // 
@@ -1514,6 +1525,7 @@
             // 
             // textFlightID
             // 
+            textFlightID.Enabled = false;
             textFlightID.Location = new Point(145, 25);
             textFlightID.Margin = new Padding(4, 2, 4, 2);
             textFlightID.Name = "textFlightID";
@@ -1533,34 +1545,37 @@
             // tabNavigationPage5
             // 
             tabNavigationPage5.Caption = "Plane";
-            tabNavigationPage5.Controls.Add(gridControl3);
+            tabNavigationPage5.Controls.Add(gridControlPlane);
             tabNavigationPage5.Controls.Add(groupBox7);
             tabNavigationPage5.Margin = new Padding(4, 2, 4, 2);
             tabNavigationPage5.Name = "tabNavigationPage5";
             tabNavigationPage5.Size = new Size(1040, 806);
             // 
-            // gridControl3
+            // gridControlPlane
             // 
-            gridControl3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gridControl3.EmbeddedNavigator.Margin = new Padding(4, 2, 4, 2);
-            gridControl3.Location = new Point(12, 283);
-            gridControl3.MainView = gridView5;
-            gridControl3.Margin = new Padding(4, 2, 4, 2);
-            gridControl3.Name = "gridControl3";
-            gridControl3.Size = new Size(1016, 512);
-            gridControl3.TabIndex = 4;
-            gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView5 });
+            gridControlPlane.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gridControlPlane.EmbeddedNavigator.Margin = new Padding(4, 2, 4, 2);
+            gridControlPlane.Location = new Point(12, 283);
+            gridControlPlane.MainView = gridPlane;
+            gridControlPlane.Margin = new Padding(4, 2, 4, 2);
+            gridControlPlane.Name = "gridControlPlane";
+            gridControlPlane.Size = new Size(1016, 512);
+            gridControlPlane.TabIndex = 4;
+            gridControlPlane.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridPlane });
+            gridControlPlane.Load += gridControlPlane_Load;
             // 
-            // gridView5
+            // gridPlane
             // 
-            gridView5.GridControl = gridControl3;
-            gridView5.Name = "gridView5";
+            gridPlane.GridControl = gridControlPlane;
+            gridPlane.Name = "gridPlane";
+            gridPlane.OptionsBehavior.Editable = false;
+            gridPlane.RowClick += GridPlaneRowClick;
             // 
             // groupBox7
             // 
             groupBox7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox7.Controls.Add(txtRegistration);
             groupBox7.Controls.Add(label39);
+            groupBox7.Controls.Add(txtRegistration);
             groupBox7.Controls.Add(txtPlaneSeat);
             groupBox7.Controls.Add(txtManufactor);
             groupBox7.Controls.Add(txtPlaneModel);
@@ -1584,27 +1599,27 @@
             groupBox7.TabStop = false;
             groupBox7.Text = "Information plane";
             // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Location = new Point(616, 28);
+            label39.Margin = new Padding(4, 0, 4, 0);
+            label39.Name = "label39";
+            label39.Size = new Size(80, 16);
+            label39.TabIndex = 40;
+            label39.Text = "Registration:";
+            // 
             // txtRegistration
             // 
-            txtRegistration.Location = new Point(730, 20);
+            txtRegistration.Location = new Point(730, 25);
             txtRegistration.Margin = new Padding(4, 2, 4, 2);
             txtRegistration.Name = "txtRegistration";
             txtRegistration.Size = new Size(243, 22);
             txtRegistration.TabIndex = 39;
             // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.Location = new Point(596, 28);
-            label39.Margin = new Padding(4, 0, 4, 0);
-            label39.Name = "label39";
-            label39.Size = new Size(80, 16);
-            label39.TabIndex = 38;
-            label39.Text = "Registration:";
-            // 
             // txtPlaneSeat
             // 
-            txtPlaneSeat.Location = new Point(730, 95);
+            txtPlaneSeat.Location = new Point(730, 98);
             txtPlaneSeat.Margin = new Padding(4, 2, 4, 2);
             txtPlaneSeat.Name = "txtPlaneSeat";
             txtPlaneSeat.Size = new Size(243, 22);
@@ -1740,19 +1755,7 @@
             tabNavigationPage6.Caption = "Statistics";
             tabNavigationPage6.Margin = new Padding(4, 2, 4, 2);
             tabNavigationPage6.Name = "tabNavigationPage6";
-            tabNavigationPage6.Size = new Size(1040, 511);
-            // 
-            // label39
-            // 
-            label39.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label39.AutoSize = true;
-            label39.BackColor = Color.FromArgb(128, 128, 255);
-            label39.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label39.Location = new Point(914, 6);
-            label39.Name = "label39";
-            label39.Size = new Size(80, 19);
-            label39.TabIndex = 6;
-            label39.Text = "Username";
+            tabNavigationPage6.Size = new Size(1040, 806);
             // 
             // Main
             // 
@@ -1811,16 +1814,16 @@
             ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridEmployee).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridView2).EndInit();
-            tabNavigationPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)gridControl2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView4).EndInit();
+            tabNavigationFlight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridControlFlight).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewFlight).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit26.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textAirline.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textFlightID.Properties).EndInit();
             tabNavigationPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)gridControl3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridControlPlane).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridPlane).EndInit();
             groupBox7.ResumeLayout(false);
             groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)txtRegistration.Properties).EndInit();
@@ -1828,7 +1831,6 @@
             ((System.ComponentModel.ISupportInitialize)txtManufactor.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtPlaneModel.Properties).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -1842,7 +1844,7 @@
         private DevExpress.XtraBars.Navigation.TabNavigationPage tp;
         private DevExpress.XtraGrid.GridControl gridEmployee;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage4;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationFlight;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage5;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage6;
         private GroupBox groupBox2;
@@ -1934,21 +1936,20 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton15;
-        private DateTimePicker dateTimePicker5;
+        private DateTimePicker dateDepartPicker;
         private Label label38;
         private DevExpress.XtraEditors.TextEdit textFlightID;
         private Label label41;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton16;
-        private DevExpress.XtraEditors.SimpleButton simpleButton17;
-        private DevExpress.XtraEditors.SimpleButton simpleButton18;
-        private ComboBox comboBox9;
+        private DevExpress.XtraGrid.GridControl gridControlFlight;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewFlight;
+        private DevExpress.XtraEditors.SimpleButton buttonDeleteFlight;
+        private DevExpress.XtraEditors.SimpleButton buttonUpdateFlight;
+        private DevExpress.XtraEditors.SimpleButton buttonAddFlight;
+        private ComboBox comboBoxPlane;
         private Label label37;
-        private ComboBox comboBox7;
         private Label label35;
-        private ComboBox comboBox6;
-        private ComboBox comboBox5;
+        private ComboBox comboBoxDesti;
+        private ComboBox comboBoxDepart;
         private Label label34;
         private Label label33;
         private GroupBox groupBox7;
@@ -1964,13 +1965,14 @@
         private DevExpress.XtraEditors.TextEdit txtPlaneSeat;
         private DevExpress.XtraEditors.TextEdit txtManufactor;
         private DevExpress.XtraEditors.TextEdit txtPlaneModel;
-        private DevExpress.XtraGrid.GridControl gridControl3;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
-        private DevExpress.XtraEditors.TextEdit textEdit26;
-        private Label label36;
+        private DevExpress.XtraGrid.GridControl gridControlPlane;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridPlane;
         private DevExpress.XtraEditors.TextEdit txtRegistration;
-        private Label label39;
         private ComboBox comboBoxPlaneState;
         private Label label42;
+        private Label label39;
+        private Label label36;
+        private DevExpress.XtraEditors.TextEdit textAirline;
+        private DateTimePicker timeDepartPicker;
     }
 }

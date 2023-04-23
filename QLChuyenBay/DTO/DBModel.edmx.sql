@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/22/2023 16:36:04
+-- Date Created: 04/23/2023 14:54:37
 -- Generated from EDMX file: D:\Code\AirportManagers\QLChuyenBay\DTO\DBModel.edmx
 -- --------------------------------------------------
 
@@ -34,6 +34,9 @@ IF OBJECT_ID(N'[dbo].[FK__Job__EmployeeID__46E78A0C]', 'F') IS NOT NULL
 GO
 IF OBJECT_ID(N'[dbo].[FK__Job__FlightID__47DBAE45]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Jobs] DROP CONSTRAINT [FK__Job__FlightID__47DBAE45];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Bill_Detail_Employees]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Bill_Detail] DROP CONSTRAINT [FK_Bill_Detail_Employees];
 GO
 IF OBJECT_ID(N'[dbo].[FK_Flights_Locations]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Flights] DROP CONSTRAINT [FK_Flights_Locations];
@@ -90,8 +93,9 @@ GO
 -- Creating table 'Bill_Detail'
 CREATE TABLE [dbo].[Bill_Detail] (
     [BillID] int IDENTITY(1,1) NOT NULL,
-    [CustomerID] int  NULL,
-    [FlightID] int  NULL,
+    [CustomerID] int  NOT NULL,
+    [FlightID] int  NOT NULL,
+    [EmployeeID] int  NOT NULL,
     [SeatNumber] nvarchar(5)  NULL,
     [SeatClass] bit  NULL,
     [BookingState] int  NULL,
@@ -132,7 +136,7 @@ GO
 -- Creating table 'Flights'
 CREATE TABLE [dbo].[Flights] (
     [FlightID] int IDENTITY(1,1) NOT NULL,
-    [PlaneID] int  NULL,
+    [PlaneID] int  NOT NULL,
     [Departure] int  NULL,
     [DateOfDeparture] datetime  NULL,
     [Destination] int  NULL,
@@ -277,6 +281,21 @@ GO
 CREATE INDEX [IX_FK__Bill_Deta__Fligh__440B1D61]
 ON [dbo].[Bill_Detail]
     ([FlightID]);
+GO
+
+-- Creating foreign key on [EmployeeID] in table 'Bill_Detail'
+ALTER TABLE [dbo].[Bill_Detail]
+ADD CONSTRAINT [FK_Bill_Detail_Employees]
+    FOREIGN KEY ([EmployeeID])
+    REFERENCES [dbo].[Employees]
+        ([EmployeeID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Bill_Detail_Employees'
+CREATE INDEX [IX_FK_Bill_Detail_Employees]
+ON [dbo].[Bill_Detail]
+    ([EmployeeID]);
 GO
 
 -- Creating foreign key on [EmployeeID] in table 'Jobs'
