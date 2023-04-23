@@ -84,8 +84,6 @@
     <Property Name="Manufacturer" Type="nvarchar" MaxLength="30" />
     <Property Name="State" Type="int" />
   </EntityType>
-<<<<<<< HEAD
-=======
   <EntityType Name="sysdiagrams">
     <Key>
       <PropertyRef Name="diagram_id" />
@@ -96,7 +94,6 @@
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
->>>>>>> main
   <Association Name="FK__Account__Employe__398D8EEE">
     <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
     <End Role="Accounts" Type="Self.Accounts" Multiplicity="0..1" />
@@ -177,10 +174,7 @@
     <EntitySet Name="Flights" EntityType="Self.Flights" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Jobs" EntityType="Self.Jobs" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Planes" EntityType="Self.Planes" Schema="dbo" store:Type="Tables" />
-<<<<<<< HEAD
-=======
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
->>>>>>> main
     <AssociationSet Name="FK__Account__Employe__398D8EEE" Association="Self.FK__Account__Employe__398D8EEE">
       <End Role="Employees" EntitySet="Employees" />
       <End Role="Accounts" EntitySet="Accounts" />

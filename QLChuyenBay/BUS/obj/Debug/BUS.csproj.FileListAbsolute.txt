@@ -9,26 +9,6 @@ D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.csproj.CoreCompileInput
 D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.dll
 D:\Homework\AirportManager\QLChuyenBay\BUS\obj\Debug\BUS.pdb
-<<<<<<< HEAD
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\BUS.dll.config
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\BUS.dll
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\BUS.pdb
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\DAL.dll
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\DTO.dll
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\EntityFramework.dll
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\EntityFramework.SqlServer.dll
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\DAL.pdb
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\DAL.dll.config
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\DTO.pdb
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\DTO.dll.config
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\EntityFramework.xml
-D:\Homework\AirportManagers\QLChuyenBay\BUS\bin\Debug\EntityFramework.SqlServer.xml
-D:\Homework\AirportManagers\QLChuyenBay\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-D:\Homework\AirportManagers\QLChuyenBay\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-D:\Homework\AirportManagers\QLChuyenBay\BUS\obj\Debug\BUS.csproj.CopyComplete
-D:\Homework\AirportManagers\QLChuyenBay\BUS\obj\Debug\BUS.dll
-D:\Homework\AirportManagers\QLChuyenBay\BUS\obj\Debug\BUS.pdb
-=======
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\BUS\bin\Debug\BUS.dll.config
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\BUS\bin\Debug\BUS.dll
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\BUS\bin\Debug\BUS.pdb
@@ -47,4 +27,3 @@ C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\BUS\obj\D
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\BUS\obj\Debug\BUS.dll
 C:\Users\bthta\OneDrive\Desktop\OU-Airport\AirportManagers\QLChuyenBay\BUS\obj\Debug\BUS.pdb
->>>>>>> main

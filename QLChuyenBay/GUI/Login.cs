@@ -1,5 +1,4 @@
 ﻿using DevExpress.XtraEditors;
-using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,19 +18,9 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void txtPass_EditValueChanged(object sender, EventArgs e)
         {
-            Employee emp = new Employee();
-            Account acc = new Account();
 
-
-            if (true)
-            {
-                Main frmMain = new Main(acc, emp);
-                this.Hide();
-                frmMain.ShowDialog();
-                Application.Exit();
-            }
         }
     }
 }

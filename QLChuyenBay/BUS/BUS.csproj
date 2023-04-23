@@ -51,8 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BUS_Customer.cs" />
-    <Compile Include="BUS_Ticket.cs" />
+    <Compile Include="BUS_Account.cs" />
+    <Compile Include="BUS_Employee.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

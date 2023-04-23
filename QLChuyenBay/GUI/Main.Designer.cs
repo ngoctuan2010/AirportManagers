@@ -28,381 +28,348 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tabControls = new DevExpress.XtraBars.Navigation.TabPane();
-            tpTicket = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            gcTicket = new DevExpress.XtraGrid.GridControl();
-            gvTicket = new DevExpress.XtraGrid.Views.Grid.GridView();
-            groupBox1 = new GroupBox();
-            groupBox4 = new GroupBox();
-            lbTicketCustomerDoB = new Label();
-            lbTicketCustomerPhone = new Label();
-            lbTicketCustomerNid = new Label();
-            lbTicketCustomerSex = new Label();
-            lbTicketCustomerAddress = new Label();
-            lbTicketCustomerName = new Label();
-            lbTicketsCustomerID = new Label();
-            label21 = new Label();
-            label15 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            groupBox3 = new GroupBox();
-            lbTicketCurrentClass = new Label();
-            lbTicketCurrentSeat = new Label();
-            lbTicketSeatClass = new Label();
-            lbTicketSeatNumber = new Label();
-            lbTicketPrice = new Label();
-            dateTimePicker3 = new DateTimePicker();
-            label23 = new Label();
-            label22 = new Label();
-            cbTimeDeparture = new ComboBox();
-            label18 = new Label();
-            cbDestination = new ComboBox();
-            label17 = new Label();
-            label16 = new Label();
-            cbDeparture = new ComboBox();
-            txtTicketID = new DevExpress.XtraEditors.TextEdit();
-            label20 = new Label();
-            tpCustomer = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            gcCustomer = new DevExpress.XtraGrid.GridControl();
-            gvCustomer = new DevExpress.XtraGrid.Views.Grid.GridView();
-            groupBox5 = new GroupBox();
-            btnCustomerDelete = new DevExpress.XtraEditors.SimpleButton();
-            btnCustomerUpdate = new DevExpress.XtraEditors.SimpleButton();
-            btnAddCustomer = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            label24 = new Label();
-            txtCustomerPhone = new DevExpress.XtraEditors.TextEdit();
-            txtCustomerNationality = new DevExpress.XtraEditors.TextEdit();
-            txtCustomerEmail = new DevExpress.XtraEditors.TextEdit();
-            label25 = new Label();
-            label26 = new Label();
-            label27 = new Label();
-            txtCustomerID = new DevExpress.XtraEditors.TextEdit();
-            label28 = new Label();
-            dtpCustomerDate = new DateTimePicker();
-            label29 = new Label();
-            rbCustomerFemale = new RadioButton();
-            rbCustomerMale = new RadioButton();
-            label30 = new Label();
-            label31 = new Label();
-            txtCustomerAddress = new DevExpress.XtraEditors.TextEdit();
-            txtCustomerName = new DevExpress.XtraEditors.TextEdit();
-            textEdit21 = new DevExpress.XtraEditors.TextEdit();
-            label32 = new Label();
-            tp = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            groupBox2 = new GroupBox();
-            simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            label9 = new Label();
-            txt2 = new DevExpress.XtraEditors.TextEdit();
-            txt5 = new DevExpress.XtraEditors.TextEdit();
-            txt4 = new DevExpress.XtraEditors.TextEdit();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            txt1 = new DevExpress.XtraEditors.TextEdit();
-            label5 = new Label();
-            dtp1 = new DateTimePicker();
-            label4 = new Label();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
-            label3 = new Label();
-            label2 = new Label();
-            txt6 = new DevExpress.XtraEditors.TextEdit();
-            txt3 = new DevExpress.XtraEditors.TextEdit();
-            textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            label1 = new Label();
-            gridEmployee = new DevExpress.XtraGrid.GridControl();
-            gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            gridControl2 = new DevExpress.XtraGrid.GridControl();
-            gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            groupBox6 = new GroupBox();
-            simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
-            comboBox9 = new ComboBox();
-            label37 = new Label();
-            comboBox8 = new ComboBox();
-            comboBox7 = new ComboBox();
-            label36 = new Label();
-            label35 = new Label();
-            comboBox6 = new ComboBox();
-            comboBox5 = new ComboBox();
-            label34 = new Label();
-            label33 = new Label();
-            simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
-            dateTimePicker5 = new DateTimePicker();
-            label38 = new Label();
-            textEdit28 = new DevExpress.XtraEditors.TextEdit();
-            label41 = new Label();
-            tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            gridControl3 = new DevExpress.XtraGrid.GridControl();
-            gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            groupBox7 = new GroupBox();
-            textEdit25 = new DevExpress.XtraEditors.TextEdit();
-            textEdit24 = new DevExpress.XtraEditors.TextEdit();
-            textEdit23 = new DevExpress.XtraEditors.TextEdit();
-            simpleButton19 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
-            comboBox12 = new ComboBox();
-            label42 = new Label();
-            label43 = new Label();
-            label44 = new Label();
-            simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton23 = new DevExpress.XtraEditors.SimpleButton();
-            simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
-            label45 = new Label();
-            textEdit22 = new DevExpress.XtraEditors.TextEdit();
-            label46 = new Label();
-            tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            lbUsername = new Label();
-            ((System.ComponentModel.ISupportInitialize)tabControls).BeginInit();
-            tabControls.SuspendLayout();
-            tpTicket.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gcTicket).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gvTicket).BeginInit();
-            groupBox1.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)txtTicketID.Properties).BeginInit();
-            tpCustomer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gcCustomer).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gvCustomer).BeginInit();
-            groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerPhone.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerNationality.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerEmail.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerID.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerAddress.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerName.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit21.Properties).BeginInit();
-            tp.SuspendLayout();
-            groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)txt2.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txt5.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txt4.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txt1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txt6.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txt3.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridEmployee).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView2).BeginInit();
-            tabNavigationPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gridControl2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView4).BeginInit();
-            groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit28.Properties).BeginInit();
-            tabNavigationPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gridControl3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView5).BeginInit();
-            groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit25.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit24.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit23.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit22.Properties).BeginInit();
-            SuspendLayout();
+            this.tabControls = new DevExpress.XtraBars.Navigation.TabPane();
+            this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.gridTicket = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textEdit16 = new DevExpress.XtraEditors.TextEdit();
+            this.label21 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            this.label22 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textEdit14 = new DevExpress.XtraEditors.TextEdit();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tpCustomer = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.gcCustomer = new DevExpress.XtraGrid.GridControl();
+            this.gvCustomer = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit15 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit17 = new DevExpress.XtraEditors.TextEdit();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.textEdit18 = new DevExpress.XtraEditors.TextEdit();
+            this.label28 = new System.Windows.Forms.Label();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.label29 = new System.Windows.Forms.Label();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textEdit19 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit20 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit21 = new DevExpress.XtraEditors.TextEdit();
+            this.label32 = new System.Windows.Forms.Label();
+            this.tp = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txtPasswordEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.txtUsernameEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.label40 = new System.Windows.Forms.Label();
+            this.txtPositionEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.label39 = new System.Windows.Forms.Label();
+            this.btnDeleteEmployee = new DevExpress.XtraEditors.SimpleButton();
+            this.btnUpdateEmployee = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddEmployee = new DevExpress.XtraEditors.SimpleButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtPhoneEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.txtNationalityEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmailEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtNationalIDEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dtpBirthdayEmployee = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rbFelmale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtAddressEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.txtNameEmployee = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmployeeID = new DevExpress.XtraEditors.TextEdit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvEmployee = new DevExpress.XtraGrid.GridControl();
+            this.gvEmploy = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textEdit28 = new DevExpress.XtraEditors.TextEdit();
+            this.label41 = new System.Windows.Forms.Label();
+            this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.textEdit25 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit24 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit23 = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton19 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton23 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
+            this.label45 = new System.Windows.Forms.Label();
+            this.textEdit22 = new DevExpress.XtraEditors.TextEdit();
+            this.label46 = new System.Windows.Forms.Label();
+            this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            ((System.ComponentModel.ISupportInitialize)(this.tabControls)).BeginInit();
+            this.tabControls.SuspendLayout();
+            this.tabNavigationPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridTicket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).BeginInit();
+            this.tpCustomer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gcCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvCustomer)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit17.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit19.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).BeginInit();
+            this.tp.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPasswordEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsernameEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPositionEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNationalityEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmailEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNationalIDEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAddressEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNameEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvEmploy)).BeginInit();
+            this.tabNavigationPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit28.Properties)).BeginInit();
+            this.tabNavigationPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit25.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit24.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit23.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).BeginInit();
+            this.SuspendLayout();
             // 
             // tabControls
             // 
-            tabControls.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tabControls.Controls.Add(tpTicket);
-            tabControls.Controls.Add(tpCustomer);
-            tabControls.Controls.Add(tp);
-            tabControls.Controls.Add(tabNavigationPage4);
-            tabControls.Controls.Add(tabNavigationPage5);
-            tabControls.Controls.Add(tabNavigationPage6);
-            tabControls.Location = new Point(0, 6);
-            tabControls.Margin = new Padding(3, 2, 3, 2);
-            tabControls.Name = "tabControls";
-            tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { tpTicket, tpCustomer, tp, tabNavigationPage4, tabNavigationPage5, tabNavigationPage6 });
-            tabControls.RegularSize = new Size(1006, 599);
-            tabControls.SelectedPage = tpTicket;
-            tabControls.Size = new Size(1006, 599);
-            tabControls.TabIndex = 0;
-            tabControls.Text = "Tickets";
+            this.tabControls.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControls.Controls.Add(this.tabNavigationPage1);
+            this.tabControls.Controls.Add(this.tpCustomer);
+            this.tabControls.Controls.Add(this.tp);
+            this.tabControls.Controls.Add(this.tabNavigationPage4);
+            this.tabControls.Controls.Add(this.tabNavigationPage5);
+            this.tabControls.Controls.Add(this.tabNavigationPage6);
+            this.tabControls.Location = new System.Drawing.Point(0, 0);
+            this.tabControls.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabControls.Name = "tabControls";
+            this.tabControls.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.tabNavigationPage1,
+            this.tpCustomer,
+            this.tp,
+            this.tabNavigationPage4,
+            this.tabNavigationPage5,
+            this.tabNavigationPage6});
+            this.tabControls.RegularSize = new System.Drawing.Size(1940, 526);
+            this.tabControls.SelectedPage = this.tabNavigationPage1;
+            this.tabControls.Size = new System.Drawing.Size(1940, 526);
+            this.tabControls.TabIndex = 0;
+            this.tabControls.Text = "Tickets";
             // 
-            // tpTicket
+            // tabNavigationPage1
             // 
-            tpTicket.Caption = "Tickets";
-            tpTicket.Controls.Add(simpleButton4);
-            tpTicket.Controls.Add(simpleButton5);
-            tpTicket.Controls.Add(simpleButton6);
-            tpTicket.Controls.Add(gcTicket);
-            tpTicket.Controls.Add(groupBox1);
-            tpTicket.Margin = new Padding(3, 2, 3, 2);
-            tpTicket.Name = "tpTicket";
-            tpTicket.Size = new Size(1006, 566);
-            tpTicket.Paint += tpTicket_Paint;
+            this.tabNavigationPage1.Caption = "Tickets";
+            this.tabNavigationPage1.Controls.Add(this.simpleButton4);
+            this.tabNavigationPage1.Controls.Add(this.simpleButton5);
+            this.tabNavigationPage1.Controls.Add(this.simpleButton6);
+            this.tabNavigationPage1.Controls.Add(this.gridTicket);
+            this.tabNavigationPage1.Controls.Add(this.groupBox1);
+            this.tabNavigationPage1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabNavigationPage1.Name = "tabNavigationPage1";
+            this.tabNavigationPage1.Size = new System.Drawing.Size(1940, 485);
             // 
             // simpleButton4
             // 
-            simpleButton4.Location = new Point(615, 317);
-            simpleButton4.Margin = new Padding(3, 2, 3, 2);
-            simpleButton4.Name = "simpleButton4";
-            simpleButton4.Size = new Size(101, 29);
-            simpleButton4.TabIndex = 24;
-            simpleButton4.Text = "Delete";
+            this.simpleButton4.Location = new System.Drawing.Point(294, 382);
+            this.simpleButton4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton4.TabIndex = 24;
+            this.simpleButton4.Text = "Delete";
             // 
             // simpleButton5
             // 
-            simpleButton5.Location = new Point(487, 317);
-            simpleButton5.Margin = new Padding(3, 2, 3, 2);
-            simpleButton5.Name = "simpleButton5";
-            simpleButton5.Size = new Size(101, 29);
-            simpleButton5.TabIndex = 23;
-            simpleButton5.Text = "Update";
+            this.simpleButton5.Location = new System.Drawing.Point(158, 382);
+            this.simpleButton5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton5.TabIndex = 23;
+            this.simpleButton5.Text = "Update";
             // 
             // simpleButton6
             // 
-            simpleButton6.Location = new Point(356, 317);
-            simpleButton6.Margin = new Padding(3, 2, 3, 2);
-            simpleButton6.Name = "simpleButton6";
-            simpleButton6.Size = new Size(101, 29);
-            simpleButton6.TabIndex = 22;
-            simpleButton6.Text = "Add";
+            this.simpleButton6.Location = new System.Drawing.Point(22, 382);
+            this.simpleButton6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton6.TabIndex = 22;
+            this.simpleButton6.Text = "Add";
             // 
-            // gcTicket
+            // gridTicket
             // 
-            gcTicket.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gcTicket.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
-            gcTicket.Location = new Point(4, 358);
-            gcTicket.MainView = gvTicket;
-            gcTicket.Margin = new Padding(3, 2, 3, 2);
-            gcTicket.Name = "gcTicket";
-            gcTicket.Size = new Size(986, 157);
-            gcTicket.TabIndex = 1;
-            gcTicket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvTicket });
+            this.gridTicket.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridTicket.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gridTicket.Location = new System.Drawing.Point(5, 441);
+            this.gridTicket.MainView = this.gridView1;
+            this.gridTicket.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gridTicket.Name = "gridTicket";
+            this.gridTicket.Size = new System.Drawing.Size(1016, 110);
+            this.gridTicket.TabIndex = 1;
+            this.gridTicket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
-            // gvTicket
+            // gridView1
             // 
-            gvTicket.DetailHeight = 284;
-            gvTicket.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            gvTicket.GridControl = gcTicket;
-            gvTicket.Name = "gvTicket";
-            gvTicket.RowClick += gvTicket_RowClick;
+            this.gridView1.GridControl = this.gridTicket;
+            this.gridView1.Name = "gridView1";
             // 
             // groupBox1
             // 
-            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox1.Controls.Add(groupBox4);
-            groupBox1.Controls.Add(groupBox3);
-            groupBox1.Location = new Point(4, 13);
-            groupBox1.Margin = new Padding(3, 2, 3, 2);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(983, 300);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Book Ticket";
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.groupBox4);
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Location = new System.Drawing.Point(5, 16);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1013, 359);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Book Ticket";
             // 
             // groupBox4
             // 
-            groupBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            groupBox4.Controls.Add(lbTicketCustomerDoB);
-            groupBox4.Controls.Add(lbTicketCustomerPhone);
-            groupBox4.Controls.Add(lbTicketCustomerNid);
-            groupBox4.Controls.Add(lbTicketCustomerSex);
-            groupBox4.Controls.Add(lbTicketCustomerAddress);
-            groupBox4.Controls.Add(lbTicketCustomerName);
-            groupBox4.Controls.Add(lbTicketsCustomerID);
-            groupBox4.Controls.Add(label21);
-            groupBox4.Controls.Add(label15);
-            groupBox4.Controls.Add(label14);
-            groupBox4.Controls.Add(label13);
-            groupBox4.Controls.Add(label10);
-            groupBox4.Controls.Add(label11);
-            groupBox4.Controls.Add(label12);
-            groupBox4.Location = new Point(6, 24);
-            groupBox4.Margin = new Padding(3, 2, 3, 2);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Padding = new Padding(3, 2, 3, 2);
-            groupBox4.Size = new Size(327, 272);
-            groupBox4.TabIndex = 1;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Customer information";
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox4.Controls.Add(this.textEdit16);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.dateTimePicker2);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.textEdit11);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this.textEdit10);
+            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Controls.Add(this.textEdit9);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.textEdit8);
+            this.groupBox4.Controls.Add(this.radioButton3);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Controls.Add(this.radioButton4);
+            this.groupBox4.Location = new System.Drawing.Point(525, 33);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox4.Size = new System.Drawing.Size(482, 320);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Customer information";
             // 
-            // lbTicketCustomerDoB
+            // textEdit16
             // 
-            lbTicketCustomerDoB.AutoSize = true;
-            lbTicketCustomerDoB.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketCustomerDoB.Location = new Point(97, 209);
-            lbTicketCustomerDoB.Name = "lbTicketCustomerDoB";
-            lbTicketCustomerDoB.Size = new Size(23, 18);
-            lbTicketCustomerDoB.TabIndex = 36;
-            lbTicketCustomerDoB.Text = "...";
-            // 
-            // lbTicketCustomerPhone
-            // 
-            lbTicketCustomerPhone.AutoSize = true;
-            lbTicketCustomerPhone.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketCustomerPhone.Location = new Point(97, 174);
-            lbTicketCustomerPhone.Name = "lbTicketCustomerPhone";
-            lbTicketCustomerPhone.Size = new Size(23, 18);
-            lbTicketCustomerPhone.TabIndex = 35;
-            lbTicketCustomerPhone.Text = "...";
-            // 
-            // lbTicketCustomerNid
-            // 
-            lbTicketCustomerNid.AutoSize = true;
-            lbTicketCustomerNid.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketCustomerNid.Location = new Point(97, 145);
-            lbTicketCustomerNid.Name = "lbTicketCustomerNid";
-            lbTicketCustomerNid.Size = new Size(23, 18);
-            lbTicketCustomerNid.TabIndex = 34;
-            lbTicketCustomerNid.Text = "...";
-            // 
-            // lbTicketCustomerSex
-            // 
-            lbTicketCustomerSex.AutoSize = true;
-            lbTicketCustomerSex.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketCustomerSex.Location = new Point(97, 117);
-            lbTicketCustomerSex.Name = "lbTicketCustomerSex";
-            lbTicketCustomerSex.Size = new Size(23, 18);
-            lbTicketCustomerSex.TabIndex = 33;
-            lbTicketCustomerSex.Text = "...";
-            // 
-            // lbTicketCustomerAddress
-            // 
-            lbTicketCustomerAddress.AutoSize = true;
-            lbTicketCustomerAddress.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketCustomerAddress.Location = new Point(97, 88);
-            lbTicketCustomerAddress.Name = "lbTicketCustomerAddress";
-            lbTicketCustomerAddress.Size = new Size(23, 18);
-            lbTicketCustomerAddress.TabIndex = 32;
-            lbTicketCustomerAddress.Text = "...";
-            // 
-            // lbTicketCustomerName
-            // 
-            lbTicketCustomerName.AutoSize = true;
-            lbTicketCustomerName.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketCustomerName.Location = new Point(97, 56);
-            lbTicketCustomerName.Name = "lbTicketCustomerName";
-            lbTicketCustomerName.Size = new Size(23, 18);
-            lbTicketCustomerName.TabIndex = 31;
-            lbTicketCustomerName.Text = "...";
-            // 
-            // lbTicketsCustomerID
-            // 
-            lbTicketsCustomerID.AutoSize = true;
-            lbTicketsCustomerID.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketsCustomerID.Location = new Point(97, 26);
-            lbTicketsCustomerID.Name = "lbTicketsCustomerID";
-            lbTicketsCustomerID.Size = new Size(23, 18);
-            lbTicketsCustomerID.TabIndex = 30;
-            lbTicketsCustomerID.Text = "...";
+            this.textEdit16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit16.Location = new System.Drawing.Point(113, 34);
+            this.textEdit16.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit16.Name = "textEdit16";
+            this.textEdit16.Size = new System.Drawing.Size(243, 22);
+            this.textEdit16.TabIndex = 28;
             // 
             // label21
             // 
@@ -416,35 +383,71 @@
             this.label21.TabIndex = 29;
             this.label21.Text = "Customer ID:";
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(113, 242);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(244, 23);
+            this.dateTimePicker2.TabIndex = 27;
+            // 
             // label15
             // 
-            label15.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label15.AutoSize = true;
-            label15.Location = new Point(21, 211);
-            label15.Name = "label15";
-            label15.Size = new Size(72, 13);
-            label15.TabIndex = 26;
-            label15.Text = "Date of birth:";
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(24, 249);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(83, 16);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "Date of birth:";
+            // 
+            // textEdit11
+            // 
+            this.textEdit11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit11.Location = new System.Drawing.Point(114, 206);
+            this.textEdit11.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit11.Name = "textEdit11";
+            this.textEdit11.Size = new System.Drawing.Size(243, 22);
+            this.textEdit11.TabIndex = 24;
             // 
             // label14
             // 
-            label14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label14.AutoSize = true;
-            label14.Location = new Point(21, 179);
-            label14.Name = "label14";
-            label14.Size = new Size(41, 13);
-            label14.TabIndex = 25;
-            label14.Text = "Phone:";
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(24, 209);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 16);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Phone:";
             // 
             // label13
             // 
-            label13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label13.AutoSize = true;
-            label13.Location = new Point(21, 150);
-            label13.Name = "label13";
-            label13.Size = new Size(64, 13);
-            label13.TabIndex = 23;
-            label13.Text = "National ID:";
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(24, 174);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(83, 16);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "CMND/CCCD:";
+            // 
+            // textEdit10
+            // 
+            this.textEdit10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit10.Location = new System.Drawing.Point(113, 171);
+            this.textEdit10.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit10.Name = "textEdit10";
+            this.textEdit10.Size = new System.Drawing.Size(243, 22);
+            this.textEdit10.TabIndex = 22;
             // 
             // label10
             // 
@@ -458,15 +461,51 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "Address:";
             // 
+            // textEdit9
+            // 
+            this.textEdit9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit9.Location = new System.Drawing.Point(113, 71);
+            this.textEdit9.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit9.Name = "textEdit9";
+            this.textEdit9.Size = new System.Drawing.Size(243, 22);
+            this.textEdit9.TabIndex = 15;
+            // 
             // label11
             // 
-            label11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label11.AutoSize = true;
-            label11.Location = new Point(21, 121);
-            label11.Name = "label11";
-            label11.Size = new Size(29, 13);
-            label11.TabIndex = 20;
-            label11.Text = "Sex:";
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(24, 145);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(33, 16);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Sex:";
+            // 
+            // textEdit8
+            // 
+            this.textEdit8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit8.Location = new System.Drawing.Point(113, 110);
+            this.textEdit8.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit8.Name = "textEdit8";
+            this.textEdit8.Size = new System.Drawing.Size(243, 22);
+            this.textEdit8.TabIndex = 16;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(192, 142);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(73, 20);
+            this.radioButton3.TabIndex = 19;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Felmale";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -480,145 +519,147 @@
             this.label12.TabIndex = 17;
             this.label12.Text = "Name:";
             // 
+            // radioButton4
+            // 
+            this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(122, 142);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(55, 20);
+            this.radioButton4.TabIndex = 18;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Male";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
             // groupBox3
             // 
-            groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            groupBox3.Controls.Add(lbTicketCurrentClass);
-            groupBox3.Controls.Add(lbTicketCurrentSeat);
-            groupBox3.Controls.Add(lbTicketSeatClass);
-            groupBox3.Controls.Add(lbTicketSeatNumber);
-            groupBox3.Controls.Add(lbTicketPrice);
-            groupBox3.Controls.Add(dateTimePicker3);
-            groupBox3.Controls.Add(label23);
-            groupBox3.Controls.Add(label22);
-            groupBox3.Controls.Add(cbTimeDeparture);
-            groupBox3.Controls.Add(label18);
-            groupBox3.Controls.Add(cbDestination);
-            groupBox3.Controls.Add(label17);
-            groupBox3.Controls.Add(label16);
-            groupBox3.Controls.Add(cbDeparture);
-            groupBox3.Controls.Add(txtTicketID);
-            groupBox3.Controls.Add(label20);
-            groupBox3.Location = new Point(352, 24);
-            groupBox3.Margin = new Padding(3, 2, 3, 2);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(3, 2, 3, 2);
-            groupBox3.Size = new Size(360, 272);
-            groupBox3.TabIndex = 0;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Tickets information";
-            // 
-            // lbTicketCurrentClass
-            // 
-            lbTicketCurrentClass.AutoSize = true;
-            lbTicketCurrentClass.BackColor = Color.FromArgb(192, 192, 255);
-            lbTicketCurrentClass.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketCurrentClass.Location = new Point(121, 209);
-            lbTicketCurrentClass.Name = "lbTicketCurrentClass";
-            lbTicketCurrentClass.Size = new Size(23, 18);
-            lbTicketCurrentClass.TabIndex = 45;
-            lbTicketCurrentClass.Text = "...";
-            // 
-            // lbTicketCurrentSeat
-            // 
-            lbTicketCurrentSeat.AutoSize = true;
-            lbTicketCurrentSeat.BackColor = Color.FromArgb(192, 192, 255);
-            lbTicketCurrentSeat.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTicketCurrentSeat.Location = new Point(121, 179);
-            lbTicketCurrentSeat.Name = "lbTicketCurrentSeat";
-            lbTicketCurrentSeat.Size = new Size(23, 18);
-            lbTicketCurrentSeat.TabIndex = 44;
-            lbTicketCurrentSeat.Text = "...";
-            // 
-            // lbTicketSeatClass
-            // 
-            lbTicketSeatClass.AutoSize = true;
-            lbTicketSeatClass.Location = new Point(24, 214);
-            lbTicketSeatClass.Name = "lbTicketSeatClass";
-            lbTicketSeatClass.Size = new Size(61, 13);
-            lbTicketSeatClass.TabIndex = 43;
-            lbTicketSeatClass.Text = "Seat Class:";
-            // 
-            // lbTicketSeatNumber
-            // 
-            lbTicketSeatNumber.AutoSize = true;
-            lbTicketSeatNumber.Location = new Point(24, 184);
-            lbTicketSeatNumber.Name = "lbTicketSeatNumber";
-            lbTicketSeatNumber.Size = new Size(33, 13);
-            lbTicketSeatNumber.TabIndex = 42;
-            lbTicketSeatNumber.Text = "Seat:";
-            // 
-            // lbTicketPrice
-            // 
-            lbTicketPrice.AutoSize = true;
-            lbTicketPrice.BackColor = Color.FromArgb(192, 192, 255);
-            lbTicketPrice.Font = new Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbTicketPrice.Location = new Point(121, 241);
-            lbTicketPrice.Name = "lbTicketPrice";
-            lbTicketPrice.Size = new Size(16, 18);
-            lbTicketPrice.TabIndex = 41;
-            lbTicketPrice.Text = "0";
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox3.Controls.Add(this.dateTimePicker3);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.textEdit12);
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.comboBox4);
+            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.comboBox2);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.textEdit14);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Location = new System.Drawing.Point(16, 33);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox3.Size = new System.Drawing.Size(464, 320);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tickets information";
             // 
             // dateTimePicker3
             // 
-            dateTimePicker3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            dateTimePicker3.CustomFormat = "dd/MM/yyyy";
-            dateTimePicker3.Format = DateTimePickerFormat.Custom;
-            dateTimePicker3.Location = new Point(121, 121);
-            dateTimePicker3.Margin = new Padding(3, 2, 3, 2);
-            dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(215, 21);
-            dateTimePicker3.TabIndex = 40;
+            this.dateTimePicker3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dateTimePicker3.Location = new System.Drawing.Point(141, 262);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(250, 23);
+            this.dateTimePicker3.TabIndex = 40;
             // 
             // label23
             // 
-            label23.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label23.AutoSize = true;
-            label23.Location = new Point(24, 122);
-            label23.Name = "label23";
-            label23.Size = new Size(86, 13);
-            label23.TabIndex = 39;
-            label23.Text = "Date Departure:";
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(28, 262);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(99, 16);
+            this.label23.TabIndex = 39;
+            this.label23.Text = "Date Departure:";
+            // 
+            // textEdit12
+            // 
+            this.textEdit12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit12.Location = new System.Drawing.Point(141, 220);
+            this.textEdit12.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit12.Name = "textEdit12";
+            this.textEdit12.Size = new System.Drawing.Size(250, 22);
+            this.textEdit12.TabIndex = 38;
             // 
             // label22
             // 
-            label22.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label22.AutoSize = true;
-            label22.Location = new Point(24, 246);
-            label22.Name = "label22";
-            label22.Size = new Size(34, 13);
-            label22.TabIndex = 37;
-            label22.Text = "Price:";
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(28, 223);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(40, 16);
+            this.label22.TabIndex = 37;
+            this.label22.Text = "Price:";
             // 
-            // cbTimeDeparture
+            // comboBox4
             // 
-            cbTimeDeparture.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            cbTimeDeparture.FormattingEnabled = true;
-            cbTimeDeparture.Location = new Point(121, 150);
-            cbTimeDeparture.Margin = new Padding(3, 2, 3, 2);
-            cbTimeDeparture.Name = "cbTimeDeparture";
-            cbTimeDeparture.Size = new Size(215, 21);
-            cbTimeDeparture.TabIndex = 35;
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(141, 182);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(250, 24);
+            this.comboBox4.TabIndex = 36;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(141, 148);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(250, 24);
+            this.comboBox3.TabIndex = 35;
+            // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(27, 185);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(108, 16);
+            this.label19.TabIndex = 34;
+            this.label19.Text = "Time Destination:";
             // 
             // label18
             // 
-            label18.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label18.AutoSize = true;
-            label18.Location = new Point(25, 150);
-            label18.Name = "label18";
-            label18.Size = new Size(85, 13);
-            label18.TabIndex = 33;
-            label18.Text = "Time Departure:";
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(28, 148);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(102, 16);
+            this.label18.TabIndex = 33;
+            this.label18.Text = "Time Departure:";
             // 
-            // cbDestination
+            // comboBox2
             // 
-            cbDestination.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            cbDestination.FormattingEnabled = true;
-            cbDestination.Location = new Point(121, 89);
-            cbDestination.Margin = new Padding(3, 2, 3, 2);
-            cbDestination.Name = "cbDestination";
-            cbDestination.Size = new Size(215, 21);
-            cbDestination.TabIndex = 32;
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(141, 110);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(250, 24);
+            this.comboBox2.TabIndex = 32;
             // 
             // label17
             // 
@@ -644,24 +685,26 @@
             this.label16.TabIndex = 30;
             this.label16.Text = "Departure:";
             // 
-            // cbDeparture
+            // comboBox1
             // 
-            cbDeparture.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            cbDeparture.FormattingEnabled = true;
-            cbDeparture.Location = new Point(121, 56);
-            cbDeparture.Margin = new Padding(3, 2, 3, 2);
-            cbDeparture.Name = "cbDeparture";
-            cbDeparture.Size = new Size(215, 21);
-            cbDeparture.TabIndex = 29;
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(141, 69);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(250, 24);
+            this.comboBox1.TabIndex = 29;
             // 
-            // txtTicketID
+            // textEdit14
             // 
-            txtTicketID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtTicketID.Location = new Point(121, 28);
-            txtTicketID.Margin = new Padding(3, 2, 3, 2);
-            txtTicketID.Name = "txtTicketID";
-            txtTicketID.Size = new Size(214, 20);
-            txtTicketID.TabIndex = 26;
+            this.textEdit14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit14.Location = new System.Drawing.Point(141, 34);
+            this.textEdit14.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit14.Name = "textEdit14";
+            this.textEdit14.Size = new System.Drawing.Size(250, 22);
+            this.textEdit14.TabIndex = 26;
             // 
             // label20
             // 
@@ -677,135 +720,132 @@
             // 
             // tpCustomer
             // 
-            tpCustomer.Caption = "Customer";
-            tpCustomer.Controls.Add(gcCustomer);
-            tpCustomer.Controls.Add(groupBox5);
-            tpCustomer.Margin = new Padding(3, 2, 3, 2);
-            tpCustomer.Name = "tpCustomer";
-            tpCustomer.Size = new Size(1006, 566);
-            tpCustomer.Paint += tpCustomer_Paint;
+            this.tpCustomer.Caption = "Customer";
+            this.tpCustomer.Controls.Add(this.gcCustomer);
+            this.tpCustomer.Controls.Add(this.groupBox5);
+            this.tpCustomer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tpCustomer.Name = "tpCustomer";
+            this.tpCustomer.Size = new System.Drawing.Size(1040, 361);
             // 
             // gcCustomer
             // 
-            gcCustomer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gcCustomer.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
-            gcCustomer.Location = new Point(10, 211);
-            gcCustomer.MainView = gvCustomer;
-            gcCustomer.Margin = new Padding(3, 2, 3, 2);
-            gcCustomer.Name = "gcCustomer";
-            gcCustomer.Size = new Size(986, 344);
-            gcCustomer.TabIndex = 3;
-            gcCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvCustomer });
+            this.gcCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gcCustomer.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gcCustomer.Location = new System.Drawing.Point(12, 260);
+            this.gcCustomer.MainView = this.gvCustomer;
+            this.gcCustomer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gcCustomer.Name = "gcCustomer";
+            this.gcCustomer.Size = new System.Drawing.Size(1016, 101);
+            this.gcCustomer.TabIndex = 3;
+            this.gcCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvCustomer});
             // 
             // gvCustomer
             // 
-            gvCustomer.DetailHeight = 284;
-            gvCustomer.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            gvCustomer.GridControl = gcCustomer;
-            gvCustomer.Name = "gvCustomer";
-            gvCustomer.OptionsBehavior.CacheValuesOnRowUpdating = DevExpress.Data.CacheRowValuesMode.Disabled;
-            gvCustomer.OptionsBehavior.Editable = false;
-            gvCustomer.RowClick += gvCustomer_RowClick;
+            this.gvCustomer.GridControl = this.gcCustomer;
+            this.gvCustomer.Name = "gvCustomer";
+            this.gvCustomer.OptionsBehavior.CacheValuesOnRowUpdating = DevExpress.Data.CacheRowValuesMode.Disabled;
+            this.gvCustomer.OptionsBehavior.Editable = false;
             // 
             // groupBox5
             // 
-            groupBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox5.Controls.Add(btnCustomerDelete);
-            groupBox5.Controls.Add(btnCustomerUpdate);
-            groupBox5.Controls.Add(btnAddCustomer);
-            groupBox5.Controls.Add(simpleButton7);
-            groupBox5.Controls.Add(simpleButton8);
-            groupBox5.Controls.Add(simpleButton9);
-            groupBox5.Controls.Add(label24);
-            groupBox5.Controls.Add(txtCustomerPhone);
-            groupBox5.Controls.Add(txtCustomerNationality);
-            groupBox5.Controls.Add(txtCustomerEmail);
-            groupBox5.Controls.Add(label25);
-            groupBox5.Controls.Add(label26);
-            groupBox5.Controls.Add(label27);
-            groupBox5.Controls.Add(txtCustomerID);
-            groupBox5.Controls.Add(label28);
-            groupBox5.Controls.Add(dtpCustomerDate);
-            groupBox5.Controls.Add(label29);
-            groupBox5.Controls.Add(rbCustomerFemale);
-            groupBox5.Controls.Add(rbCustomerMale);
-            groupBox5.Controls.Add(label30);
-            groupBox5.Controls.Add(label31);
-            groupBox5.Controls.Add(txtCustomerAddress);
-            groupBox5.Controls.Add(txtCustomerName);
-            groupBox5.Controls.Add(textEdit21);
-            groupBox5.Controls.Add(label32);
-            groupBox5.Location = new Point(10, 13);
-            groupBox5.Margin = new Padding(3, 2, 3, 2);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Padding = new Padding(3, 2, 3, 2);
-            groupBox5.Size = new Size(986, 185);
-            groupBox5.TabIndex = 2;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "Information Customer";
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox5.Controls.Add(this.simpleButton10);
+            this.groupBox5.Controls.Add(this.simpleButton11);
+            this.groupBox5.Controls.Add(this.simpleButton12);
+            this.groupBox5.Controls.Add(this.simpleButton7);
+            this.groupBox5.Controls.Add(this.simpleButton8);
+            this.groupBox5.Controls.Add(this.simpleButton9);
+            this.groupBox5.Controls.Add(this.label24);
+            this.groupBox5.Controls.Add(this.textEdit13);
+            this.groupBox5.Controls.Add(this.textEdit15);
+            this.groupBox5.Controls.Add(this.textEdit17);
+            this.groupBox5.Controls.Add(this.label25);
+            this.groupBox5.Controls.Add(this.label26);
+            this.groupBox5.Controls.Add(this.label27);
+            this.groupBox5.Controls.Add(this.textEdit18);
+            this.groupBox5.Controls.Add(this.label28);
+            this.groupBox5.Controls.Add(this.dateTimePicker4);
+            this.groupBox5.Controls.Add(this.label29);
+            this.groupBox5.Controls.Add(this.radioButton5);
+            this.groupBox5.Controls.Add(this.radioButton6);
+            this.groupBox5.Controls.Add(this.label30);
+            this.groupBox5.Controls.Add(this.label31);
+            this.groupBox5.Controls.Add(this.textEdit19);
+            this.groupBox5.Controls.Add(this.textEdit20);
+            this.groupBox5.Controls.Add(this.textEdit21);
+            this.groupBox5.Controls.Add(this.label32);
+            this.groupBox5.Location = new System.Drawing.Point(12, 16);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox5.Size = new System.Drawing.Size(1016, 228);
+            this.groupBox5.TabIndex = 2;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Information employee";
             // 
-            // btnCustomerDelete
+            // simpleButton10
             // 
-            btnCustomerDelete.Anchor = AnchorStyles.Right;
-            btnCustomerDelete.Location = new Point(869, 137);
-            btnCustomerDelete.Margin = new Padding(3, 2, 3, 2);
-            btnCustomerDelete.Name = "btnCustomerDelete";
-            btnCustomerDelete.Size = new Size(101, 29);
-            btnCustomerDelete.TabIndex = 24;
-            btnCustomerDelete.Text = "Delete";
-            btnCustomerDelete.Click += btnCustomerDelete_Click;
+            this.simpleButton10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton10.Location = new System.Drawing.Point(880, 169);
+            this.simpleButton10.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton10.TabIndex = 24;
+            this.simpleButton10.Text = "Delete";
             // 
-            // btnCustomerUpdate
+            // simpleButton11
             // 
-            btnCustomerUpdate.Anchor = AnchorStyles.Right;
-            btnCustomerUpdate.Location = new Point(751, 137);
-            btnCustomerUpdate.Margin = new Padding(3, 2, 3, 2);
-            btnCustomerUpdate.Name = "btnCustomerUpdate";
-            btnCustomerUpdate.Size = new Size(101, 29);
-            btnCustomerUpdate.TabIndex = 23;
-            btnCustomerUpdate.Text = "Update";
-            btnCustomerUpdate.Click += btnCustomerUpdate_Click;
+            this.simpleButton11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton11.Location = new System.Drawing.Point(742, 169);
+            this.simpleButton11.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton11.TabIndex = 23;
+            this.simpleButton11.Text = "Update";
             // 
-            // btnAddCustomer
+            // simpleButton12
             // 
-            btnAddCustomer.Anchor = AnchorStyles.Right;
-            btnAddCustomer.Location = new Point(634, 137);
-            btnAddCustomer.Margin = new Padding(3, 2, 3, 2);
-            btnAddCustomer.Name = "btnAddCustomer";
-            btnAddCustomer.Size = new Size(101, 29);
-            btnAddCustomer.TabIndex = 22;
-            btnAddCustomer.Text = "Add";
-            btnAddCustomer.Click += btnAddCustomer_Click;
+            this.simpleButton12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton12.Location = new System.Drawing.Point(606, 169);
+            this.simpleButton12.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton12.Name = "simpleButton12";
+            this.simpleButton12.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton12.TabIndex = 22;
+            this.simpleButton12.Text = "Add";
             // 
             // simpleButton7
             // 
-            simpleButton7.Anchor = AnchorStyles.Right;
-            simpleButton7.Location = new Point(1544, 203);
-            simpleButton7.Margin = new Padding(3, 2, 3, 2);
-            simpleButton7.Name = "simpleButton7";
-            simpleButton7.Size = new Size(101, 29);
-            simpleButton7.TabIndex = 21;
-            simpleButton7.Text = "Delete";
+            this.simpleButton7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton7.Location = new System.Drawing.Point(1667, 250);
+            this.simpleButton7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton7.TabIndex = 21;
+            this.simpleButton7.Text = "Delete";
             // 
             // simpleButton8
             // 
-            simpleButton8.Anchor = AnchorStyles.Right;
-            simpleButton8.Location = new Point(1427, 203);
-            simpleButton8.Margin = new Padding(3, 2, 3, 2);
-            simpleButton8.Name = "simpleButton8";
-            simpleButton8.Size = new Size(101, 29);
-            simpleButton8.TabIndex = 20;
-            simpleButton8.Text = "Update";
+            this.simpleButton8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton8.Location = new System.Drawing.Point(1531, 250);
+            this.simpleButton8.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton8.TabIndex = 20;
+            this.simpleButton8.Text = "Update";
             // 
             // simpleButton9
             // 
-            simpleButton9.Anchor = AnchorStyles.Right;
-            simpleButton9.Location = new Point(1311, 203);
-            simpleButton9.Margin = new Padding(3, 2, 3, 2);
-            simpleButton9.Name = "simpleButton9";
-            simpleButton9.Size = new Size(101, 29);
-            simpleButton9.TabIndex = 19;
-            simpleButton9.Text = "Add";
+            this.simpleButton9.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton9.Location = new System.Drawing.Point(1395, 250);
+            this.simpleButton9.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton9.TabIndex = 19;
+            this.simpleButton9.Text = "Add";
             // 
             // label24
             // 
@@ -819,32 +859,35 @@
             this.label24.TabIndex = 18;
             this.label24.Text = "Phone:";
             // 
-            // txtCustomerPhone
+            // textEdit13
             // 
-            txtCustomerPhone.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerPhone.Location = new Point(679, 18);
-            txtCustomerPhone.Margin = new Padding(3, 2, 3, 2);
-            txtCustomerPhone.Name = "txtCustomerPhone";
-            txtCustomerPhone.Size = new Size(177, 20);
-            txtCustomerPhone.TabIndex = 17;
+            this.textEdit13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit13.Location = new System.Drawing.Point(792, 22);
+            this.textEdit13.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit13.Name = "textEdit13";
+            this.textEdit13.Size = new System.Drawing.Size(206, 22);
+            this.textEdit13.TabIndex = 17;
             // 
-            // txtCustomerNationality
+            // textEdit15
             // 
-            txtCustomerNationality.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerNationality.Location = new Point(679, 53);
-            txtCustomerNationality.Margin = new Padding(3, 2, 3, 2);
-            txtCustomerNationality.Name = "txtCustomerNationality";
-            txtCustomerNationality.Size = new Size(177, 20);
-            txtCustomerNationality.TabIndex = 16;
+            this.textEdit15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit15.Location = new System.Drawing.Point(792, 65);
+            this.textEdit15.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit15.Name = "textEdit15";
+            this.textEdit15.Size = new System.Drawing.Size(206, 22);
+            this.textEdit15.TabIndex = 16;
             // 
-            // txtCustomerEmail
+            // textEdit17
             // 
-            txtCustomerEmail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerEmail.Location = new Point(405, 53);
-            txtCustomerEmail.Margin = new Padding(3, 2, 3, 2);
-            txtCustomerEmail.Name = "txtCustomerEmail";
-            txtCustomerEmail.Size = new Size(177, 20);
-            txtCustomerEmail.TabIndex = 15;
+            this.textEdit17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit17.Location = new System.Drawing.Point(472, 65);
+            this.textEdit17.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit17.Name = "textEdit17";
+            this.textEdit17.Size = new System.Drawing.Size(206, 22);
+            this.textEdit17.TabIndex = 15;
             // 
             // label25
             // 
@@ -873,22 +916,25 @@
             // 
             // label27
             // 
-            label27.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label27.AutoSize = true;
-            label27.Location = new Point(326, 20);
-            label27.Name = "label27";
-            label27.Size = new Size(64, 13);
-            label27.TabIndex = 12;
-            label27.Text = "National ID:";
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(380, 25);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(83, 16);
+            this.label27.TabIndex = 12;
+            this.label27.Text = "CMND/CCCD:";
             // 
-            // txtCustomerID
+            // textEdit18
             // 
-            txtCustomerID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerID.Location = new Point(405, 18);
-            txtCustomerID.Margin = new Padding(3, 2, 3, 2);
-            txtCustomerID.Name = "txtCustomerID";
-            txtCustomerID.Size = new Size(177, 20);
-            txtCustomerID.TabIndex = 11;
+            this.textEdit18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit18.Location = new System.Drawing.Point(472, 22);
+            this.textEdit18.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit18.Name = "textEdit18";
+            this.textEdit18.Size = new System.Drawing.Size(206, 22);
+            this.textEdit18.TabIndex = 11;
             // 
             // label28
             // 
@@ -903,16 +949,15 @@
             this.label28.TabIndex = 10;
             this.label28.Text = "Sex:";
             // 
-            // dtpCustomerDate
+            // dateTimePicker4
             // 
-            dtpCustomerDate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            dtpCustomerDate.CustomFormat = "dd/MM/yyyy";
-            dtpCustomerDate.Format = DateTimePickerFormat.Custom;
-            dtpCustomerDate.Location = new Point(405, 89);
-            dtpCustomerDate.Margin = new Padding(3, 2, 3, 2);
-            dtpCustomerDate.Name = "dtpCustomerDate";
-            dtpCustomerDate.Size = new Size(177, 21);
-            dtpCustomerDate.TabIndex = 9;
+            this.dateTimePicker4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dateTimePicker4.Location = new System.Drawing.Point(472, 110);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(243, 23);
+            this.dateTimePicker4.TabIndex = 9;
             // 
             // label29
             // 
@@ -926,31 +971,35 @@
             this.label29.TabIndex = 8;
             this.label29.Text = "Date of birth:";
             // 
-            // rbCustomerFemale
+            // radioButton5
             // 
-            rbCustomerFemale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            rbCustomerFemale.AutoSize = true;
-            rbCustomerFemale.Location = new Point(163, 113);
-            rbCustomerFemale.Margin = new Padding(3, 2, 3, 2);
-            rbCustomerFemale.Name = "rbCustomerFemale";
-            rbCustomerFemale.Size = new Size(61, 17);
-            rbCustomerFemale.TabIndex = 7;
-            rbCustomerFemale.TabStop = true;
-            rbCustomerFemale.Text = "Felmale";
-            rbCustomerFemale.UseVisualStyleBackColor = true;
+            this.radioButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(190, 139);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(73, 20);
+            this.radioButton5.TabIndex = 7;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Felmale";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
-            // rbCustomerMale
+            // radioButton6
             // 
-            rbCustomerMale.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            rbCustomerMale.AutoSize = true;
-            rbCustomerMale.Location = new Point(90, 113);
-            rbCustomerMale.Margin = new Padding(3, 2, 3, 2);
-            rbCustomerMale.Name = "rbCustomerMale";
-            rbCustomerMale.Size = new Size(47, 17);
-            rbCustomerMale.TabIndex = 6;
-            rbCustomerMale.TabStop = true;
-            rbCustomerMale.Text = "Male";
-            rbCustomerMale.UseVisualStyleBackColor = true;
+            this.radioButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(105, 139);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(55, 20);
+            this.radioButton6.TabIndex = 6;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Male";
+            this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // label30
             // 
@@ -977,23 +1026,25 @@
             this.label31.TabIndex = 4;
             this.label31.Text = "Name:";
             // 
-            // txtCustomerAddress
+            // textEdit19
             // 
-            txtCustomerAddress.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerAddress.Location = new Point(90, 84);
-            txtCustomerAddress.Margin = new Padding(3, 2, 3, 2);
-            txtCustomerAddress.Name = "txtCustomerAddress";
-            txtCustomerAddress.Size = new Size(208, 20);
-            txtCustomerAddress.TabIndex = 3;
+            this.textEdit19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit19.Location = new System.Drawing.Point(105, 103);
+            this.textEdit19.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit19.Name = "textEdit19";
+            this.textEdit19.Size = new System.Drawing.Size(243, 22);
+            this.textEdit19.TabIndex = 3;
             // 
-            // txtCustomerName
+            // textEdit20
             // 
-            txtCustomerName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtCustomerName.Location = new Point(90, 53);
-            txtCustomerName.Margin = new Padding(3, 2, 3, 2);
-            txtCustomerName.Name = "txtCustomerName";
-            txtCustomerName.Size = new Size(208, 20);
-            txtCustomerName.TabIndex = 2;
+            this.textEdit20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textEdit20.Location = new System.Drawing.Point(105, 65);
+            this.textEdit20.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit20.Name = "textEdit20";
+            this.textEdit20.Size = new System.Drawing.Size(243, 22);
+            this.textEdit20.TabIndex = 2;
             // 
             // textEdit21
             // 
@@ -1020,76 +1071,84 @@
             // 
             // tp
             // 
-            tp.Caption = "Employee";
-            tp.Controls.Add(groupBox2);
-            tp.Controls.Add(gridEmployee);
-            tp.Margin = new Padding(3, 2, 3, 2);
-            tp.Name = "tp";
-            tp.Size = new Size(1006, 566);
+            this.tp.Caption = "Employee";
+            this.tp.Controls.Add(this.groupBox2);
+            this.tp.Controls.Add(this.dgvEmployee);
+            this.tp.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tp.Name = "tp";
+            this.tp.Size = new System.Drawing.Size(1940, 485);
             // 
             // groupBox2
             // 
-            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox2.Controls.Add(simpleButton3);
-            groupBox2.Controls.Add(simpleButton2);
-            groupBox2.Controls.Add(simpleButton1);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(txt2);
-            groupBox2.Controls.Add(txt5);
-            groupBox2.Controls.Add(txt4);
-            groupBox2.Controls.Add(label8);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(txt1);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(dtp1);
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(radioButton2);
-            groupBox2.Controls.Add(radioButton1);
-            groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(txt6);
-            groupBox2.Controls.Add(txt3);
-            groupBox2.Controls.Add(textEdit1);
-            groupBox2.Controls.Add(label1);
-            groupBox2.Location = new Point(4, 2);
-            groupBox2.Margin = new Padding(3, 2, 3, 2);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(3, 2, 3, 2);
-            groupBox2.Size = new Size(986, 185);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Information employee";
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.groupBox8);
+            this.groupBox2.Controls.Add(this.label47);
+            this.groupBox2.Controls.Add(this.txtPasswordEmployee);
+            this.groupBox2.Controls.Add(this.txtUsernameEmployee);
+            this.groupBox2.Controls.Add(this.label40);
+            this.groupBox2.Controls.Add(this.txtPositionEmployee);
+            this.groupBox2.Controls.Add(this.label39);
+            this.groupBox2.Controls.Add(this.btnDeleteEmployee);
+            this.groupBox2.Controls.Add(this.btnUpdateEmployee);
+            this.groupBox2.Controls.Add(this.btnAddEmployee);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.txtPhoneEmployee);
+            this.groupBox2.Controls.Add(this.txtNationalityEmployee);
+            this.groupBox2.Controls.Add(this.txtEmailEmployee);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.txtNationalIDEmployee);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.dtpBirthdayEmployee);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.rbFelmale);
+            this.groupBox2.Controls.Add(this.rbMale);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.txtAddressEmployee);
+            this.groupBox2.Controls.Add(this.txtNameEmployee);
+            this.groupBox2.Controls.Add(this.txtEmployeeID);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(5, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox2.Size = new System.Drawing.Size(1916, 380);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Information employee";
+            this.groupBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.gbEmployee_Paint);
             // 
             // groupBox8
             // 
-            simpleButton3.Anchor = AnchorStyles.Right;
-            simpleButton3.Location = new Point(844, 151);
-            simpleButton3.Margin = new Padding(3, 2, 3, 2);
-            simpleButton3.Name = "simpleButton3";
-            simpleButton3.Size = new Size(101, 29);
-            simpleButton3.TabIndex = 21;
-            simpleButton3.Text = "Delete";
+            this.groupBox8.Controls.Add(this.label49);
+            this.groupBox8.Controls.Add(this.label48);
+            this.groupBox8.Location = new System.Drawing.Point(1116, 14);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(777, 284);
+            this.groupBox8.TabIndex = 28;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Seat";
             // 
             // label49
             // 
-            simpleButton2.Anchor = AnchorStyles.Right;
-            simpleButton2.Location = new Point(728, 151);
-            simpleButton2.Margin = new Padding(3, 2, 3, 2);
-            simpleButton2.Name = "simpleButton2";
-            simpleButton2.Size = new Size(101, 29);
-            simpleButton2.TabIndex = 20;
-            simpleButton2.Text = "Update";
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(6, 141);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(48, 16);
+            this.label49.TabIndex = 1;
+            this.label49.Text = "Normal";
             // 
             // label48
             // 
-            simpleButton1.Anchor = AnchorStyles.Right;
-            simpleButton1.Location = new Point(611, 151);
-            simpleButton1.Margin = new Padding(3, 2, 3, 2);
-            simpleButton1.Name = "simpleButton1";
-            simpleButton1.Size = new Size(101, 29);
-            simpleButton1.TabIndex = 19;
-            simpleButton1.Text = "Add";
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(6, 31);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(26, 16);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "VIP";
             // 
             // label47
             // 
@@ -1203,32 +1262,35 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Phone:";
             // 
-            // txt2
+            // txtPhoneEmployee
             // 
-            txt2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt2.Location = new Point(679, 18);
-            txt2.Margin = new Padding(3, 2, 3, 2);
-            txt2.Name = "txt2";
-            txt2.Size = new Size(177, 20);
-            txt2.TabIndex = 17;
+            this.txtPhoneEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtPhoneEmployee.Location = new System.Drawing.Point(792, 22);
+            this.txtPhoneEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtPhoneEmployee.Name = "txtPhoneEmployee";
+            this.txtPhoneEmployee.Size = new System.Drawing.Size(206, 22);
+            this.txtPhoneEmployee.TabIndex = 17;
             // 
-            // txt5
+            // txtNationalityEmployee
             // 
-            txt5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt5.Location = new Point(679, 53);
-            txt5.Margin = new Padding(3, 2, 3, 2);
-            txt5.Name = "txt5";
-            txt5.Size = new Size(177, 20);
-            txt5.TabIndex = 16;
+            this.txtNationalityEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNationalityEmployee.Location = new System.Drawing.Point(792, 65);
+            this.txtNationalityEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtNationalityEmployee.Name = "txtNationalityEmployee";
+            this.txtNationalityEmployee.Size = new System.Drawing.Size(206, 22);
+            this.txtNationalityEmployee.TabIndex = 16;
             // 
-            // txt4
+            // txtEmailEmployee
             // 
-            txt4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt4.Location = new Point(405, 53);
-            txt4.Margin = new Padding(3, 2, 3, 2);
-            txt4.Name = "txt4";
-            txt4.Size = new Size(177, 20);
-            txt4.TabIndex = 15;
+            this.txtEmailEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtEmailEmployee.Location = new System.Drawing.Point(472, 65);
+            this.txtEmailEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtEmailEmployee.Name = "txtEmailEmployee";
+            this.txtEmailEmployee.Size = new System.Drawing.Size(225, 22);
+            this.txtEmailEmployee.TabIndex = 15;
             // 
             // label8
             // 
@@ -1257,22 +1319,25 @@
             // 
             // label6
             // 
-            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label6.AutoSize = true;
-            label6.Location = new Point(326, 20);
-            label6.Name = "label6";
-            label6.Size = new Size(64, 13);
-            label6.TabIndex = 12;
-            label6.Text = "National ID:";
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(380, 25);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 16);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "NationalID:";
             // 
-            // txt1
+            // txtNationalIDEmployee
             // 
-            txt1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt1.Location = new Point(405, 18);
-            txt1.Margin = new Padding(3, 2, 3, 2);
-            txt1.Name = "txt1";
-            txt1.Size = new Size(177, 20);
-            txt1.TabIndex = 11;
+            this.txtNationalIDEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNationalIDEmployee.Location = new System.Drawing.Point(472, 22);
+            this.txtNationalIDEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtNationalIDEmployee.Name = "txtNationalIDEmployee";
+            this.txtNationalIDEmployee.Size = new System.Drawing.Size(225, 22);
+            this.txtNationalIDEmployee.TabIndex = 11;
             // 
             // label5
             // 
@@ -1287,16 +1352,15 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Sex:";
             // 
-            // dtp1
+            // dtpBirthdayEmployee
             // 
-            dtp1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            dtp1.CustomFormat = "\"dd-mm-yyyy\"";
-            dtp1.Format = DateTimePickerFormat.Short;
-            dtp1.Location = new Point(405, 89);
-            dtp1.Margin = new Padding(3, 2, 3, 2);
-            dtp1.Name = "dtp1";
-            dtp1.Size = new Size(177, 21);
-            dtp1.TabIndex = 9;
+            this.dtpBirthdayEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dtpBirthdayEmployee.Location = new System.Drawing.Point(472, 110);
+            this.dtpBirthdayEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dtpBirthdayEmployee.Name = "dtpBirthdayEmployee";
+            this.dtpBirthdayEmployee.Size = new System.Drawing.Size(225, 23);
+            this.dtpBirthdayEmployee.TabIndex = 9;
             // 
             // label4
             // 
@@ -1365,23 +1429,25 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Name:";
             // 
-            // txt6
+            // txtAddressEmployee
             // 
-            txt6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt6.Location = new Point(90, 84);
-            txt6.Margin = new Padding(3, 2, 3, 2);
-            txt6.Name = "txt6";
-            txt6.Size = new Size(208, 20);
-            txt6.TabIndex = 3;
+            this.txtAddressEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtAddressEmployee.Location = new System.Drawing.Point(105, 103);
+            this.txtAddressEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtAddressEmployee.Name = "txtAddressEmployee";
+            this.txtAddressEmployee.Size = new System.Drawing.Size(243, 22);
+            this.txtAddressEmployee.TabIndex = 3;
             // 
-            // txt3
+            // txtNameEmployee
             // 
-            txt3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txt3.Location = new Point(90, 53);
-            txt3.Margin = new Padding(3, 2, 3, 2);
-            txt3.Name = "txt3";
-            txt3.Size = new Size(208, 20);
-            txt3.TabIndex = 2;
+            this.txtNameEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNameEmployee.Location = new System.Drawing.Point(105, 65);
+            this.txtNameEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtNameEmployee.Name = "txtNameEmployee";
+            this.txtNameEmployee.Size = new System.Drawing.Size(243, 22);
+            this.txtNameEmployee.TabIndex = 2;
             // 
             // txtEmployeeID
             // 
@@ -1408,15 +1474,18 @@
             // 
             // dgvEmployee
             // 
-            gridEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gridEmployee.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
-            gridEmployee.Location = new Point(4, 193);
-            gridEmployee.MainView = gridView2;
-            gridEmployee.Margin = new Padding(3, 2, 3, 2);
-            gridEmployee.Name = "gridEmployee";
-            gridEmployee.Size = new Size(986, 370);
-            gridEmployee.TabIndex = 0;
-            gridEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView2 });
+            this.dgvEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvEmployee.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dgvEmployee.Location = new System.Drawing.Point(5, 401);
+            this.dgvEmployee.MainView = this.gvEmploy;
+            this.dgvEmployee.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.Size = new System.Drawing.Size(1931, 78);
+            this.dgvEmployee.TabIndex = 0;
+            this.dgvEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvEmploy});
             // 
             // gvEmploy
             // 
@@ -1426,24 +1495,27 @@
             // 
             // tabNavigationPage4
             // 
-            tabNavigationPage4.Caption = "Filght";
-            tabNavigationPage4.Controls.Add(gridControl2);
-            tabNavigationPage4.Controls.Add(groupBox6);
-            tabNavigationPage4.Margin = new Padding(3, 2, 3, 2);
-            tabNavigationPage4.Name = "tabNavigationPage4";
-            tabNavigationPage4.Size = new Size(1006, 566);
+            this.tabNavigationPage4.Caption = "Filght";
+            this.tabNavigationPage4.Controls.Add(this.gridControl2);
+            this.tabNavigationPage4.Controls.Add(this.groupBox6);
+            this.tabNavigationPage4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabNavigationPage4.Name = "tabNavigationPage4";
+            this.tabNavigationPage4.Size = new System.Drawing.Size(1040, 361);
             // 
             // gridControl2
             // 
-            gridControl2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gridControl2.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
-            gridControl2.Location = new Point(10, 221);
-            gridControl2.MainView = gridView4;
-            gridControl2.Margin = new Padding(3, 2, 3, 2);
-            gridControl2.Name = "gridControl2";
-            gridControl2.Size = new Size(986, 336);
-            gridControl2.TabIndex = 3;
-            gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView4 });
+            this.gridControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gridControl2.Location = new System.Drawing.Point(12, 272);
+            this.gridControl2.MainView = this.gridView4;
+            this.gridControl2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(1016, 78);
+            this.gridControl2.TabIndex = 3;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView4});
             // 
             // gridView4
             // 
@@ -1452,35 +1524,36 @@
             // 
             // groupBox6
             // 
-            groupBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox6.Controls.Add(simpleButton16);
-            groupBox6.Controls.Add(simpleButton17);
-            groupBox6.Controls.Add(simpleButton18);
-            groupBox6.Controls.Add(comboBox9);
-            groupBox6.Controls.Add(label37);
-            groupBox6.Controls.Add(comboBox8);
-            groupBox6.Controls.Add(comboBox7);
-            groupBox6.Controls.Add(label36);
-            groupBox6.Controls.Add(label35);
-            groupBox6.Controls.Add(comboBox6);
-            groupBox6.Controls.Add(comboBox5);
-            groupBox6.Controls.Add(label34);
-            groupBox6.Controls.Add(label33);
-            groupBox6.Controls.Add(simpleButton13);
-            groupBox6.Controls.Add(simpleButton14);
-            groupBox6.Controls.Add(simpleButton15);
-            groupBox6.Controls.Add(dateTimePicker5);
-            groupBox6.Controls.Add(label38);
-            groupBox6.Controls.Add(textEdit28);
-            groupBox6.Controls.Add(label41);
-            groupBox6.Location = new Point(10, 10);
-            groupBox6.Margin = new Padding(3, 2, 3, 2);
-            groupBox6.Name = "groupBox6";
-            groupBox6.Padding = new Padding(3, 2, 3, 2);
-            groupBox6.Size = new Size(986, 197);
-            groupBox6.TabIndex = 2;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "Information flight";
+            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.Controls.Add(this.simpleButton16);
+            this.groupBox6.Controls.Add(this.simpleButton17);
+            this.groupBox6.Controls.Add(this.simpleButton18);
+            this.groupBox6.Controls.Add(this.comboBox9);
+            this.groupBox6.Controls.Add(this.label37);
+            this.groupBox6.Controls.Add(this.comboBox8);
+            this.groupBox6.Controls.Add(this.comboBox7);
+            this.groupBox6.Controls.Add(this.label36);
+            this.groupBox6.Controls.Add(this.label35);
+            this.groupBox6.Controls.Add(this.comboBox6);
+            this.groupBox6.Controls.Add(this.comboBox5);
+            this.groupBox6.Controls.Add(this.label34);
+            this.groupBox6.Controls.Add(this.label33);
+            this.groupBox6.Controls.Add(this.simpleButton13);
+            this.groupBox6.Controls.Add(this.simpleButton14);
+            this.groupBox6.Controls.Add(this.simpleButton15);
+            this.groupBox6.Controls.Add(this.dateTimePicker5);
+            this.groupBox6.Controls.Add(this.label38);
+            this.groupBox6.Controls.Add(this.textEdit28);
+            this.groupBox6.Controls.Add(this.label41);
+            this.groupBox6.Location = new System.Drawing.Point(12, 12);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox6.Size = new System.Drawing.Size(1016, 242);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Information flight";
             // 
             // simpleButton16
             // 
@@ -1606,33 +1679,33 @@
             // 
             // simpleButton13
             // 
-            simpleButton13.Anchor = AnchorStyles.Right;
-            simpleButton13.Location = new Point(1544, 209);
-            simpleButton13.Margin = new Padding(3, 2, 3, 2);
-            simpleButton13.Name = "simpleButton13";
-            simpleButton13.Size = new Size(101, 29);
-            simpleButton13.TabIndex = 21;
-            simpleButton13.Text = "Delete";
+            this.simpleButton13.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton13.Location = new System.Drawing.Point(1667, 257);
+            this.simpleButton13.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton13.Name = "simpleButton13";
+            this.simpleButton13.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton13.TabIndex = 21;
+            this.simpleButton13.Text = "Delete";
             // 
             // simpleButton14
             // 
-            simpleButton14.Anchor = AnchorStyles.Right;
-            simpleButton14.Location = new Point(1427, 209);
-            simpleButton14.Margin = new Padding(3, 2, 3, 2);
-            simpleButton14.Name = "simpleButton14";
-            simpleButton14.Size = new Size(101, 29);
-            simpleButton14.TabIndex = 20;
-            simpleButton14.Text = "Update";
+            this.simpleButton14.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton14.Location = new System.Drawing.Point(1531, 257);
+            this.simpleButton14.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton14.Name = "simpleButton14";
+            this.simpleButton14.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton14.TabIndex = 20;
+            this.simpleButton14.Text = "Update";
             // 
             // simpleButton15
             // 
-            simpleButton15.Anchor = AnchorStyles.Right;
-            simpleButton15.Location = new Point(1311, 209);
-            simpleButton15.Margin = new Padding(3, 2, 3, 2);
-            simpleButton15.Name = "simpleButton15";
-            simpleButton15.Size = new Size(101, 29);
-            simpleButton15.TabIndex = 19;
-            simpleButton15.Text = "Add";
+            this.simpleButton15.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton15.Location = new System.Drawing.Point(1395, 257);
+            this.simpleButton15.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton15.Name = "simpleButton15";
+            this.simpleButton15.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton15.TabIndex = 19;
+            this.simpleButton15.Text = "Add";
             // 
             // dateTimePicker5
             // 
@@ -1672,24 +1745,27 @@
             // 
             // tabNavigationPage5
             // 
-            tabNavigationPage5.Caption = "Plane";
-            tabNavigationPage5.Controls.Add(gridControl3);
-            tabNavigationPage5.Controls.Add(groupBox7);
-            tabNavigationPage5.Margin = new Padding(3, 2, 3, 2);
-            tabNavigationPage5.Name = "tabNavigationPage5";
-            tabNavigationPage5.Size = new Size(1006, 566);
+            this.tabNavigationPage5.Caption = "Plane";
+            this.tabNavigationPage5.Controls.Add(this.gridControl3);
+            this.tabNavigationPage5.Controls.Add(this.groupBox7);
+            this.tabNavigationPage5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabNavigationPage5.Name = "tabNavigationPage5";
+            this.tabNavigationPage5.Size = new System.Drawing.Size(1040, 361);
             // 
             // gridControl3
             // 
-            gridControl3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            gridControl3.EmbeddedNavigator.Margin = new Padding(3, 2, 3, 2);
-            gridControl3.Location = new Point(10, 230);
-            gridControl3.MainView = gridView5;
-            gridControl3.Margin = new Padding(3, 2, 3, 2);
-            gridControl3.Name = "gridControl3";
-            gridControl3.Size = new Size(986, 327);
-            gridControl3.TabIndex = 4;
-            gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView5 });
+            this.gridControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl3.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gridControl3.Location = new System.Drawing.Point(12, 283);
+            this.gridControl3.MainView = this.gridView5;
+            this.gridControl3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gridControl3.Name = "gridControl3";
+            this.gridControl3.Size = new System.Drawing.Size(1016, 67);
+            this.gridControl3.TabIndex = 4;
+            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView5});
             // 
             // gridView5
             // 
@@ -1698,31 +1774,32 @@
             // 
             // groupBox7
             // 
-            groupBox7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox7.Controls.Add(textEdit25);
-            groupBox7.Controls.Add(textEdit24);
-            groupBox7.Controls.Add(textEdit23);
-            groupBox7.Controls.Add(simpleButton19);
-            groupBox7.Controls.Add(simpleButton20);
-            groupBox7.Controls.Add(simpleButton21);
-            groupBox7.Controls.Add(comboBox12);
-            groupBox7.Controls.Add(label42);
-            groupBox7.Controls.Add(label43);
-            groupBox7.Controls.Add(label44);
-            groupBox7.Controls.Add(simpleButton22);
-            groupBox7.Controls.Add(simpleButton23);
-            groupBox7.Controls.Add(simpleButton24);
-            groupBox7.Controls.Add(label45);
-            groupBox7.Controls.Add(textEdit22);
-            groupBox7.Controls.Add(label46);
-            groupBox7.Location = new Point(10, 12);
-            groupBox7.Margin = new Padding(3, 2, 3, 2);
-            groupBox7.Name = "groupBox7";
-            groupBox7.Padding = new Padding(3, 2, 3, 2);
-            groupBox7.Size = new Size(986, 197);
-            groupBox7.TabIndex = 3;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "Information plane";
+            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox7.Controls.Add(this.textEdit25);
+            this.groupBox7.Controls.Add(this.textEdit24);
+            this.groupBox7.Controls.Add(this.textEdit23);
+            this.groupBox7.Controls.Add(this.simpleButton19);
+            this.groupBox7.Controls.Add(this.simpleButton20);
+            this.groupBox7.Controls.Add(this.simpleButton21);
+            this.groupBox7.Controls.Add(this.comboBox12);
+            this.groupBox7.Controls.Add(this.label42);
+            this.groupBox7.Controls.Add(this.label43);
+            this.groupBox7.Controls.Add(this.label44);
+            this.groupBox7.Controls.Add(this.simpleButton22);
+            this.groupBox7.Controls.Add(this.simpleButton23);
+            this.groupBox7.Controls.Add(this.simpleButton24);
+            this.groupBox7.Controls.Add(this.label45);
+            this.groupBox7.Controls.Add(this.textEdit22);
+            this.groupBox7.Controls.Add(this.label46);
+            this.groupBox7.Location = new System.Drawing.Point(12, 15);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox7.Size = new System.Drawing.Size(1016, 242);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Information plane";
             // 
             // textEdit25
             // 
@@ -1816,33 +1893,33 @@
             // 
             // simpleButton22
             // 
-            simpleButton22.Anchor = AnchorStyles.Right;
-            simpleButton22.Location = new Point(2243, 266);
-            simpleButton22.Margin = new Padding(3, 2, 3, 2);
-            simpleButton22.Name = "simpleButton22";
-            simpleButton22.Size = new Size(101, 29);
-            simpleButton22.TabIndex = 21;
-            simpleButton22.Text = "Delete";
+            this.simpleButton22.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton22.Location = new System.Drawing.Point(2483, 327);
+            this.simpleButton22.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton22.Name = "simpleButton22";
+            this.simpleButton22.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton22.TabIndex = 21;
+            this.simpleButton22.Text = "Delete";
             // 
             // simpleButton23
             // 
-            simpleButton23.Anchor = AnchorStyles.Right;
-            simpleButton23.Location = new Point(2127, 266);
-            simpleButton23.Margin = new Padding(3, 2, 3, 2);
-            simpleButton23.Name = "simpleButton23";
-            simpleButton23.Size = new Size(101, 29);
-            simpleButton23.TabIndex = 20;
-            simpleButton23.Text = "Update";
+            this.simpleButton23.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton23.Location = new System.Drawing.Point(2347, 327);
+            this.simpleButton23.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton23.Name = "simpleButton23";
+            this.simpleButton23.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton23.TabIndex = 20;
+            this.simpleButton23.Text = "Update";
             // 
             // simpleButton24
             // 
-            simpleButton24.Anchor = AnchorStyles.Right;
-            simpleButton24.Location = new Point(2010, 266);
-            simpleButton24.Margin = new Padding(3, 2, 3, 2);
-            simpleButton24.Name = "simpleButton24";
-            simpleButton24.Size = new Size(101, 29);
-            simpleButton24.TabIndex = 19;
-            simpleButton24.Text = "Add";
+            this.simpleButton24.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.simpleButton24.Location = new System.Drawing.Point(2211, 327);
+            this.simpleButton24.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton24.Name = "simpleButton24";
+            this.simpleButton24.Size = new System.Drawing.Size(118, 36);
+            this.simpleButton24.TabIndex = 19;
+            this.simpleButton24.Text = "Add";
             // 
             // label45
             // 
@@ -1874,98 +1951,94 @@
             // 
             // tabNavigationPage6
             // 
-            tabNavigationPage6.Caption = "Statistics";
-            tabNavigationPage6.Margin = new Padding(3, 2, 3, 2);
-            tabNavigationPage6.Name = "tabNavigationPage6";
-            tabNavigationPage6.Size = new Size(1006, 566);
-            // 
-            // lbUsername
-            // 
-            lbUsername.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lbUsername.AutoSize = true;
-            lbUsername.BackColor = Color.FromArgb(128, 128, 255);
-            lbUsername.BorderStyle = BorderStyle.FixedSingle;
-            lbUsername.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lbUsername.Location = new Point(919, 9);
-            lbUsername.Name = "lbUsername";
-            lbUsername.Size = new Size(82, 21);
-            lbUsername.TabIndex = 6;
-            lbUsername.Text = "Username";
+            this.tabNavigationPage6.Caption = "Statistics";
+            this.tabNavigationPage6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabNavigationPage6.Name = "tabNavigationPage6";
+            this.tabNavigationPage6.Size = new System.Drawing.Size(1040, 511);
             // 
             // Main
             // 
-            AutoScaleDimensions = new SizeF(6F, 13F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1006, 605);
-            Controls.Add(lbUsername);
-            Controls.Add(tabControls);
-            Margin = new Padding(3, 2, 3, 2);
-            MaximizeBox = false;
-            Name = "Main";
-            Text = "Main";
-            WindowState = FormWindowState.Maximized;
-            Load += Main_Load;
-            ((System.ComponentModel.ISupportInitialize)tabControls).EndInit();
-            tabControls.ResumeLayout(false);
-            tpTicket.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)gcTicket).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gvTicket).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)txtTicketID.Properties).EndInit();
-            tpCustomer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)gcCustomer).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gvCustomer).EndInit();
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerPhone.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerNationality.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerEmail.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerID.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerAddress.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtCustomerName.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit21.Properties).EndInit();
-            tp.ResumeLayout(false);
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)txt2.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txt5.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txt4.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txt1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txt6.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txt3.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridEmployee).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView2).EndInit();
-            tabNavigationPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)gridControl2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView4).EndInit();
-            groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit28.Properties).EndInit();
-            tabNavigationPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)gridControl3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView5).EndInit();
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit25.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit24.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit23.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit22.Properties).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1940, 526);
+            this.Controls.Add(this.tabControls);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.MaximizeBox = false;
+            this.Name = "Main";
+            this.Text = "Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.tabControls)).EndInit();
+            this.tabControls.ResumeLayout(false);
+            this.tabNavigationPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridTicket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).EndInit();
+            this.tpCustomer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gcCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvCustomer)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit17.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit19.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).EndInit();
+            this.tp.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPasswordEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsernameEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPositionEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhoneEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNationalityEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmailEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNationalIDEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAddressEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNameEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvEmploy)).EndInit();
+            this.tabNavigationPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit28.Properties)).EndInit();
+            this.tabNavigationPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit25.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit24.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit23.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
 
         private DevExpress.XtraBars.Navigation.TabPane tabControls;
-        private DevExpress.XtraBars.Navigation.TabNavigationPage tpTicket;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tpCustomer;
-        private DevExpress.XtraGrid.GridControl gcTicket;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvTicket;
+        private DevExpress.XtraGrid.GridControl gridTicket;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private GroupBox groupBox1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tp;
         private DevExpress.XtraGrid.GridControl dgvEmployee;
@@ -1980,69 +2053,80 @@
         private RadioButton rbMale;
         private Label label3;
         private Label label2;
-        private DevExpress.XtraEditors.TextEdit txt6;
-        private DevExpress.XtraEditors.TextEdit txt3;
+        private DevExpress.XtraEditors.TextEdit txtAddressEmployee;
+        private DevExpress.XtraEditors.TextEdit txtNameEmployee;
         private Label label4;
-        private DevExpress.XtraEditors.TextEdit txt5;
-        private DevExpress.XtraEditors.TextEdit txt4;
+        private DevExpress.XtraEditors.TextEdit txtNationalityEmployee;
+        private DevExpress.XtraEditors.TextEdit txtEmailEmployee;
         private Label label8;
         private Label label7;
         private Label label6;
-        private DevExpress.XtraEditors.TextEdit txt1;
+        private DevExpress.XtraEditors.TextEdit txtNationalIDEmployee;
         private Label label5;
-        private DateTimePicker dtp1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DateTimePicker dtpBirthdayEmployee;
+        private DevExpress.XtraEditors.SimpleButton btnDeleteEmployee;
+        private DevExpress.XtraEditors.SimpleButton btnUpdateEmployee;
+        private DevExpress.XtraEditors.SimpleButton btnAddEmployee;
         private Label label9;
-        private DevExpress.XtraEditors.TextEdit txt2;
+        private DevExpress.XtraEditors.TextEdit txtPhoneEmployee;
         private GroupBox groupBox4;
         private GroupBox groupBox3;
+        private DateTimePicker dateTimePicker2;
         private Label label15;
+        private DevExpress.XtraEditors.TextEdit textEdit11;
         private Label label14;
         private Label label13;
+        private DevExpress.XtraEditors.TextEdit textEdit10;
         private Label label10;
+        private DevExpress.XtraEditors.TextEdit textEdit9;
         private Label label11;
+        private DevExpress.XtraEditors.TextEdit textEdit8;
+        private RadioButton radioButton3;
         private Label label12;
+        private RadioButton radioButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.TextEdit textEdit16;
         private Label label21;
         private DateTimePicker dateTimePicker3;
         private Label label23;
+        private DevExpress.XtraEditors.TextEdit textEdit12;
         private Label label22;
-        private ComboBox cbTimeDeparture;
+        private ComboBox comboBox4;
+        private ComboBox comboBox3;
+        private Label label19;
         private Label label18;
-        private ComboBox cbDestination;
+        private ComboBox comboBox2;
         private Label label17;
         private Label label16;
-        private ComboBox cbDeparture;
-        private DevExpress.XtraEditors.TextEdit txtTicketID;
+        private ComboBox comboBox1;
+        private DevExpress.XtraEditors.TextEdit textEdit14;
         private Label label20;
         private GroupBox groupBox5;
-        private DevExpress.XtraEditors.SimpleButton btnCustomerDelete;
-        private DevExpress.XtraEditors.SimpleButton btnCustomerUpdate;
-        private DevExpress.XtraEditors.SimpleButton btnAddCustomer;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton12;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
         private DevExpress.XtraEditors.SimpleButton simpleButton8;
         private DevExpress.XtraEditors.SimpleButton simpleButton9;
         private Label label24;
-        private DevExpress.XtraEditors.TextEdit txtCustomerPhone;
-        private DevExpress.XtraEditors.TextEdit txtCustomerNationality;
-        private DevExpress.XtraEditors.TextEdit txtCustomerEmail;
+        private DevExpress.XtraEditors.TextEdit textEdit13;
+        private DevExpress.XtraEditors.TextEdit textEdit15;
+        private DevExpress.XtraEditors.TextEdit textEdit17;
         private Label label25;
         private Label label26;
         private Label label27;
-        private DevExpress.XtraEditors.TextEdit txtCustomerID;
+        private DevExpress.XtraEditors.TextEdit textEdit18;
         private Label label28;
-        private DateTimePicker dtpCustomerDate;
+        private DateTimePicker dateTimePicker4;
         private Label label29;
-        private RadioButton rbCustomerFemale;
-        private RadioButton rbCustomerMale;
+        private RadioButton radioButton5;
+        private RadioButton radioButton6;
         private Label label30;
         private Label label31;
-        private DevExpress.XtraEditors.TextEdit txtCustomerAddress;
-        private DevExpress.XtraEditors.TextEdit txtCustomerName;
+        private DevExpress.XtraEditors.TextEdit textEdit19;
+        private DevExpress.XtraEditors.TextEdit textEdit20;
         private DevExpress.XtraEditors.TextEdit textEdit21;
         private Label label32;
         private DevExpress.XtraGrid.GridControl gcCustomer;
@@ -2089,18 +2173,14 @@
         private DevExpress.XtraEditors.TextEdit textEdit23;
         private DevExpress.XtraGrid.GridControl gridControl3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
-        private Label lbUsername;
-        private Label lbTicketsCustomerID;
-        private Label lbTicketCustomerName;
-        private Label lbTicketCustomerAddress;
-        private Label lbTicketCustomerSex;
-        private Label lbTicketCustomerNid;
-        private Label lbTicketCustomerPhone;
-        private Label lbTicketCustomerDoB;
-        private Label lbTicketPrice;
-        private Label lbTicketSeatNumber;
-        private Label lbTicketSeatClass;
-        private Label lbTicketCurrentSeat;
-        private Label lbTicketCurrentClass;
+        private DevExpress.XtraEditors.TextEdit txtPositionEmployee;
+        private Label label39;
+        private DevExpress.XtraEditors.TextEdit txtUsernameEmployee;
+        private Label label40;
+        private Label label47;
+        private DevExpress.XtraEditors.TextEdit txtPasswordEmployee;
+        private GroupBox groupBox8;
+        private Label label48;
+        private Label label49;
     }
 }

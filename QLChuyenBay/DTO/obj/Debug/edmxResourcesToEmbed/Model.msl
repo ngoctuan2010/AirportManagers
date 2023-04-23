@@ -92,8 +92,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-<<<<<<< HEAD
-=======
     <EntitySetMapping Name="sysdiagrams">
       <EntityTypeMapping TypeName="AirportManagerModel.sysdiagram">
         <MappingFragment StoreEntitySet="sysdiagrams">
@@ -105,6 +103,5 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
->>>>>>> main
   </EntityContainerMapping>
 </Mapping>

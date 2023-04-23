@@ -96,8 +96,6 @@
     <Property Name="State" Type="Int32" />
     <NavigationProperty Name="Flights" Relationship="Self.FK__Flight__Airline__403A8C7D" FromRole="Planes" ToRole="Flights" />
   </EntityType>
-<<<<<<< HEAD
-=======
   <EntityType Name="sysdiagram">
     <Key>
       <PropertyRef Name="diagram_id" />
@@ -108,7 +106,6 @@
     <Property Name="version" Type="Int32" />
     <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
->>>>>>> main
   <Association Name="FK__Account__Employe__398D8EEE">
     <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
     <End Role="Accounts" Type="Self.Account" Multiplicity="0..1" />
@@ -189,10 +186,7 @@
     <EntitySet Name="Flights" EntityType="Self.Flight" />
     <EntitySet Name="Jobs" EntityType="Self.Job" />
     <EntitySet Name="Planes" EntityType="Self.Plane" />
-<<<<<<< HEAD
-=======
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
->>>>>>> main
     <AssociationSet Name="FK__Account__Employe__398D8EEE" Association="Self.FK__Account__Employe__398D8EEE">
       <End Role="Employees" EntitySet="Employees" />
       <End Role="Accounts" EntitySet="Accounts" />
