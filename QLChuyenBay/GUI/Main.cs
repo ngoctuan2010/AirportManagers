@@ -361,20 +361,18 @@ namespace GUI
 
         private void gridViewFlight_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-            if (gridViewFlight.GetRow(gridViewFlight.FocusedRowHandle) != null)
-            {
-                var pickedFlight = (Flight)gridViewFlight.GetRow(gridViewFlight.FocusedRowHandle);
-                var planeID = (Plane)comboBoxPlane.SelectedItem;
-                var loDes = (Location)comboBoxDepart.SelectedItem;
-                var loDep = (Location)comboBoxDesti.SelectedItem;
-                textFlightID.Text = pickedFlight.FlightID.ToString();
-                planeID.PlaneID = pickedFlight.PlaneID;
-                textAirline.Text = pickedFlight.Airline;
-                loDes.LocationID = (int)pickedFlight.Departure;
-                loDep.LocationID = (int)pickedFlight.Destination;
-                dateDepartPicker.Value = pickedFlight.DateOfDeparture.Date;
-                timeDepartPicker.Value = DateTime.Parse(pickedFlight.DateOfDeparture.TimeOfDay.ToString());
-            }
+            if (gridViewFlight.GetRow(gridViewFlight.FocusedRowHandle) == null) return;
+            var pickedFlight = (Flight)gridViewFlight.GetRow(gridViewFlight.FocusedRowHandle);
+            var planeID = (Plane)comboBoxPlane.SelectedItem;
+            var loDes = (Location)comboBoxDepart.SelectedItem;
+            var loDep = (Location)comboBoxDesti.SelectedItem;
+            textFlightID.Text = pickedFlight.FlightID.ToString();
+            planeID.PlaneID = pickedFlight.PlaneID;
+            textAirline.Text = pickedFlight.Airline;
+            loDes.LocationID = (int)pickedFlight.Departure;
+            loDep.LocationID = (int)pickedFlight.Destination;
+            dateDepartPicker.Value = pickedFlight.DateOfDeparture.Date;
+            timeDepartPicker.Value = DateTime.Parse(pickedFlight.DateOfDeparture.TimeOfDay.ToString());
         }
 
         private void buttonAddFlight_Click(object sender, EventArgs e)
