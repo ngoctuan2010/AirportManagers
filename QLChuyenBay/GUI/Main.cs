@@ -38,192 +38,210 @@ namespace GUI
         private void Main_Load(object sender, EventArgs e)
         {
         }
-
-        private void btnAdd_Click(object sender, EventArgs e)
+        // Customer Controller
+        private void tpCustomer_Paint(object sender, PaintEventArgs e)
         {
+            gcCustomer.DataSource = bCustomer.getCustomerList();
+        }
 
-
-            if (String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text))
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            if (txtCustomerID.Text != null && !txtCustomerID.Text.IsEmptyOrSingle()
+               && txtCustomerPhone.Text != null && !txtCustomerPhone.Text.IsEmptyOrSingle()
+               && txtCustomerName.Text != null && !txtCustomerName.Text.IsEmptyOrSingle()
+               && txtCustomerEmail.Text != null && !txtCustomerEmail.Text.IsEmptyOrSingle()
+               && txtCustomerNationality.Text != null && !txtCustomerNationality.Text.IsEmptyOrSingle()
+               && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
+               && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
             {
-                MessageBox.Show("Please enter all the information!");
-            }
-            else
-            {
-                employee.Name = txtNameEmployee.Text.Trim();
-                employee.Address = txtAddressEmployee.Text.Trim();
-                employee.Nationality = txtNationalityEmployee.Text.Trim();
-                if (rbMale.Checked)
-                    employee.Sex = true;
-                else
-                    employee.Sex = false;
-                employee.DateOfBirth = dtpBirthdayEmployee.Value.Date;
-                employee.Email = txtEmailEmployee.Text.Trim();
-                employee.NationID = txtNationalIDEmployee.Text.Trim();
-                employee.TeleNumber = txtPhoneEmployee.Text.Trim();
-                employee.Position = txtPositionEmployee.Text.Trim();
-
-
-
-
-                if (busEmp.AddEmployee(employee) == 1)
+                string customerID = txtCustomerID.Text.Trim();
+                string customerName = txtCustomerName.Text.Trim();
+                string customerEmail = txtCustomerEmail.Text.Trim();
+                string customerAddress = txtCustomerAddress.Text.Trim();
+                string customerPhone = txtCustomerPhone.Text.Trim();
+                String customerDate = dtpCustomerDate.Value.ToString("dd/MM/yyyy");
+                string customerNationality = txtCustomerNationality.Text.Trim();
+                bool? customerSex;
+                if (rbCustomerFemale.Checked)
                 {
-                    account.EmployeeID = dalAccount.takeEmployeeIDbyEmployeeNationalID(txtNationalIDEmployee.Text.Trim());
-                    account.Username = txtUsernameEmployee.Text.Trim();
-                    account.Password = txtPasswordEmployee.Text.Trim();
-                    account.AccessLevel = false;
+                    customerSex = true;
+                }
+                else
+                {
+                    customerSex = false;
+                }
 
-                    if (busAcc.AddAccount(account) == 2)
+                Customer customer = new Customer();
+                customer.NationalID = customerID;
+                customer.Name = customerName;
+                customer.Email = customerEmail;
+                customer.Address = customerAddress;
+                customer.TeleNumber = customerPhone;
+                customer.DateOfBirth = DateTime.ParseExact(customerDate, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                customer.Nationality = customerNationality;
+                customer.Sex = customerSex;
+
+                try
+                {
+                    if (bCustomer.addCustomer(customer))
                     {
-                        MessageBox.Show("Username was exited");
-                        LoadDataGridViewEmployee();
+                        MessageBox.Show("Add customer successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        gcCustomer.DataSource = bCustomer.getCustomerList();
                     }
                     else
                     {
-                        if (busAcc.AddAccount(account) == 1)
+                        MessageBox.Show("Add customer failure", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Not enough infomation about customer", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void gvCustomer_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+
+            if (e.Clicks == 2) //Send customer to ticket tab
+            {
+                tabControls.SelectedPageIndex = 0;
+                Customer order_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                lbTicketsCustomerID.Text = order_customer.CustomerID.ToString();
+                lbTicketCustomerName.Text = order_customer.Name;
+                lbTicketCustomerAddress.Text = order_customer.Address;
+                lbTicketCustomerPhone.Text = order_customer.TeleNumber;
+                lbTicketCustomerNid.Text = order_customer.NationalID;
+                if (order_customer.Sex == true)
+                {
+                    lbTicketCustomerSex.Text = "Nữ";
+                }
+                else
+                {
+                    lbTicketCustomerSex.Text = "Nam";
+                }
+                lbTicketCustomerDoB.Text = order_customer.DateOfBirth.Value.ToString("dd/MM/yyyy");
+            }
+            else if (e.Clicks == 1) //fetch data to textfield
+            {
+
+                if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
+                {
+                    Customer cur_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    txtCustomerID.Text = cur_customer.NationalID;
+                    txtCustomerName.Text = cur_customer.Name;
+                    txtCustomerAddress.Text = cur_customer.Address;
+                    txtCustomerPhone.Text = cur_customer.TeleNumber;
+                    txtCustomerEmail.Text = cur_customer.Email;
+                    txtCustomerNationality.Text = cur_customer.Nationality;
+                    dtpCustomerDate.Value = cur_customer.DateOfBirth.Value;
+                    if (cur_customer.Sex == true)
+                    {
+                        rbCustomerFemale.Checked = true;
+                    }
+                    else
+                    {
+                        rbCustomerMale.Checked = true;
+                    }
+                }
+
+            }
+        }
+
+        private void btnCustomerUpdate_Click(object sender, EventArgs e)
+        {
+            if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
+            {
+                if (txtCustomerID.Text != null && !txtCustomerID.Text.IsEmptyOrSingle()
+               && txtCustomerPhone.Text != null && !txtCustomerPhone.Text.IsEmptyOrSingle()
+               && txtCustomerName.Text != null && !txtCustomerName.Text.IsEmptyOrSingle()
+               && txtCustomerEmail.Text != null && !txtCustomerEmail.Text.IsEmptyOrSingle()
+               && txtCustomerNationality.Text != null && !txtCustomerNationality.Text.IsEmptyOrSingle()
+               && txtCustomerAddress.Text != null && !txtCustomerAddress.Text.IsEmptyOrSingle()
+               && dtpCustomerDate.Text != null && (rbCustomerMale.Checked == true || rbCustomerFemale.Checked == true))
+                {
+                    Customer current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    Customer updated_customer = new Customer();
+                    updated_customer.CustomerID = current_customer.CustomerID;
+                    updated_customer.Name = txtCustomerName.Text.Trim();
+                    updated_customer.NationalID = txtCustomerID.Text.Trim();
+                    updated_customer.Email = txtCustomerEmail.Text.Trim();
+                    updated_customer.Address = txtCustomerAddress.Text.Trim();
+                    updated_customer.TeleNumber = txtCustomerPhone.Text.Trim();
+                    updated_customer.DateOfBirth = DateTime.ParseExact(dtpCustomerDate.Value.ToString("dd/MM/yyyy"), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    updated_customer.Nationality = txtCustomerNationality.Text.Trim();
+                    if (rbCustomerFemale.Checked)
+                    {
+                        updated_customer.Sex = true;
+                    }
+                    else
+                    {
+                        updated_customer.Sex = false;
+                    }
+                    try
+                    {
+                        if (bCustomer.updateCustomer(updated_customer))
                         {
-                            MessageBox.Show("Add Employee Successfully");
-                            LoadDataGridViewEmployee();
+                            MessageBox.Show("Update customer successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            gcCustomer.DataSource = bCustomer.getCustomerList();
                         }
                         else
-                            MessageBox.Show("Add fAIL");
-                    }
-                }
-                else
-                {
-                        if (busEmp.AddEmployee(employee) == 0)
-                            MessageBox.Show("Add Employee Fail");
-                        else
-                            if (busEmp.AddEmployee(employee) == 2)
-                            MessageBox.Show("Exited Phone");
-                        else
-                                if (busEmp.AddEmployee(employee) == 3)
-                            MessageBox.Show("Exited NationalID");
-                        else
-                                    if (busEmp.AddEmployee(employee) == 4)
-                            MessageBox.Show("Exited NationalID and Phone");
-                        else
-                            MessageBox.Show("Something wrong");
-                }
-                
-            }
-        }
-
-        private void gbEmployee_Paint(object sender, PaintEventArgs e)
-        {
-            txtEmployeeID.ReadOnly = true;
-            LoadDataGridViewEmployee();
-        }
-
-        private void gvEmployee_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
-        {
-            if (gvEmploy.GetRow(gvEmploy.FocusedRowHandle) != null)
-            {
-                Employee cur_emp = (Employee)gvEmploy.GetRow(gvEmploy.FocusedRowHandle);
-                txtEmployeeID.Text = cur_emp.EmployeeID.ToString();
-                txtNameEmployee.Text = cur_emp.Name.ToString();
-                txtAddressEmployee.Text = cur_emp.Address.ToString();
-                txtNationalityEmployee.Text = cur_emp.Nationality.ToString();
-            //    dtpBirthday.Value.Date = cur_emp.DateOfBirth.;
-                txtNationalIDEmployee.Text = cur_emp.NationID.ToString();
-                txtEmailEmployee.Text = cur_emp.Email.ToString(); 
-                txtNationalIDEmployee.Text = cur_emp.NationID.ToString();
-                txtPhoneEmployee.Text = cur_emp.TeleNumber.ToString();
-                txtPositionEmployee.Text = cur_emp.Position.ToString();
-                if (cur_emp.Sex == true)
-                    rbMale.Checked= true;
-                else
-                    rbFelmale.Checked= true;
-            }    
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
-            if (String.IsNullOrEmpty(txtEmployeeID.Text))
-            {
-                MessageBox.Show("Please select Employee you want to delete");
-            }
-            else
-            {
-                if (MessageBox.Show("Do you want to delete this employee?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    if (dalEmployee.CheckExitEmployee(Int32.Parse(txtEmployeeID.Text))== false)
-                    {
-                        MessageBox.Show("This employee not exit!");
-                    }    
-                    else
-                    {
-                        if (busAcc.DeleteAccount(Int32.Parse(txtEmployeeID.Text)) == 1)
                         {
-                            if (busEmp.DeleteEmployee(Int32.Parse(txtEmployeeID.Text)) == 1)
-                                MessageBox.Show("Delete Employee Successfully");
-                            else
-                                MessageBox.Show("Delete Employee Fail");
+                            MessageBox.Show("Update customer failure", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        else
-                        {
-                            MessageBox.Show("Fail, Something wrong");
-                        }    
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
 
+                }
+
+            }
+        }
+
+        private void btnCustomerDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to delete this customer?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (gvCustomer.GetRow(gvCustomer.FocusedRowHandle) != null)
+                {
+                    Customer current_customer = (Customer)gvCustomer.GetRow(gvCustomer.FocusedRowHandle);
+                    int id = current_customer.CustomerID;
+
+                    if (bCustomer.deleteCustomer(id))
+                    {
+                        MessageBox.Show("Delete customer successfully", "Success");
+                        gcCustomer.DataSource = bCustomer.getCustomerList();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Delete customer failure", "Error");
                     }
                 }
             }
+
         }
 
-        private void btnUpdateEmployee_Click(object sender, EventArgs e)
+        //Ticket Controller
+        private void tpTicket_Paint(object sender, PaintEventArgs e)
         {
-            if (String.IsNullOrEmpty(txtEmployeeID.Text)|| String.IsNullOrEmpty(txtNameEmployee.Text) || String.IsNullOrEmpty(txtAddressEmployee.Text) || String.IsNullOrEmpty(txtNationalityEmployee.Text) || String.IsNullOrEmpty(txtEmailEmployee.Text) || String.IsNullOrEmpty(txtNationalIDEmployee.Text) || String.IsNullOrEmpty(txtPhoneEmployee.Text) || String.IsNullOrEmpty(txtUsernameEmployee.Text) || String.IsNullOrEmpty(txtPasswordEmployee.Text))
+            gcTicket.DataSource = bTicket.getTicketsList();
+        }
+
+        private void gvTicket_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if (gvTicket.GetRow(gvTicket.FocusedRowHandle) != null)
             {
-                MessageBox.Show("Please enter all the information!");
+                Bill_Detail ticket = (Bill_Detail)gvTicket.GetRow(gvTicket.FocusedRowHandle);
+                Customer customer = ticket.Customer;
+                MessageBox.Show(customer.Name);
             }
-            else
-            {
-                employee.EmployeeID = Int32.Parse(txtEmployeeID.Text.Trim());
-                employee.Name = txtNameEmployee.Text.Trim();
-                employee.Address = txtAddressEmployee.Text.Trim();
-                employee.Nationality = txtNationalityEmployee.Text.Trim();
-                if (rbMale.Checked)
-                    employee.Sex = true;
-                else
-                    employee.Sex = false;
-                employee.DateOfBirth = dtpBirthdayEmployee.Value.Date;
-                employee.Email = txtEmailEmployee.Text.Trim();
-                employee.NationID = txtNationalIDEmployee.Text.Trim();
-                employee.TeleNumber = txtPhoneEmployee.Text.Trim();
-                employee.Position = txtPositionEmployee.Text.Trim();
-
-
-                if (busEmp.UpdateEmployee(employee) == 2)
-                {
-                    MessageBox.Show("EmployeeID not exit");
-                } 
-                else
-                {
-                    if (busEmp.UpdateEmployee(employee) == 1)
-                    {
-                        account.EmployeeID = dalAccount.takeEmployeeIDbyEmployeeNationalID(txtNationalIDEmployee.Text.Trim());
-                        account.Username = txtUsernameEmployee.Text.Trim();
-                        account.Password = txtPasswordEmployee.Text.Trim();
-                        account.AccessLevel = false;
-                        dalAccount.UpdateAccount(account);
-
-                        MessageBox.Show("Update Employee successfully");
-                    }    
-                    else
-                        MessageBox.Show("Something Wrong");
-                }    
-                    
-            }
-        }
-
-        private void txtPasswordEmployee_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
